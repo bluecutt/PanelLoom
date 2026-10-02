@@ -28,7 +28,7 @@ Replaceable assets and undoable layout changes make iteration more forgiving. Cr
 
 Use a Windows x64 computer. Manual layout with existing assets works in the portable application without installing Codex, the .NET SDK, or a model API.
 
-1. After publication, download the portable Windows x64 ZIP and full practice pack from this repository's **Releases**. See the [download guide](docs/downloads.en.md) for files and verification steps.
+1. Download the portable Windows x64 ZIP and full practice pack from this repository's [Releases](https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4). See the [download guide](docs/downloads.en.md) for files and verification steps.
 2. Extract the complete application ZIP into your tools folder. Keep the EXE, DLLs, and companion files together, then double-click `ComicEditor.exe`.
 3. Extract the practice pack. In the application, click **打开工程** (Open project) and select `P10/projects/reference.json` to view the finished example layout.
 4. Use **项目 → 另存为** (Project → Save as) to create a working copy before moving images, arranging bubbles, and exporting. Follow the [quick start](docs/quick-start.en.md) for canvas controls.
@@ -74,7 +74,7 @@ The application interface is currently in Chinese. The [English quick start](doc
 
 ## Try it with the practice pack
 
-Get the Windows application and full practice pack from this repository's Releases when published; the [download guide](docs/downloads.en.md) lists the files and opening steps. P10 contains 6 panels and 10 lettered objects. P09 contains 9 panels and 13 historical blank bubbles. Start with the [case exercise](case-studies/guide/quick-start.en.md) and open `P10/projects/reference.json` from the extracted pack, then save a working copy before editing. `start.json` preserves the historical initial layout for comparison.
+Get the Windows application and full practice pack from this repository's [Releases](https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4); the [download guide](docs/downloads.en.md) lists the files and opening steps. P10 contains 6 panels and 10 lettered objects. P09 contains 9 panels and 13 historical blank bubbles. Start with the [case exercise](case-studies/guide/quick-start.en.md) and open `P10/projects/reference.json` from the extracted pack, then save a working copy before editing. `start.json` preserves the historical initial layout for comparison.
 
 The artwork retains its Chinese lettering. English instructions explain the workflow and controls. Illustrated guides and their teaching images are included in this repository; the full practice ZIP is distributed as a Release attachment.
 
@@ -86,13 +86,13 @@ The general-purpose Skill is in [skills/comic-page-workflow](skills/comic-page-w
 
 ## Version and development
 
-The current local release candidate is `0.2.0-preview.4`, with behavior based on the accepted `0.2.0-preview.2`. This preparation work organizes the complete workflow, tutorials, licensing, and packaging. See [build and release](docs/build-and-release.md) and the [acceptance checklist](docs/acceptance-checklist.md), currently in Chinese.
+The first public preview is `0.2.0-preview.4`, with behavior based on the accepted `0.2.0-preview.2`. It includes the complete workflow, tutorials, licensing, and portable packaging. See [build and release](docs/build-and-release.md) and the [acceptance checklist](docs/acceptance-checklist.md), currently in Chinese.
 
 Software, the general-purpose Skill, templates, and general documentation use **AGPL-3.0-only**. The embedded comics and case materials retain their separate [asset terms](ASSET-TERMS.en.md); bluecutt retains all legally held creative rights. See the [license scope](LICENSE-SCOPE.en.md), [full software license](LICENSE), and [asset guidance](docs/licensing.md).
 
 Windows may display an unsigned-application warning on first launch. Verify the download source and checksums. Testing on a second Windows x64 computer was accepted on 2026-10-02: 10 automatic checks and 15 manual checks. Wider Windows compatibility remains subject to further testing.
 
-Application binaries remain `0.2.0-preview.4`; this candidate reorganizes the homepage, illustrated guides, and asset terms. Local release preparation is in progress; the repository and Release attachments have not been published.
+Application binaries remain `0.2.0-preview.4`. The `docs.3` package revision connects the public repository and downloads; the tested EXE and DLL files are unchanged. [Release notes and attachments](https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4) are available in this repository.
 
 [Contributing](CONTRIBUTING.en.md) · [Credits](CREDITS.md)
 

@@ -28,7 +28,7 @@
 
 准备 Windows x64 电脑。已有素材的手动排版可直接使用免安装应用，无需安装 Codex、.NET SDK 或模型接口。
 
-1. 正式发布后，从本仓库 **Releases** 下载 Windows x64 免安装 ZIP 和完整练习包。文件选择及校验方法见[下载说明](docs/downloads.md)。
+1. 从本仓库 [Releases](https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4) 下载 Windows x64 免安装 ZIP 和完整练习包。文件选择及校验方法见[下载说明](docs/downloads.md)。
 2. 将应用 ZIP 完整解压到自己的工具目录，保留 EXE、DLL 和其他配套文件，双击 `ComicEditor.exe`。
 3. 解压练习包，在应用中点击“打开工程”，选择 `P10/projects/reference.json`，查看已完成排版的示例。
 4. 使用“项目 → 另存为”创建自己的工作副本，再拖动图片、调整气泡并高清导出。具体操作见[快速上手](docs/quick-start.md)。
@@ -74,7 +74,7 @@
 
 ## 亲手试一次
 
-正式发布后，从本仓库 Releases 下载 Windows 应用与完整练习包；[下载说明](docs/downloads.md)列出附件和打开步骤。P10 提供 6 个分镜和 10 个带字对象；P09 提供 9 个分镜和 13 个历史空白气泡。先阅读[案例快速操作](case-studies/guide/quick-start.md)，打开解压后练习包中的 `P10/projects/reference.json`，另存工作副本再调整。`start.json` 保留历史初始化布局，便于对照。
+从本仓库 [Releases](https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4) 下载 Windows 应用与完整练习包；[下载说明](docs/downloads.md)列出附件和打开步骤。P10 提供 6 个分镜和 10 个带字对象；P09 提供 9 个分镜和 13 个历史空白气泡。先阅读[案例快速操作](case-studies/guide/quick-start.md)，打开解压后练习包中的 `P10/projects/reference.json`，另存工作副本再调整。`start.json` 保留历史初始化布局，便于对照。
 
 图文教程及教学图片随本仓库保存，完整练习 ZIP 作为 Releases 附件提供。新页面使用自己的故事、角色和画风约定。
 
@@ -86,13 +86,13 @@
 
 ## 版本与开发
 
-当前本地发行候选使用 `0.2.0-preview.4`，功能基于已验收的 `0.2.0-preview.2`；本轮整理完整工作流、教程、许可和打包内容。源码构建见 [构建与发行](docs/build-and-release.md)，操作验收见 [验收清单](docs/acceptance-checklist.md)。
+首个公开预览版为 `0.2.0-preview.4`，功能基于已验收的 `0.2.0-preview.2`，包含完整工作流、教程、许可和免安装发行包。源码构建见 [构建与发行](docs/build-and-release.md)，操作验收见 [验收清单](docs/acceptance-checklist.md)。
 
 软件、通用 Skill、模板和通用文档采用 **AGPL-3.0-only**。嵌入的漫画与案例素材适用独立的[素材使用说明](ASSET-TERMS.md)，bluecutt 保留依法享有的创作权益。[许可范围](LICENSE-SCOPE.md)、[完整软件许可](LICENSE)与[素材说明](docs/licensing.md)分别列出授权范围。
 
 Windows 首次运行可能提示未签名应用。先核验下载来源和文件校验值。2026-10-02 已完成另一台 Windows x64 的试用验收：自动检查 10 项、人工检查 15 项通过。更广泛的 Windows 兼容性继续通过后续测试确认。
 
-程序二进制仍为 `0.2.0-preview.4`。本候选整理首页、图文教程和素材授权；当前为本地发布准备状态，尚未建立远端仓库或上传 Releases 附件。
+程序二进制仍为 `0.2.0-preview.4`，`docs.3` 包装订正版接入公开仓库及下载链接，已验收的 EXE 和 DLL 保持不变。[发行说明及附件](https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4)统一保存在本仓库。
 
 [参与开发](CONTRIBUTING.md) · [创作者清单](CREDITS.md)
 

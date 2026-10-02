@@ -24,7 +24,7 @@
 <h3>使用 Windows 编辑器</h3>
 <p>准备 Windows x64 电脑。已有素材的手动排版可直接使用免安装应用，无需安装 Codex、.NET SDK 或模型接口。</p>
 <ol>
-<li>正式发布后，从本仓库 <strong>Releases</strong> 下载 Windows x64 免安装 ZIP 和完整练习包。文件选择及校验方法见<a href="docs/downloads.html">下载说明</a>。</li>
+<li>从本仓库 <a href="https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4">Releases</a> 下载 Windows x64 免安装 ZIP 和完整练习包。文件选择及校验方法见<a href="docs/downloads.html">下载说明</a>。</li>
 <li>将应用 ZIP 完整解压到自己的工具目录，保留 EXE、DLL 和其他配套文件，双击 <code>ComicEditor.exe</code>。</li>
 <li>解压练习包，在应用中点击“打开工程”，选择 <code>P10/projects/reference.json</code>，查看已完成排版的示例。</li>
 <li>使用“项目 → 另存为”创建自己的工作副本，再拖动图片、调整气泡并高清导出。具体操作见<a href="docs/quick-start.html">快速上手</a>。</li>
@@ -96,16 +96,16 @@
 <p>画布普通滚轮缩放选中的图片或气泡，Ctrl＋滚轮缩放整页，侧栏滚轮只滚动。独立多边形可以调大小、顶点、形状和取景。气泡支持完整带字 PNG、主体与尾巴图层、旋转、透明度、限框或跨格，以及相对小格的前后遮挡。单线边界保持分镜形状独立，导出从原素材重新渲染。</p>
 <p>界面当前使用中文。<a href="docs/quick-start.en.html">英文快速上手</a>提供实际按钮名的英文对照。本轮只新增双语文档，软件界面的英文切换另行安排。</p>
 <h2>亲手试一次</h2>
-<p>正式发布后，从本仓库 Releases 下载 Windows 应用与完整练习包；<a href="docs/downloads.html">下载说明</a>列出附件和打开步骤。P10 提供 6 个分镜和 10 个带字对象；P09 提供 9 个分镜和 13 个历史空白气泡。先阅读<a href="case-studies/guide/quick-start.html">案例快速操作</a>，打开解压后练习包中的 <code>P10/projects/reference.json</code>，另存工作副本再调整。<code>start.json</code> 保留历史初始化布局，便于对照。</p>
+<p>从本仓库 <a href="https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4">Releases</a> 下载 Windows 应用与完整练习包；<a href="docs/downloads.html">下载说明</a>列出附件和打开步骤。P10 提供 6 个分镜和 10 个带字对象；P09 提供 9 个分镜和 13 个历史空白气泡。先阅读<a href="case-studies/guide/quick-start.html">案例快速操作</a>，打开解压后练习包中的 <code>P10/projects/reference.json</code>，另存工作副本再调整。<code>start.json</code> 保留历史初始化布局，便于对照。</p>
 <p>图文教程及教学图片随本仓库保存，完整练习 ZIP 作为 Releases 附件提供。新页面使用自己的故事、角色和画风约定。</p>
 <h2>与 Agent 配合</h2>
 <p>旁边的 <code>ComicEditor.Cli.exe</code> 提供能力查询、初始化、校验、素材替换、渲染与工程迁移。正在打开的窗口支持同用户本机会话；创作者勾选“允许 Agent 修改本次会话”后，Agent 可以在当前人工状态上修改指定对象，一批操作可整体撤销。</p>
 <p>通用 Skill 位于 <a href="skills/comic-page-workflow/SKILL.html">skills/comic-page-workflow</a>。它通过项目自己的 <code>comic-project.json</code> 查找剧情、角色和画风契约。示例、记录模板和阶段参考随 Skill 保存。</p>
 <h2>版本与开发</h2>
-<p>当前本地发行候选使用 <code>0.2.0-preview.4</code>，功能基于已验收的 <code>0.2.0-preview.2</code>；本轮整理完整工作流、教程、许可和打包内容。源码构建见 <a href="docs/build-and-release.html">构建与发行</a>，操作验收见 <a href="docs/acceptance-checklist.html">验收清单</a>。</p>
+<p>首个公开预览版为 <code>0.2.0-preview.4</code>，功能基于已验收的 <code>0.2.0-preview.2</code>，包含完整工作流、教程、许可和免安装发行包。源码构建见 <a href="docs/build-and-release.html">构建与发行</a>，操作验收见 <a href="docs/acceptance-checklist.html">验收清单</a>。</p>
 <p>软件、通用 Skill、模板和通用文档采用 <strong>AGPL-3.0-only</strong>。嵌入的漫画与案例素材适用独立的<a href="ASSET-TERMS.html">素材使用说明</a>，bluecutt 保留依法享有的创作权益。<a href="LICENSE-SCOPE.html">许可范围</a>、<a href="LICENSE">完整软件许可</a>与<a href="docs/licensing.html">素材说明</a>分别列出授权范围。</p>
 <p>Windows 首次运行可能提示未签名应用。先核验下载来源和文件校验值。2026-10-02 已完成另一台 Windows x64 的试用验收：自动检查 10 项、人工检查 15 项通过。更广泛的 Windows 兼容性继续通过后续测试确认。</p>
-<p>程序二进制仍为 <code>0.2.0-preview.4</code>。本候选整理首页、图文教程和素材授权；当前为本地发布准备状态，尚未建立远端仓库或上传 Releases 附件。</p>
+<p>程序二进制仍为 <code>0.2.0-preview.4</code>，<code>docs.3</code> 包装订正版接入公开仓库及下载链接，已验收的 EXE 和 DLL 保持不变。<a href="https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4">发行说明及附件</a>统一保存在本仓库。</p>
 <p><a href="CONTRIBUTING.html">参与开发</a> · <a href="CREDITS.html">创作者清单</a></p>
 <p>作者：bluecutt。AI 协作助手：ChatGPT。第三方既有角色权益由相应权利人保留。</p>
 </article></body></html>

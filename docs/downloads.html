@@ -1,6 +1,6 @@
 <!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>下载与练习</h1>
 <p><a href="downloads.html">中文</a> | <a href="downloads.en.html">English</a></p>
-<p>正式发布后，在本仓库右侧的 <strong>Releases</strong> 中打开对应版本，下载所需附件。所有介绍、教程、教学图片、源码、Skill 和下载入口均通过 GitHub 提供。</p>
+<p>打开 <a href="https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4">0.2.0-preview.4 发行页</a>，下载所需附件。所有介绍、教程、教学图片、源码、Skill 和下载入口均通过 GitHub 提供。</p>
 <table>
 <thead>
 <tr>
@@ -9,24 +9,25 @@
 </tr>
 </thead>
 <tbody><tr>
-<td>Windows x64 免安装 ZIP</td>
+<td><a href="https://github.com/bluecutt/PanelLoom/releases/download/v0.2.0-preview.4/PanelLoom-0.2.0-preview.4-docs.3-win-x64.zip">Windows x64 免安装 ZIP</a></td>
 <td>解压后运行 <code>ComicEditor.exe</code>，保留整个目录及配套文件</td>
 </tr>
 <tr>
-<td>对应版本源码 ZIP 或仓库源码归档</td>
+<td><a href="https://github.com/bluecutt/PanelLoom/releases/download/v0.2.0-preview.4/PanelLoom-source-0.2.0-preview.4-docs.3.zip">对应版本源码 ZIP</a></td>
 <td>阅读代码、构建和参与开发；同时遵守软件与素材许可</td>
 </tr>
 <tr>
-<td><code>PanelLoom-case-practice-v09.zip</code></td>
+<td><a href="https://github.com/bluecutt/PanelLoom/releases/download/v0.2.0-preview.4/PanelLoom-case-practice-v10.zip">完整练习包 v10</a></td>
 <td>P09/P10 原图、文字对象、起始与参考工程、完整中英教程</td>
 </tr>
 <tr>
-<td>文件清单与 SHA-256</td>
+<td><a href="https://github.com/bluecutt/PanelLoom/releases/download/v0.2.0-preview.4/SHA256SUMS.txt">SHA-256 清单</a></td>
 <td>核对版本、文件完整性与下载来源</td>
 </tr>
 </tbody></table>
 <p>下载并解压应用后，可以直接打开包内 <code>case-studies/P10/projects/reference.json</code>。单独下载练习包时，打开其中的 <code>P10/projects/reference.json</code>。使用“项目 → 另存为”建立工作副本。<code>reference.json</code> 为已确认排版，<code>start.json</code> 为历史初始化排版。操作步骤见<a href="../case-studies/guide/quick-start.html">案例快速操作</a>。</p>
 <p>手动调整已有素材无需安装 Codex、SDK 或模型接口。通过 Codex 开始新创作时，按<a href="codex-setup.html">Skill 安装说明</a>配置自己的项目与契约。</p>
 <p>开始练习前阅读<a href="../ASSET-TERMS.html">素材说明</a>。软件使用 AGPL-3.0-only，案例素材遵守其独立条款与 GitHub 平台权限。</p>
-<p>当前为本地发布候选，尚未建立远端仓库或上传附件。下载按钮与线上校验值在实际发布时接入；本页暂不提供虚构链接。</p>
+<p>应用版本为 <code>0.2.0-preview.4</code>，包装订正版为 <code>docs.3</code>。这次订正仅接入发布链接及文档，已验收的 EXE、DLL 与工程布局保持不变。</p>
+<p>使用 PowerShell 对下载文件运行 <code>Get-FileHash -Algorithm SHA256 -LiteralPath &#39;文件的完整路径&#39;</code>，将结果与同一发行页的 <code>SHA256SUMS.txt</code> 对照。首次运行可能出现未签名应用提示，请先核实下载来源和文件完整性。</p>
 </article></body></html>

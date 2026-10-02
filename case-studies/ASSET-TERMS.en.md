@@ -42,4 +42,4 @@ Original assets are preserved by SHA-256. Layout parameters are stored in a work
 
 Human creator: bluecutt. AI collaborator: ChatGPT.
 
-Confirmed on 2026-10-02: the creator approved download access for everyone, official display of current teaching images, consolidated publication on GitHub, and the platform permissions described above. This is a local release candidate; repository creation, pushes, and Release uploads have not been performed.
+Confirmed on 2026-10-02: the creator approved download access for everyone, official display of current teaching images, consolidated publication on GitHub, and the platform permissions described above. The official repository is [bluecutt/PanelLoom](https://github.com/bluecutt/PanelLoom). The application and full practice pack are provided through its Releases.

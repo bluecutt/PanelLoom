@@ -820,11 +820,11 @@
     "rightsScope": "all rights legally held by creator; third-party rights retained",
     "downloaderUsage": "local-layout-only",
     "publicationChannel": "GitHub repository and Releases",
-    "casePackageRevision": "v09",
+    "casePackageRevision": "v10",
     "githubPlatformPermissionsAccepted": true,
     "githubPublicForkPermissionsAccepted": true,
     "githubAndAffiliateAiTrainingLicenseAccepted": true,
     "termsReference": "ASSET-TERMS.md",
-    "published": false
+    "published": true
   }
 }

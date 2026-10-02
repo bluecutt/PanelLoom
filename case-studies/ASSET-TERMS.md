@@ -40,4 +40,4 @@ bluecutt 保留其依法享有的漫画、图片及其他创作成果权益。�
 
 人类创作者：bluecutt。AI 协作助手：ChatGPT。
 
-确认日期：2026-10-02。作者已确认所有人可下载、当前教学图片可官方公开展示，并接受集中于 GitHub 发布及上述平台权限。本文件为本地发布候选；实际建仓、推送与 Releases 上传尚未执行。
+确认日期：2026-10-02。作者已确认所有人可下载、当前教学图片可官方公开展示，并接受集中于 GitHub 发布及上述平台权限。官方仓库为 [bluecutt/PanelLoom](https://github.com/bluecutt/PanelLoom)，应用和完整练习包由同仓库 Releases 提供。

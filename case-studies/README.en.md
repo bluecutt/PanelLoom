@@ -6,9 +6,9 @@ Comic Creation Workflow & Manual Page Assembler.
 
 [Introduction and page examples](guide/product-introduction.en.md) · [Quick start](guide/quick-start.en.md) · [Asset terms](ASSET-TERMS.en.md)
 
-Release-preparation candidate v09 is approved for everyone to download, with official public display of the currently reviewed teaching images. bluecutt retains the rights legally held in the comics and images. Local practice and GitHub's permitted platform uses follow the asset terms.
+Public practice pack v10 is approved for everyone to download, with official public display of the currently reviewed teaching images. bluecutt retains the rights legally held in the comics and images. Local practice and GitHub's permitted platform uses follow the asset terms.
 
-The application and full practice pack will be provided through the PanelLoom repository's Releases. Illustrated tutorials can also be read directly in the repository.
+The application and full practice pack are provided through [PanelLoom Releases](https://github.com/bluecutt/PanelLoom/releases/tag/v0.2.0-preview.4). Illustrated tutorials can also be read directly in the repository.
 
 English entry pages retain the creator's approved P10 native-editor layout: clipping, front/back occlusion, independent panel shapes, and its 2× export setting. The historical initial layout is kept separately.
 
@@ -27,4 +27,4 @@ Read the [asset terms](ASSET-TERMS.en.md), then open `P10/projects/reference.jso
 
 The P10 chapters are available in English with Chinese counterparts: [full workflow](P10/guide/full-workflow.en.md), [numbered selection and redraw comparisons](P10/guide/storyboard-design.en.md), [lettered-object prompts and styles](P10/guide/lettering-styles.en.md), [object list](P10/guide/text-objects.en.md), [prompt appendix](P10/guide/prompt-notes.en.md), and [Agent operations](guide/agent-appendix.en.md). Historical conversations include their Chinese originals and English translations, with model-call text and archived prompts labeled separately. Artwork and lettering retain their original form. P09's advanced chapter remains in Chinese.
 
-Creator: bluecutt. AI collaborator: ChatGPT. Illustrated tutorials and teaching images are included in the GitHub repository; the full practice ZIP is provided through its Releases. The creator has approved the platform content permissions described in the asset terms. The pack has not been published.
+Creator: bluecutt. AI collaborator: ChatGPT. Illustrated tutorials and teaching images are included in the GitHub repository; the full practice ZIP is provided through its Releases. The creator has approved the platform content permissions described in the asset terms.
