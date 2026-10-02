@@ -4,9 +4,16 @@
 
 Comic Creation Workflow & Manual Page Assembler.
 
-| Page example 1 · P09 | Page example 2 · P10 |
-| --- | --- |
-| [![Finished P09 page](case-studies/P09/reference-output/historical-final.png)](case-studies/P09/reference-output/historical-final.png) | [![Finished P10 page](case-studies/P10/reference-output/editor-reference.png)](case-studies/P10/reference-output/editor-reference.png) |
+<table>
+  <tr>
+    <th width="50%" align="center">Page example 1 · P09</th>
+    <th width="50%" align="center">Page example 2 · P10</th>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="case-studies/P09/reference-output/historical-final.png"><img src="case-studies/P09/reference-output/historical-final.png" width="420" alt="Finished P09 page"></a></td>
+    <td width="50%" align="center" valign="top"><a href="case-studies/P10/reference-output/editor-reference.png"><img src="case-studies/P10/reference-output/editor-reference.png" width="420" alt="Finished P10 page"></a></td>
+  </tr>
+</table>
 
 A Codex-oriented workflow for making individual comic pages, paired with a native Windows x64 page assembler and a reusable Skill. Creators and ChatGPT discuss dialogue and visual design, select a framework and performances from layout drafts, redraw panels individually, generate independent lettered objects, and finish framing and layout in the editor.
 

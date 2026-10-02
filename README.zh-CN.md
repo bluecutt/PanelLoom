@@ -4,9 +4,16 @@
 
 漫画创作工作流与手动组装器。
 
-| 页面示例一 · P09 | 页面示例二 · P10 |
-| --- | --- |
-| [![P09 成品漫画](case-studies/P09/reference-output/historical-final.png)](case-studies/P09/reference-output/historical-final.png) | [![P10 成品漫画](case-studies/P10/reference-output/editor-reference.png)](case-studies/P10/reference-output/editor-reference.png) |
+<table>
+  <tr>
+    <th width="50%" align="center">页面示例一 · P09</th>
+    <th width="50%" align="center">页面示例二 · P10</th>
+  </tr>
+  <tr>
+    <td width="50%" align="center" valign="top"><a href="case-studies/P09/reference-output/historical-final.png"><img src="case-studies/P09/reference-output/historical-final.png" width="420" alt="P09 成品漫画"></a></td>
+    <td width="50%" align="center" valign="top"><a href="case-studies/P10/reference-output/editor-reference.png"><img src="case-studies/P10/reference-output/editor-reference.png" width="420" alt="P10 成品漫画"></a></td>
+  </tr>
+</table>
 
 面向 Codex 的单页漫画工作流，配套 Windows x64 原生手动组装器和可独立使用的 Skill。创作者与 ChatGPT 讨论台词和画面，通过结构草稿选定框架与表演，逐格绘制画面、生成独立带字气泡，最后在编辑器中取景和排版。
 
