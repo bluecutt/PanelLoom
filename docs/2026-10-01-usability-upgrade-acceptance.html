@@ -1,0 +1,21 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>0.2 升级验收指南</h1>
+<p>这是与旧工具并存的免安装候选。保留整个发行文件夹；先打开工作副本，不要覆盖正式漫画。GUI：ComicEditor.exe；Agent：ComicEditor.Cli.exe。接口API1、工程v2保持。未自动安装 skill、改默认工具或发布 GitHub。</p>
+<h2>请在漫画画布上逐项试用</h2>
+<ul>
+<li><input disabled="" type="checkbox"> 点分镜/气泡模块，工具自动切换；同对象刷新不折叠属性、不跳滚动条、不丢光标。</li>
+<li><input disabled="" type="checkbox"> 普通滚轮缩放所选图片/气泡；Ctrl＋滚轮只缩整页；侧栏滚轮不改任何数值。一段连续滚轮一次撤销。</li>
+<li><input disabled="" type="checkbox"> 两组输入各有草稿，应用一组保留另一组；切对象/关闭时取消保留输入，应用全部一次撤销。</li>
+<li><input disabled="" type="checkbox"> 下拉范围列出分镜名称/ID，也可画布点选或整页自由；无需手输编号。</li>
+<li><input disabled="" type="checkbox"> 上/下一层是实际相邻一步；边界提示无变化，锁定对象拒绝，不移动其他对象。</li>
+<li><input disabled="" type="checkbox"> 选边/顶点在画布高亮；隐藏边仍可选。蓝色选中、橙色候选；单次吸附报告已移动、已对齐、无目标或安全拒绝。Alt拖动绕过自动吸附。</li>
+<li><input disabled="" type="checkbox"> 色盘预览/确认/取消正常；导出预设显示尺寸与源图不足提示，旧自定义倍率不被改掉。</li>
+<li><input disabled="" type="checkbox"> 气泡前置可压住指定小格图与框线；后置保留框线全宽；裁切范围独立。共线另一来源和父格不被擦掉。</li>
+<li><input disabled="" type="checkbox"> 0.2.0-preview.2 默认自动把当前气泡移到最近合法层级（可跨多层），状态栏说明方向和层数；其他对象相互顺序不变，整个操作一次撤销。侧栏关闭自动调层可保留严格拒绝行为。真正矛盾或锁定时拒绝并提示，不擅改其他规则。</li>
+<li><input disabled="" type="checkbox"> 持续拖动能看到过程，结束恢复清晰；Esc回起点，不出现迟来的旧画面。600像素宽交互预览只是速度取舍，正式输出不使用它。</li>
+<li><input disabled="" type="checkbox"> Agent在初始化、完整素材/带字气泡更换、保存重开、高清输出之间保持其他人工调整。写入需GUI授权，草稿/拖动/模态中Busy拒绝。</li>
+</ul>
+<h2>已有自动验证与边界</h2>
+<p>中性场景与旧私有金图测试、P10局部ROI、真实窗口持续输入、离线/在线Agent闭环分别保留测试日志。旧金图未更新以掩盖差异。继承/前置路径保留历史GDI伽马；显式后置的半透明小格使用普通通道SourceOver。缓存预算只限制驻留素材，不保证整个进程内存。</p>
+<p>本机P10一次探针：首帧224ms，连续输入中4次更新，最长更新间隔238ms；并非FPS保证。机器、源图和边线复杂度会影响体验。请以你的手感验收。</p>
+<p>仍待：用户逐项确认、另一台无SDK/.NET的兼容Windows、另一标准用户身份隔离。公开源码运行Public，私人All/UiAll不包含在公开素材包里。软件许可已确定为 AGPL-3.0-only；最终发行审核与公开发布另行确认。</p>
+</article></body></html>

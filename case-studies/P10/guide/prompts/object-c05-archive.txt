@@ -1,0 +1,12 @@
+Use case: illustration-story.
+Asset type: BOOK-002 P10 A02 text-only manga lettering object for manual editor assembly; transparent PNG cutout with NO balloon.
+Input image: Image 1 is ONLY a P10 typography continuity anchor for natural black hand-lettered Chinese ink weight and optical character scale. Do not copy its balloon, tail, words, outline, white fill, shape or layout.
+Primary request: Create exactly one isolated transparent text-only object containing childhood Subaru's two spoken promises as two separate vertical columns. There must be NO speech balloon, NO thought balloon, NO caption box, NO outline, NO tail, NO white background and NO decorative frame.
+Exact text, verbatim Simplified Chinese and punctuation:
+RIGHT vertical column M01: “和我成为朋友吧，我会保护你的。”
+LEFT vertical column M02: “以后别再一个人躲起来了”
+Layout: exactly two long vertical columns, characters top-to-bottom; read the RIGHT column first and the LEFT column second. Each complete sentence stays in its own single vertical column without horizontal typesetting. Keep the two columns parallel, naturally spaced and visually balanced. The right column may be slightly taller because its sentence is longer. Do not reverse their positions.
+Typography: natural bright youthful Chinese manga hand-lettering, clear, warm, sincere and gently determined, like a rescue-memory promise. Both columns use the same optical character size, stroke family and baseline rhythm; no random enlargement, no dramatic shout styling. Large enough for page assembly and highly legible.
+Transparency: every pixel outside the black lettering must be genuinely transparent RGBA. No opaque background, checkerboard pixels, white panel or glow plate. Keep generous transparent margin around the two columns.
+Absolute accuracy: render each sentence exactly once. Preserve the comma after 吧 and the full stop after 的 in M01. M02 has no final punctuation. No missing, substituted, repeated or extra characters; no pseudo-Chinese, Japanese, English, numbers, bubble, box, tail, border, background art, light rays, stars, character, logo, watermark, signature or UI.
+Output intent: exactly one tall/narrow standalone C05 A02 M01-M02 combined vertical text asset, ready to import as one Complete editor object.

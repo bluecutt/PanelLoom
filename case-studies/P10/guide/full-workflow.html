@@ -1,0 +1,310 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>P10：从台词到成稿</h1>
+<p><a href="full-workflow.html">中文</a> | <a href="full-workflow.en.html">English</a></p>
+<p><a href="../reference-output/editor-reference.png"><img src="../reference-output/editor-reference.png" alt="当前确认的编辑器参考成品"></a></p>
+<p>这一页用于说明完整协作过程。每一步保留创作者的要求、ChatGPT 的理解、后续修订和对应产物。对话标为原文节选，模型提示词另列。现成素材的操作入口见<a href="../../guide/quick-start.html">快速操作</a>。</p>
+<p>这套流程采用“统一 → 拆卸 → 再统一”：整页草稿先确定阅读结构，再按选定裁片分别完成画面与带字对象，最后本地装配。每次重试只影响对应素材，已经认可的画面可以保留。减少反复整页生成，也减少了填词和修细节时其他区域出现模糊、斑块或漂移的机会。高质量成稿通过逐格选稿、细化、人工调整和审核来实现。</p>
+<h2>1. 先打磨台词</h2>
+<p>目标是确定每一句话的内容、说话人和情绪。第一轮从文字开始。</p>
+<p>创作者 · 原文：</p>
+<blockquote>
+<p>好的，现在按照我们的剧本开始P10的台词稿设计吧。请你先写出第一版，我们后续来慢慢修改</p>
+</blockquote>
+<p>ChatGPT · 原文节选：</p>
+<blockquote>
+<p>第一版台词如下：</p>
+<ol>
+<li>昴：<code>……行。</code></li>
+<li>昴：<code>但只准五分钟。</code></li>
+<li>昴：<code>不许得寸进尺。</code></li>
+<li>尤里乌斯：<code>谢谢你，昴。</code></li>
+<li>昴内心：<code>……又来了。</code></li>
+<li>昴内心：<code>只要这家伙露出这种表情，</code></li>
+<li>昴内心：<code>我就会想起那时候。</code></li>
+<li>昴内心：<code>……真是烦恼呢。</code></li>
+<li>旁白：<code>五分钟后。</code></li>
+<li>昴：<code>……喂。</code></li>
+<li>昴：<code>五分钟已经到了吧？！</code></li>
+<li>尤里乌斯：<code>再多抱一会儿。</code></li>
+</ol>
+<p>这版的核心节奏是：明确许可 → 无字拥抱 → 往事碎片 → 昴主动心软 → 五分钟后的微喜剧。</p>
+</blockquote>
+<p>创作者 · 原文：</p>
+<blockquote>
+<p>我直接指定序号来修改了：
+1.“也不是.....不行吧.....”
+3.”你可别想占我便宜。“
+8.“真是麻烦的家伙啊......”</p>
+<p>这一页漫画主要营造的是昴刀子嘴豆腐心的事实，也暗示昴其实对尤里乌斯也有很深的情感，只是碍于面子说不出来。</p>
+</blockquote>
+<p>ChatGPT · 原文：</p>
+<blockquote>
+<p>收到老大。这里的情绪核心我会从“明确划界后勉强答应”调整成“嘴上嫌弃、实际上早已心软”：第1句负责含蓄许可，第3句保留昴的面子，第8句则把烦恼落到带感情的纵容上。我会按照漫画逐页工作流把修改保存为新的 v0.2，不覆盖刚才的初稿；这一轮仍停留在台词审核门。</p>
+</blockquote>
+<p>修改时使用“序号＋精确句子＋情绪目的”，可以让 Agent 只改指定内容。文字、标点和强调位置进入文字设计，后续气泡制作按它核对。</p>
+<h2>2. 把镜头说清楚</h2>
+<p>这一阶段确定机位、人物位置、表情、动作、手部关系和文字空间。布局可以继续讨论。</p>
+<p>ChatGPT · 原文：</p>
+<blockquote>
+<p>好的老大。我会把P10做成“少格数、大主格、两枚往事嵌格、末尾两格微喜剧”的结构：往事不另起一整行，而是嵌在拥抱主格的留白中，这样既完整保留两段过去，也不会切碎当下的情绪。我先按漫画逐页工作流核对P09的落点和正式文字契约，再把第一版详细分镜记录下来；这一轮只做画面设计，不进入线稿生成。</p>
+</blockquote>
+<p>创作者 · 原文：</p>
+<blockquote>
+<p>往事我要另起一行，一行中的左右格，但是这一行要足够宽</p>
+</blockquote>
+<p>创作者随后给出了具体镜头描述。开场描述节选：</p>
+<blockquote>
+<p>1.U01主要用来描绘昴有点害羞和尤里乌斯欲望拉满的张力情景，镜头主要是昴和尤里乌斯的上半身。昴整体在分镜右半边，昴身体朝左边，但是头偏向右边，脸颊微红，还有一滴因为害羞而出现的汗。昴的左手的食指挠着脸颊，一副有点紧张的样子。</p>
+</blockquote>
+<p>ChatGPT 对气泡归属的分析 · 原文节选：</p>
+<blockquote>
+<p>此外，两组气泡不能都放在右边：</p>
+<ul>
+<li>昴的三联气泡放在右上至中间。</li>
+<li>尤里乌斯的“谢谢你，昴。”应放在左上或左侧，尾巴指向尤里乌斯。</li>
+</ul>
+<p>这样才能保持说话人清楚，也符合右至左的阅读顺序。</p>
+</blockquote>
+<p>创作者进一步修订镜头范围与文字形式 · 原文节选：</p>
+<blockquote>
+<p>1.可以画出尤里乌斯弯腰，但是不要画出“屈膝”，我们U02主要是对两人拥抱的上半身子刻画，而不是全身刻画
+2.A02的台词可以改成两段，“和我成为朋友吧，我会保护你的。”旁边还有一句“以后别再一个人躲起来了”。这两句话都是纵向摆排列，而且不需要气泡。</p>
+</blockquote>
+<p>讨论后的说明把主格、回忆层、特写和收束格分别安排，再逐格交代取景和动作。</p>
+<p><img src="images/layout-guide.png" alt="页面布局说明"></p>
+<p><img src="images/acting-guide.png" alt="镜头与动作说明"></p>
+<p><a href="storyboard-description.txt">完整分镜描述附件</a>保留创作者当时的表达方式；<a href="storyboard-design.html">分镜样章</a>进一步讲解如何整理这些描述。</p>
+<h2>3. 独立画草稿，比较表演</h2>
+<p>每版结构草稿独立生成，用于选择框架、镜头和表情。草稿保留空白气泡与文字空间，正式文字在后面的独立对象中完成。</p>
+<table>
+<thead>
+<tr>
+<th>构图候选</th>
+<th>选定框架</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="../storyboards/frame-03.png" alt="结构候选"></td>
+<td><img src="../storyboards/frame-06.png" alt="选定框架"></td>
+</tr>
+</tbody></table>
+<p>结构阶段可以继续修订景别、身高、服饰和动作。确定后，分别记录框架与每格内容来源。<a href="prompt-notes.html">提示词附录</a>保留这一步的归档提示词。</p>
+<h2>4. 框架和内容分别选择</h2>
+<p>为所有版本生成编号总览后，先比较页面框架的阅读节奏，再逐格挑选表情、动作和机位。P10 有七版草稿，最终框架与各格内容分别选定。</p>
+<p><a href="../storyboards/numbered/all-frames.png"><img src="../storyboards/numbered/all-frames.png" alt="七版编号选择总览"></a></p>
+<p>创作者 · 原文：</p>
+<blockquote>
+<p>正式分镜为：A03,B04,C06,D06,E02,F07
+正式分镜框架为：v0.6
+请你先把对应分镜截下来，稍后我再指定分镜来进行正式版重绘</p>
+</blockquote>
+<p>ChatGPT · 原文：</p>
+<blockquote>
+<p>我会依照页面工作流把这次选择正式锁定：框架使用 v0.6，逐格内容分别来自 A03、B04、C06、D06、E02、F07。接下来只做无损截图和来源记录，不进入正式重绘；每张截图都会保留足够的边界与构图信息，供老大下一步逐格指定修改。</p>
+</blockquote>
+<p>选定框架来自第六版，各格表演来自不同候选。编号在草稿、裁片和正式素材之间保持对应。</p>
+<table>
+<thead>
+<tr>
+<th>正式画格</th>
+<th>内容候选</th>
+<th>保留的镜头</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>U01</td>
+<td>A-03</td>
+<td>开场双人近景</td>
+</tr>
+<tr>
+<td>U02</td>
+<td>B-04</td>
+<td>拥抱主格</td>
+</tr>
+<tr>
+<td>A01</td>
+<td>C-06</td>
+<td>暗色回忆</td>
+</tr>
+<tr>
+<td>A02</td>
+<td>D-06</td>
+<td>明亮回忆</td>
+</tr>
+<tr>
+<td>A03</td>
+<td>E-02</td>
+<td>表情特写</td>
+</tr>
+<tr>
+<td>U03</td>
+<td>F-07</td>
+<td>Q 版收束</td>
+</tr>
+</tbody></table>
+<p>裁片放在 <code>storyboards/selected/</code>，完整正式画面放在 <code>assets/panels/</code>。框架用于初始化多边形，逐格参考控制表演。</p>
+<p><a href="storyboard-design.html">分镜设计与六格对照</a>展示全部候选编号页、当前工程编号结构图，以及每一格从选定线稿裁片到正式原图的变化。</p>
+<h2>5. 严格逐格重绘，留出调整余量</h2>
+<p>初次正式重绘偏离了选定动作，创作者指出了这一点。</p>
+<p>创作者 · 原文：</p>
+<blockquote>
+<p>重绘的U01和U02人物动作和表情已经和线稿已经出现出入了，请你严格按照线稿再次重绘一版。一样的要求，在保证每一个分镜都可以正确放进分镜的同时，再画得大一点</p>
+</blockquote>
+<p>ChatGPT · 原文：</p>
+<blockquote>
+<p>明白，这一轮不再对动作和表情做任何“加强解释”。我会把锁定线稿视为严格姿势蓝图：人物位置、头部角度、脸距、视线、嘴形、手势、拥抱关系和摄影角度全部照线稿复现；P09只负责校正人物长相与服装，不参与改构图。两张都从各自线稿独立重绘为 v02，不使用刚才的成稿作为参考。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>选定单格草稿</th>
+<th>正式分镜原图</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="../storyboards/selected/U01.png" alt="近景草稿"></td>
+<td><img src="../assets/panels/U01.png" alt="近景原图"></td>
+</tr>
+<tr>
+<td><img src="../storyboards/selected/U02.png" alt="拥抱草稿"></td>
+<td><img src="../assets/panels/U02.png" alt="拥抱原图"></td>
+</tr>
+</tbody></table>
+<p>构图参考负责动作与表情，完成稿参考负责辨识度和画风。增加画布余量时，保持镜头距离和人物关系，向外补足可用于取景的内容。正式分镜独立保存，不带气泡、文字和页面边框。其余 A01、A02、A03、U03 的<a href="storyboard-design.html">完整对照</a>也按固定编号展示。</p>
+<p><a href="prompt-notes.html">逐格重绘提示词</a>展示参考职责、动作保护、画布余量、背景与灰阶约束。</p>
+<h2>6. 一次生成带字对象，再按移动意图拆分</h2>
+<p>创作者 · 原文节选：</p>
+<blockquote>
+<p>接下来我想的是按照之前v0.6 版本的气泡来一次性生成带文字的气泡，然后再把气泡和文字一起以气泡对象的形式装载进入手动编辑器中，所以请你严格审核V0.6 的气泡样式和我们的画面契约，把每一个文字气泡都画准确。尤其是A01的气泡实际上是昴的心理活动，所以小圈的朝向就应该是朝着上面U02的昴，而不是旁边的少年尤里乌斯。</p>
+</blockquote>
+<p>ChatGPT · 原文节选：</p>
+<blockquote>
+<p>U01、U02 的三组“气泡＋文字”一体对象第一版已经生成并归档：</p>
+<ul>
+<li><code>C01</code>：昴的三联许可对白</li>
+<li><code>C02</code>：尤里乌斯的感谢对白</li>
+<li><code>C03</code>：昴的三联内心活动</li>
+</ul>
+</blockquote>
+<p>第一批曾把同一人的三段心理活动合成一张图。创作者希望两组能分别调节。</p>
+<p>创作者 · 原文：</p>
+<blockquote>
+<p>U02的那两个气泡应该单独作为一个对象来调整，而不是和在一起，你把他们分开一下</p>
+</blockquote>
+<p>ChatGPT · 原文：</p>
+<blockquote>
+<p>明白老大，U02 的布局应该拆成两个可独立移动的对象：</p>
+<ul>
+<li>右侧双联心理气泡：承载“……又来了。”和“只要这家伙露出这种表情，”</li>
+<li>左侧独立心理气泡：承载“我就会想起那时候。”</li>
+</ul>
+<p>我会按漫画单页流程做一次无损拆分，不重新调用 Image，避免文字和气泡轮廓再次漂移；原来的合并版继续保留为历史候选。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>右侧心理对象</th>
+<th>左侧心理对象</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="../assets/text-objects/C03A.png" alt="独立右组"></td>
+<td><img src="../assets/text-objects/C03B.png" alt="独立左组"></td>
+</tr>
+</tbody></table>
+<p>最终 P10 有 10 个对象，包括三联对白、独立心理气泡、无框双列文字、时间旁白和炸裂对白。每个对象的外部保持真实透明，气泡内部保留白色，普通字号一致，在指定情绪高点增强笔势。</p>
+<table>
+<thead>
+<tr>
+<th>对象</th>
+<th>用途</th>
+<th>可单独调整的内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>C01</td>
+<td>开场对白</td>
+<td>三联许可对白</td>
+</tr>
+<tr>
+<td>C02</td>
+<td>开场对白</td>
+<td>单枚回应</td>
+</tr>
+<tr>
+<td>C03A</td>
+<td>心理活动</td>
+<td>右侧双联</td>
+</tr>
+<tr>
+<td>C03B</td>
+<td>心理活动</td>
+<td>左侧独立一句</td>
+</tr>
+<tr>
+<td>C04</td>
+<td>心理活动</td>
+<td>向上指向的气泡，末尾五点</td>
+</tr>
+<tr>
+<td>C05</td>
+<td>无框文字</td>
+<td>两列纵排文字</td>
+</tr>
+<tr>
+<td>C06</td>
+<td>时间旁白</td>
+<td>小方框</td>
+</tr>
+<tr>
+<td>C07</td>
+<td>低声对白</td>
+<td>小气泡</td>
+</tr>
+<tr>
+<td>C08</td>
+<td>情绪对白</td>
+<td>炸裂气泡</td>
+</tr>
+<tr>
+<td>C09</td>
+<td>收束对白</td>
+<td>圆润气泡</td>
+</tr>
+</tbody></table>
+<p>创作者还指定了一处标点细节。</p>
+<p>创作者 · 原文：</p>
+<blockquote>
+<p>A01气泡里面省略号留有5个点就够了，下面多余的你帮我覆盖掉，其他的都还挺不错的</p>
+</blockquote>
+<p>练习包提供已经拆分、已经修正标点的最终对象。其对象边界、尾巴方向与情绪设计见<a href="text-objects.html">文字对象清单</a>。<a href="prompt-notes.html">模型提示词附录</a>展示实际调用与归档记录的区别。</p>
+<p><a href="lettering-styles.html">带字气泡样式详解</a>将实际对象与关键提示词并排说明：三联对白用连接关系控制阅读节奏，心理活动用圆珠尾标明归属，无框文字和旁白框分别控制透明度与排列，炸裂对白用笔压和整体节奏提高情绪张力。</p>
+<h2>7. Agent 初始化，创作者精调</h2>
+<p>创作者 · 原文：</p>
+<blockquote>
+<p>好的，现在你可以把各个分镜和气泡装载进入手动调节器了，请你进行初始化装载之后，由我来手动调整</p>
+</blockquote>
+<p>ChatGPT · 原文：</p>
+<blockquote>
+<p>好的老大。我会按漫画分页工作流，把 P10 已确认的六个正式分镜与当前 10 个带字气泡对象装入手动调节器：以 v0.6 框架初始化位置、缩放、裁切与层级，使用刚修复的 C04 五点版；只建立新的 P10 工作副本，不改动素材原图。初始化完成后我会先做工程结构、资源路径和高分辨率导出配置检查，再交给你微调。</p>
+</blockquote>
+<p>历史装配使用旧版工具。练习包另用新版原生编辑器装载完整图片和对象，保留独立取景、气泡范围、前后遮挡和高清输出。</p>
+<p><img src="../reference-output/editor-reference.png" alt="新版练习参考输出"></p>
+<p>演示时打开 <code>projects/reference.json</code>，另存为 <code>work/working.json</code> 后继续调整。参考页采用创作者已确认的新原生编辑器布局，完整保留取景、框架、气泡大小、位置、范围和前后关系，输出设置为 2×。<code>projects/start.json</code> 另存历史初始化布局，用于比较 Agent 装载与人工精调的变化。</p>
+<p><a href="../../guide/quick-start.html">快速操作</a>说明直接操作，<a href="../../guide/agent-appendix.html">Agent 附录</a>给出真实 CLI 初始化、校验和导出入口。</p>
+<h2>8. 保存、高清导出与确认</h2>
+<p>历史初始化记录曾写 2×、2048×3072，创作者确认的正式输出实际为 2560×3840。导出后读取实际文件尺寸，可以避免把预设当成最后结果。</p>
+<p>ChatGPT 的历史归档回执 · 原文节选：</p>
+<blockquote>
+<ul>
+<li>尺寸：<code>2560 × 3840</code></li>
+<li>源稿与归档 SHA-256 完全一致</li>
+<li>P01～P10 十张正式页全部齐全</li>
+<li>历史候选、逐格素材、气泡和编辑工程均完整保留</li>
+</ul>
+</blockquote>
+<p>本次练习参考 PNG 与 <code>reference.json</code> 由同一次本地渲染配对，保留当前 2× 设置，P10 实际为 2048×3072。历史正式成品为 2560×3840，单独保留当时人工调整的结果。两者可以对照阅读，各自的来源与用途清楚区分。</p>
+<p>完成自己的漫画时，保存匹配的工作工程、完整素材、导出尺寸和确认记录。人工修复后的最终图像成为归档依据，按原格式复制并比较 SHA-256。</p>
+<h2>从这个案例复用什么</h2>
+<p>先用具体语言讨论情绪、镜头和动作，再锁定文字与视觉设计。选格时分开框架与表演，正式画面和文字分别保存。Agent 做初始化，创作者保留最后一轮直接编辑与确认。</p>
+<p>案例素材的练习用途见<a href="../../ASSET-TERMS.html">使用说明</a>。实际绘画练习使用自己的角色、画风和素材。</p>
+</article></body></html>

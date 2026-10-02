@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1104 1050" width="1104" height="1050">
+  <rect width="1104" height="1050" fill="white"/>
+  <g font-family="Segoe UI, sans-serif" fill="#263342">
+    <text x="44" y="52" font-size="32" font-weight="700">Shots &amp; Actions</text>
+    <text x="44" y="92" font-size="20">Confirm framing, acting, hand relationships, and space for text.</text>
+  </g>
+  <g fill="#f7f9fb" stroke="#dce2ea" stroke-width="2">
+    <rect x="44" y="132" width="498" height="268" rx="12"/>
+    <rect x="562" y="132" width="498" height="268" rx="12"/>
+    <rect x="44" y="420" width="498" height="268" rx="12"/>
+    <rect x="562" y="420" width="498" height="268" rx="12"/>
+    <rect x="44" y="708" width="498" height="268" rx="12"/>
+    <rect x="562" y="708" width="498" height="268" rx="12"/>
+  </g>
+  <g fill="#263342" font-family="Segoe UI, sans-serif">
+    <g transform="translate(68 178)">
+      <text font-size="25" font-weight="700">U01 · Opening Close-up</text>
+      <g font-size="21">
+        <text y="48">Upper-body two-character shot.</text>
+        <text y="88">Preserve face distance and head angles.</text>
+        <text y="128">Keep the cheek-scratching gesture.</text>
+        <text y="168">Reserve space for connected dialogue.</text>
+      </g>
+    </g>
+    <g transform="translate(586 178)">
+      <text font-size="25" font-weight="700">U02 · Main Embrace</text>
+      <g font-size="21">
+        <text y="48">Side high angle; upper bodies only.</text>
+        <text y="88">Julius left, Subaru right.</text>
+        <text y="128">Clarify waist embrace and head pat.</text>
+        <text y="168">Separate thoughts on the two sides.</text>
+      </g>
+    </g>
+    <g transform="translate(68 466)">
+      <text font-size="25" font-weight="700">A01 · Corner Memory</text>
+      <g font-size="21">
+        <text y="48">Front high angle; full curled posture.</text>
+        <text y="88">Dirt, abrasions, and recent tears.</text>
+        <text y="128">Use the agreed dark atmosphere.</text>
+        <text y="168">Thought beads point to U02 above.</text>
+      </g>
+    </g>
+    <g transform="translate(586 466)">
+      <text font-size="25" font-weight="700">A02 · Reaching Out</text>
+      <g font-size="21">
+        <text y="48">Low angle from the other character.</text>
+        <text y="88">Open inviting hand and sunny smile.</text>
+        <text y="128">Bright rays and simple stars.</text>
+        <text y="168">Leave room for unboxed vertical text.</text>
+      </g>
+    </g>
+    <g transform="translate(68 754)">
+      <text font-size="25" font-weight="700">A03 · Profile Inset</text>
+      <g font-size="21">
+        <text y="48">Close framing of the side face.</text>
+        <text y="88">Closed eyes; restrained complaint.</text>
+        <text y="128">Keep the cheeks lightly flushed.</text>
+        <text y="168">Quiet line: “…Hey.”</text>
+      </g>
+    </g>
+    <g transform="translate(586 754)">
+      <text font-size="25" font-weight="700">U03 · Chibi Ending</text>
+      <g font-size="21">
+        <text y="48">Slender chibi upper-body silhouettes.</text>
+        <text y="88">Keep height difference and clothing.</text>
+        <text y="128">Embrace, lean back, and comic protest.</text>
+        <text y="168">A wide canvas with a soft background.</text>
+      </g>
+    </g>
+  </g>
+</svg>

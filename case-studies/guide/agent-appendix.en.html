@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>Agent operations appendix</h1>
+<p><a href="agent-appendix.en.html">English</a> | <a href="agent-appendix.html">中文</a></p>
+<p>PanelLoom provides a file-based CLI, project JSON and local live sessions. Use <code>ComicEditor.Cli.exe</code> from the full application package and query capabilities before constructing requests.</p>
+<pre><code class="language-powershell">$cli = &#39;D:\PanelLoom\ComicEditor.Cli.exe&#39;
+$caseRoot = &#39;D:\PanelLoom-cases&#39;
+&amp; $cli capabilities
+&amp; $cli inspect --project &quot;$caseRoot\P10\projects\reference.json&quot;
+&amp; $cli validate --project &quot;$caseRoot\P10\projects\reference.json&quot;
+</code></pre>
+<p>Replace these example paths with your own extracted folders. <code>reference.json</code> contains the approved demonstration layout; <code>start.json</code> preserves the historical initialization. Inspect actual dimensions, IDs, counts and scope before creating a separate working copy.</p>
+<h2>Initialize an approved layout</h2>
+<p>An init manifest contains <code>apiVersion</code>, a complete <code>project</code> and <code>assetMap</code>. Entries identify <code>kind</code>, <code>id</code> and <code>sourceImage</code>. Use creator-approved assets. Keep the full images: polygons determine framing. Source paths resolve through the manifest project&#39;s <code>assetBase</code>.</p>
+<pre><code class="language-powershell">&amp; $cli init --manifest manifest.json --out working.json
+&amp; $cli inspect --project working.json
+&amp; $cli validate --project working.json
+&amp; $cli render --project working.json --out practice.png --scale 2.5
+</code></pre>
+<p>The application package includes schemas and runnable neutral examples. Use those when constructing your own manifest. In the supplied cases, preserve the original reference files and save work separately.</p>
+<h2>Dry-run, apply and receipts</h2>
+<p><code>inspect</code> returns the current file hash. An API1 patch needs a fresh UUID <code>requestId</code>, that <code>baseProjectHash</code> and registered actions. Review the dry-run receipt before producing a new project.</p>
+<pre><code class="language-powershell">&amp; $cli apply --project working.json --patch patch.json --out working-next.json --dry-run
+&amp; $cli apply --project working.json --patch patch.json --out working-next.json
+</code></pre>
+<p><code>balloon.clip</code> controls display scope. <code>balloon.panelOcclusion</code> controls front/back relative to a named panel. To move the selected balloon to the nearest valid layer when required, explicitly pass <code>autoOrder:true</code> after checking capability support. Read <code>data.outcomes</code> for actual changes and warnings; a successful envelope alone does not prove that snapping or layer movement occurred.</p>
+<h2>Work on a creator&#39;s open project</h2>
+<p>Use <code>session list</code>, then <code>session snapshot</code>. Build the patch from the current unsaved state and latest revision/hash. The creator enables <strong>允许 Agent 修改本次会话</strong> (Allow Agent to modify this session); it is read-only by default. Review a dry run, then apply one batch. Save separately after layout approval.</p>
+<p>If the editor is busy, wait for the creator to finish and refresh the snapshot. If communication leaves the result unknown, inspect state or retry the identical request ID and content. Give a new intended action a fresh ID. Send paths to local images; CLI responses are JSON receipts.</p>
+<p>Case images permit local non-destructive layout practice and local saves. New drawing, AI redraws and public outputs use your own assets. See <a href="../ASSET-TERMS.en.html">asset terms</a>.</p>
+<p><a href="quick-start.en.html">Quick exercise</a> · <a href="../P10/guide/full-workflow.en.html">Full P10 workflow</a></p>
+</article></body></html>

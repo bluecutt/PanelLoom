@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>Single-page comic workflow</h1>
+<p><a href="page-workflow.en.html">English</a> | <a href="page-workflow.html">中文</a></p>
+<p>Creators discuss and draw a page in stages with Codex, then assemble it in the local editor. New drawing requires available image-generation tools. Editing existing assets can be done independently.</p>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Decisions</th>
+<th>Saved output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dialogue</td>
+<td>Page purpose, exact text, speakers, emotion, reading order, bubbles and narration</td>
+<td>Approved text</td>
+</tr>
+<tr>
+<td>Visual design</td>
+<td>Shots, positions, gaze, acting, hands, clothing, background and text space</td>
+<td>Visual guide</td>
+</tr>
+<tr>
+<td>Drafts</td>
+<td>Independent layout candidates; compare framework and performances</td>
+<td>Original drafts and numbered overview</td>
+</tr>
+<tr>
+<td>Selection</td>
+<td>Choose framework and each panel&#39;s content separately; identify repairs</td>
+<td>Framework, source map and selected crops</td>
+</tr>
+<tr>
+<td>Finished panels</td>
+<td>Redraw selected crops independently, retaining complete canvases and adjustment margins</td>
+<td>Original panel images without text or bubbles</td>
+</tr>
+<tr>
+<td>Lettered objects</td>
+<td>Generate contour, tail and final words together; split independently movable groups</td>
+<td>PNGs and an object list</td>
+</tr>
+<tr>
+<td>Assembly</td>
+<td>Agent initializes framing, placement, text scale and occlusion; creator fine-tunes</td>
+<td>Initial and manually adjusted projects</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Render from full assets at the agreed resolution</td>
+<td>PNG, actual dimensions, provenance and archive</td>
+</tr>
+</tbody></table>
+<h2>Describe specific changes</h2>
+<p>Provide dialogue IDs, exact replacement strings and emotional intent. Describe shot distance and direction, left/right positions, gaze, expression, action and text space. For interacting hands, identify whose left/right hand is involved, sleeve and wrist entry, contact and overlap.</p>
+<p>Draft production can still revise text and layout. Select a framework version and a separate candidate ID for each panel. Keep a source map with the original draft and crop bounds so a framework choice retains your favorite acting from other drafts.</p>
+<h2>Retain approved acting</h2>
+<p>Use each selected crop to anchor pose and expression. Use approved finished art for character and style continuity. Give the canvas adjustment margins while retaining the intended shot distance. Long panels require wide compositions. Keep complete originals; content hidden by polygon masks remains available for reframing.</p>
+<p>Prioritize recognition and expressive acting, then hands, clothing and continuity, with background density guided by the visual contract. Repeated anatomy errors can be addressed through clearer action references or manual repair. Preserve creator-approved corrections.</p>
+<h2>Keep lettering independently adjustable</h2>
+<p>Build a text-object list first: each approved string appears once, with the correct speaker, form and tail. Connected bubbles can move together; independently adjusted groups are separate assets. Captions, unboxed words and sound effects can also use object layers.</p>
+<p>Keep ordinary text at a consistent optical size. At selected emotional peaks, use weight, stroke gesture, rhythm and overall tilt. Generate transparent exteriors with intact white bubble interiors and clear words. Review punctuation, contours, tails and transparency with the creator.</p>
+<h2>Fine-tune and archive</h2>
+<p>Load full panel images and accepted lettered objects. Initialize placement and occlusion, then let the creator adjust directly on the canvas. Later replacements use the newest manual project and change only the specified asset, preserving unrelated framing, clipping, layers and export settings.</p>
+<p>Export reads original assets. Record actual PNG dimensions and quality warnings, and retain the matching project. A manually retouched final image may differ from the project render; record that accurately. Archive unchanged accepted bytes and compare SHA-256.</p>
+<p>Continue clothing, props, environment and emotion into the next page. Character introductions, color pages and localized updates follow their approved project-specific routes.</p>
+<p><a href="codex-setup.en.html">Codex setup</a> · <a href="agent-workflows.en.html">Agent guide</a> · <a href="quick-start.en.html">Quick start</a></p>
+</article></body></html>

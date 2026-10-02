@@ -1,0 +1,69 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>模型提示词附录</h1>
+<p><a href="prompt-notes.html">中文</a> | <a href="prompt-notes.en.html">English</a></p>
+<p>实际模型调用与归档记录分别保存。对话教程展示创作者的要求和 ChatGPT 的回复，这里展示绘画时提交的提示词。</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>文件</th>
+<th>记录类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>结构草稿</td>
+<td><a href="prompts/line-frame-06.txt">页面框架提示词</a></td>
+<td>当时的归档记录</td>
+</tr>
+<tr>
+<td>正式分镜</td>
+<td><a href="prompts/panel-u01-v02.txt">开场分镜</a>、<a href="prompts/panel-u02-v02.txt">拥抱分镜</a></td>
+<td>当时的归档记录</td>
+</tr>
+<tr>
+<td>带字对象</td>
+<td><a href="prompts/object-c01-call.txt">三联许可对白</a>、<a href="prompts/object-c02-call.txt">独立回应</a></td>
+<td>实际模型调用文本</td>
+</tr>
+<tr>
+<td>历史组合对象</td>
+<td><a href="prompts/merged-c03-call-history.txt">原始心理气泡组</a></td>
+<td>实际模型调用文本，后续拆分</td>
+</tr>
+<tr>
+<td>心理活动</td>
+<td><a href="prompts/object-c04-archive.txt">向上指向的 C04</a></td>
+<td>当时的生成记录；后续末尾点数由六点改为五点</td>
+</tr>
+<tr>
+<td>无框文字</td>
+<td><a href="prompts/object-c05-archive.txt">双列纵排 C05</a></td>
+<td>当时的生成记录</td>
+</tr>
+<tr>
+<td>旁白</td>
+<td><a href="prompts/object-c06-archive.txt">时间方框 C06</a></td>
+<td>当时的生成记录</td>
+</tr>
+<tr>
+<td>普通对白</td>
+<td><a href="prompts/object-c07-archive.txt">低声提醒 C07</a></td>
+<td>当时的生成记录</td>
+</tr>
+<tr>
+<td>情绪对白</td>
+<td><a href="prompts/object-c08-archive.txt">炸裂气泡 C08</a></td>
+<td>当时的生成记录</td>
+</tr>
+<tr>
+<td>收束对白</td>
+<td><a href="prompts/object-c09-archive.txt">柔和双瓣 C09</a></td>
+<td>当时的生成记录</td>
+</tr>
+</tbody></table>
+<p>开场与拥抱的正式重绘，以选定的单格草稿作为动作和表情依据，其他页面的图像只用于人物辨识度和画风。提示词分别限制景别、站位、手部关系、背景密度和额外画布范围。</p>
+<p>带字对象的提示词同时说明文字内容、排列顺序、普通字号、情绪笔势、气泡形状和透明背景。模型生成后由创作者检查文字，再以独立对象进入组装器。</p>
+<p><a href="lettering-styles.html">样式对照教程</a>展示各类实际素材与关键提示词，解释结构约束怎样影响外形、排版和情绪。完整记录保留原文，新的中文模板单独标为本次整理。</p>
+<p>三联许可对白与独立回应的调用文本和归档文本一致。历史组合心理对象的实际调用比归档文本多一条 99 字符的英文标点说明。附录保留完整调用，最终练习素材使用拆开的 C03A、C03B。</p>
+<p>以上是历史材料。新的漫画使用自己的角色与参考图，按选定草稿重新填写动作、台词和约束。参考图路径与原始模型调用属于当时的运行环境，练习包不提供这些路径对应的外部参考文件。</p>
+<p><a href="full-workflow.html">返回单页创作流程</a> · <a href="text-objects.html">文字对象清单</a></p>
+</article></body></html>

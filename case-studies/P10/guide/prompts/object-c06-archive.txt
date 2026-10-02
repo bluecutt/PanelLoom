@@ -1,0 +1,9 @@
+Use case: illustration-story.
+Asset type: BOOK-002 P10 A03 complete manga narration-box-and-lettering object for manual editor assembly; transparent PNG cutout.
+Input image: Image 1 is ONLY the v0.6 structural reference for the small horizontal rectangular narration box proportions, double-line-like hand-drawn manga rhythm and breathing room. Ignore and remove the panel border, character hair, background and every non-caption pixel.
+Primary request: Create one isolated small horizontal rectangular manga narration box with a clean natural pure-black hand-drawn outline and solid opaque pure-white interior. The box should be compact, stable and slightly wider than tall, preserving the v0.6 feeling without copying panel borders.
+Exact text, verbatim Simplified Chinese and punctuation: “五分钟后。”
+Typography: compact upright Chinese manga narration lettering, horizontally arranged in one centered line from left to right. Small-to-medium, square, calm and stable. Consistent optical size, even spacing and comfortable inner margins.
+Transparency: the entire area outside the narration-box outline must be genuinely transparent RGBA with generous transparent safety margin.
+Absolute accuracy: render 五分钟后。 exactly once, including the final full stop. No missing, substituted, repeated or extra characters; no pseudo-Chinese, Japanese, English, numbers other than the Chinese character 五, balloon tail, thought beads, character, background, panel border, screentone, shadow, logo, watermark, signature, UI or checkerboard pixels.
+Output intent: exactly one standalone C06 A03 N01 caption-box-plus-text asset, landscape canvas, ready as one Complete object.

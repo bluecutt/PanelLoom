@@ -1,0 +1,830 @@
+{
+  "schemaVersion": 1,
+  "product": "PanelLoom",
+  "editorFormat": "ComicPanelEditorProject",
+  "editorVersion": 2,
+  "usageTerms": "local-layout-only",
+  "cases": [
+    {
+      "caseId": "P10",
+      "panelCount": 6,
+      "balloonCount": 10,
+      "textStatus": "lettered",
+      "assets": [
+        {
+          "id": "U01",
+          "path": "P10/assets/panels/U01.png",
+          "sha256": "2C6702010AFB779E339BDF7C855564A7EE45A87EF27822689D7244FDB91B7F8C",
+          "width": 1991,
+          "height": 790,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "U02",
+          "path": "P10/assets/panels/U02.png",
+          "sha256": "1F722DCF6969DE9B00D81AA764A6999F02C27775844FC34DB9B6C245E57E78B8",
+          "width": 1638,
+          "height": 960,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "A02",
+          "path": "P10/assets/panels/A02.png",
+          "sha256": "CC42CCBC8577F0C82E848D497E636CEB52DF456A8ADD20D6758ABD21D29333F8",
+          "width": 1197,
+          "height": 1314,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "A01",
+          "path": "P10/assets/panels/A01.png",
+          "sha256": "9DA266C38BD20DE1FE8E7674B686E143754B80DDAF79C17735F690A6A31424A2",
+          "width": 1331,
+          "height": 1181,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "U03",
+          "path": "P10/assets/panels/U03.png",
+          "sha256": "AF20960B306C4435C7DF8E882EE8D96BF392C44698DA999F999A5282C8393D6A",
+          "width": 1983,
+          "height": 793,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "A03",
+          "path": "P10/assets/panels/A03.png",
+          "sha256": "7E9F5B11610A02EF30D3EE94DF513CA8401F71692FAE834AB20739A31225A6E7",
+          "width": 1536,
+          "height": 1024,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C01",
+          "path": "P10/assets/text-objects/C01.png",
+          "sha256": "E9E6D217257363038F90D79894E6728327976DAA7A36CDD850BC0071432E8747",
+          "width": 1254,
+          "height": 1254,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C02",
+          "path": "P10/assets/text-objects/C02.png",
+          "sha256": "A509417B20E7077DA5D77BA2C6C8CEC6AEF0E66B10F9CADA3E6BFA1B4ECFDF8E",
+          "width": 1023,
+          "height": 1537,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C03A",
+          "path": "P10/assets/text-objects/C03A.png",
+          "sha256": "2376742EEE33BE1B47F0000BF6ED265F36E52BDF1726830ABEB16375105AA345",
+          "width": 746,
+          "height": 1024,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C03B",
+          "path": "P10/assets/text-objects/C03B.png",
+          "sha256": "910F118D9D96B02773E4DDE91AE135BD945369D6B73AA9F3A8013A5E830FC3C5",
+          "width": 700,
+          "height": 824,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C04",
+          "path": "P10/assets/text-objects/C04.png",
+          "sha256": "C3B10BDA6E6713E91B96A8E7B1BBBEC4AA9DFEE3ADF44CE497BC02BDDFB085A2",
+          "width": 1056,
+          "height": 1489,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C05",
+          "path": "P10/assets/text-objects/C05.png",
+          "sha256": "F56F1716A700D3DEE3751AFFB293375C79CF0F3C5CB4EA1D71B2852DE05F4925",
+          "width": 868,
+          "height": 1811,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C06",
+          "path": "P10/assets/text-objects/C06.png",
+          "sha256": "F4E13E1ED628F07B067F40D18DB31B574A5C49A3638C3C0F013298D7C23E5CEB",
+          "width": 1536,
+          "height": 1024,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C07",
+          "path": "P10/assets/text-objects/C07.png",
+          "sha256": "7DDABF8039DDC89D62AA58A9D398FC09F202D6E864AA1BDE1CF492C6E80A7A0E",
+          "width": 1265,
+          "height": 1244,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C08",
+          "path": "P10/assets/text-objects/C08.png",
+          "sha256": "397A59C19525827D1F3FB421CB944F3A3D369BF64F328AC0163A3F3683237B26",
+          "width": 1254,
+          "height": 1254,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C09",
+          "path": "P10/assets/text-objects/C09.png",
+          "sha256": "B4075007D228BB39ABEB63CC650817A714AF9B803363B77AFB9FF9FCA140D948",
+          "width": 1089,
+          "height": 1445,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-16",
+          "path": "P10/reference-output/historical-final.png",
+          "sha256": "DCE744245B6353CDC97931D7108408419188B631387650D811532C0E5832FE6F",
+          "width": 2560,
+          "height": 3840,
+          "kind": "reference",
+          "role": "historical-master",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-17",
+          "path": "P10/storyboards/frame-03.png",
+          "sha256": "F4CD66419C1CF52D00177EFA53F745A994AA28D0CB60F455C683A0D7C6A47E0D",
+          "width": 1024,
+          "height": 1536,
+          "kind": "reference",
+          "role": "structural-line-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-18",
+          "path": "P10/storyboards/frame-04.png",
+          "sha256": "FA7DE812A14534116EEC9E226B37720D1F98A24620EC34EE51E76D389AEB7D6F",
+          "width": 1024,
+          "height": 1536,
+          "kind": "reference",
+          "role": "structural-line-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-19",
+          "path": "P10/storyboards/frame-06.png",
+          "sha256": "940FAE17CA1DFB8E69DC728FDCE53B9933B4341212E32E0E2D9CD73A6EC809E2",
+          "width": 1024,
+          "height": 1536,
+          "kind": "reference",
+          "role": "structural-line-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-20",
+          "path": "P10/storyboards/frame-07.png",
+          "sha256": "8DFD661D6BFA6DC63B0B05DFEF004919104A4ED11B21A235E0B364C9FF640354",
+          "width": 1024,
+          "height": 1536,
+          "kind": "reference",
+          "role": "structural-line-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-21",
+          "path": "P10/storyboards/selected/A01.png",
+          "sha256": "E4E66DD4D11E1A6737E4CA7EC18EE0AE247F063BBC25C6FBDFD75B50538DEA31",
+          "width": 517,
+          "height": 457,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-22",
+          "path": "P10/storyboards/selected/A02.png",
+          "sha256": "19A75B48659E30452BB1A9DF9811E99A1BE05F1E522EC6798D19A2D4EB676DF8",
+          "width": 510,
+          "height": 457,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-23",
+          "path": "P10/storyboards/selected/A03.png",
+          "sha256": "34DD242A1BD8174E2623812849AB48DEFA21D6B7E0D5A50A2080821AAC16776C",
+          "width": 274,
+          "height": 192,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-24",
+          "path": "P10/storyboards/selected/U01.png",
+          "sha256": "903FFECC96F76D865D610D729F7DB4D28483C49CCE20B6A1D491A34AD1AA03B8",
+          "width": 1024,
+          "height": 340,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-25",
+          "path": "P10/storyboards/selected/U02.png",
+          "sha256": "2F0AFE4A7E8904DEBE2C9A1CC90C5050F48659E1FB56E0C580F978F371FB7E87",
+          "width": 1024,
+          "height": 402,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-26",
+          "path": "P10/storyboards/selected/U03.png",
+          "sha256": "7277B104A751ED429418AE907D01C9CA4FFF772A184ED33A902CCA8ADC441AF5",
+          "width": 587,
+          "height": 369,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-27",
+          "path": "P10/guide/images/layout-guide.png",
+          "sha256": "59DD59A5CA6C4FFA829E4C996E841BDEF6BD23DBFE70B9F4C2C7997904B70A77",
+          "width": 1104,
+          "height": 1676,
+          "kind": "reference",
+          "role": "current-project-id-layout-diagram",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-28",
+          "path": "P10/guide/images/acting-guide.png",
+          "sha256": "EE3CF831893A6D5966F932E990139ABA67A28063EA276177F2848FF8F27CC81E",
+          "width": 2240,
+          "height": 2064,
+          "kind": "reference",
+          "role": "approved-explanatory-figure",
+          "usageTerms": "local-layout-only"
+        }
+      ],
+      "projects": [
+        {
+          "path": "P10/projects/start.json",
+          "sha256": "36251038DD95A117238B148C04295D359B2892F25D451FEFD274D3BBDF936F27",
+          "panelCount": 6,
+          "balloonCount": 10
+        },
+        {
+          "path": "P10/projects/reference.json",
+          "sha256": "6DC351D13246A7E99FB880A3DA884A480161AB838E1C5971A773698A9E11B478",
+          "panelCount": 6,
+          "balloonCount": 10
+        }
+      ],
+      "references": [
+        {
+          "path": "P10/reference-output/editor-reference.png",
+          "sha256": "DC6D94A088CCDBB6E846FC93371EA8A71BB6C4FC02ABBD9C7BC69BFCB0475854",
+          "width": 2048,
+          "height": 3072,
+          "role": "editor-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "sha256": "9B1C9DC1DC5200E551CF4133BD2D4E0F964C5BA997FCC572BB2885E2F5833593",
+          "path": "guide/images/editor-overview.png",
+          "role": "tutorial-ui-initial",
+          "width": 1428,
+          "height": 954,
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "sha256": "D45206B5E6EA17F7E34AD34EDB0B0DDBF18BE71F4393D4AECD64CEC5F0C71D36",
+          "path": "guide/images/bubble-selected.png",
+          "role": "tutorial-ui-initial",
+          "width": 1428,
+          "height": 954,
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "sha256": "097A428B199671F365C7765C3A7BB5B4D8EAA0C44F04EDF78290308AE3FA7229",
+          "path": "guide/images/occlusion-menu.png",
+          "role": "tutorial-ui-initial",
+          "width": 1428,
+          "height": 954,
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "sha256": "4506867A0E02A031634F6CC24516FE02B93BF4523887997C2D57CE62ED811E8F",
+          "path": "guide/images/introduction-preview.png",
+          "role": "tutorial-preview",
+          "width": 1120,
+          "height": 1000,
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "sha256": "0DE637F19C6FEDF9E2DBD5D3CECFAAA0E4167C8C65E4A9A4DCCB84CBB449F3BF",
+          "path": "P10/reference-output/initial-layout.png",
+          "role": "initial-layout",
+          "width": 2048,
+          "height": 3072,
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "path": "P10/storyboards/numbered/all-frames.png",
+          "sha256": "2775E1E45E427DC56849D168AF1EAE6B724822F253832932929700E9FA34C0AD",
+          "width": 1578,
+          "height": 1262,
+          "role": "numbered-selection-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "path": "P10/storyboards/numbered/frame-01.png",
+          "sha256": "7B902E0EF4E4656B14F1922E118361F3E5148399CA94C315F13B9E0DA0697457",
+          "width": 1024,
+          "height": 1536,
+          "role": "numbered-selection-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "path": "P10/storyboards/numbered/frame-02.png",
+          "sha256": "7E015E57F59DAB365D97C4BFA4AFD12BC68B8E304D2B7D61E4B277751DC78309",
+          "width": 1024,
+          "height": 1536,
+          "role": "numbered-selection-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "path": "P10/storyboards/numbered/frame-03.png",
+          "sha256": "8A094008071FAE8FA7D57F152260598232068DFEDA20A8E234440B3A6D9643AE",
+          "width": 1024,
+          "height": 1536,
+          "role": "numbered-selection-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "path": "P10/storyboards/numbered/frame-04.png",
+          "sha256": "0527FB1603A809B1BD1072ADCF0AE054F04E06CBC8BEDF54A6EDC6B5254B539B",
+          "width": 1024,
+          "height": 1536,
+          "role": "numbered-selection-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "path": "P10/storyboards/numbered/frame-05.png",
+          "sha256": "9B7249E30A8368C5FD925874FCE3C772F1E3CA8AD923ADB35464C589922A361D",
+          "width": 1024,
+          "height": 1536,
+          "role": "numbered-selection-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "path": "P10/storyboards/numbered/frame-06.png",
+          "sha256": "12E7233D39E4BB2E3E60B38E5D2A57A26526224EFDF52A9F1B5C879368F9FF73",
+          "width": 1024,
+          "height": 1536,
+          "role": "numbered-selection-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "path": "P10/storyboards/numbered/frame-07.png",
+          "sha256": "9D5E5CB371F98F8E71D2E1C14C926DC7F80C2B8B1D8357DCEB3CD2ACDC611447",
+          "width": 1024,
+          "height": 1536,
+          "role": "numbered-selection-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "path": "P10/guide/images/layout-guide.en.png",
+          "sha256": "C0FF04841CBCC4FB3C83E198EEC86FF9A95AC95A51467DF9A843BD67CFE3DD09",
+          "width": 1104,
+          "height": 1676,
+          "role": "english-explanatory-figure",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "path": "P10/guide/images/acting-guide.en.png",
+          "sha256": "26864223D31E8CD64F67DA0D7CA11BB7FD71E3F8B951E49300664DDD9C475FFF",
+          "width": 1104,
+          "height": 1050,
+          "role": "english-explanatory-figure",
+          "usageTerms": "local-layout-only"
+        }
+      ]
+    },
+    {
+      "caseId": "P09",
+      "panelCount": 9,
+      "balloonCount": 13,
+      "textStatus": "blank",
+      "assets": [
+        {
+          "id": "U01",
+          "path": "P09/assets/panels/U01.png",
+          "sha256": "B33F3313840BCE6B71F333B6CA8EE952F97634CFCD2538B92224E7CC6F5A0C16",
+          "width": 1958,
+          "height": 803,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "U02",
+          "path": "P09/assets/panels/U02.png",
+          "sha256": "99548E4F050C06C07F40FE578D931CFC271FFBC0DE171BA81D05801C6577CCE4",
+          "width": 1663,
+          "height": 946,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "A01",
+          "path": "P09/assets/panels/A01.png",
+          "sha256": "E93F3190E4CB17C7B01F83038678E760AA4274A8FB646B7C7D5697D66D967D83",
+          "width": 1921,
+          "height": 819,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "U03",
+          "path": "P09/assets/panels/U03.png",
+          "sha256": "CF58C5ED9B07E42FFDC4E7464384238FC319FB6D3251AEC0364AEC498ED4D3A9",
+          "width": 1509,
+          "height": 1042,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "U04",
+          "path": "P09/assets/panels/U04.png",
+          "sha256": "02EE11A25723271B76A92478FE2A305CD1470693A6C775431C3FFCBB16643BFC",
+          "width": 2048,
+          "height": 768,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "A02",
+          "path": "P09/assets/panels/A02.png",
+          "sha256": "15C7BF458A10F2E1029191EF5CBAA9CA22830623AD02626960E1EEBEF8B4AB9F",
+          "width": 1741,
+          "height": 903,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "U05",
+          "path": "P09/assets/panels/U05.png",
+          "sha256": "A04A548F137355821488EDC471BD3A69F1E11457A30D96A76C95FBFA7225E55F",
+          "width": 1781,
+          "height": 883,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "U06",
+          "path": "P09/assets/panels/U06.png",
+          "sha256": "02A15EBD126356F27EB164DA7D21404CD2E28110975CC649651D5C3CA30D2CA1",
+          "width": 1695,
+          "height": 928,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "U07",
+          "path": "P09/assets/panels/U07.png",
+          "sha256": "663855F489E2F05B6D2032CEAFF8BBA2E0260557F933FCE63C056AA2837EB81B",
+          "width": 2172,
+          "height": 724,
+          "kind": "panel",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C01",
+          "path": "P09/assets/text-objects/C01.png",
+          "sha256": "A66F8B175A349BA01252967389F3A34D06356999815ABAC939D99E5D22830293",
+          "width": 1376,
+          "height": 1143,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C02",
+          "path": "P09/assets/text-objects/C02.png",
+          "sha256": "AE79C5D73F349A645F6A5BAE1177841AF5162243AF131A0D0EE0E639D3B59D76",
+          "width": 1500,
+          "height": 1049,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C03",
+          "path": "P09/assets/text-objects/C03.png",
+          "sha256": "3E593FD8B7264059EAAD78C93BABBDE83D9205B6D6BFADCEAFA72D00487603BE",
+          "width": 912,
+          "height": 1725,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C04",
+          "path": "P09/assets/text-objects/C04.png",
+          "sha256": "9359364061442C7B46E7175D391D221FB8783009264E52F0A04F28A10E140E44",
+          "width": 1023,
+          "height": 1537,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C05",
+          "path": "P09/assets/text-objects/C05.png",
+          "sha256": "91E41C29191D0DBAB07B01CC5A27F835AB68654F1F52FE8A0F0D0188075377D0",
+          "width": 1033,
+          "height": 1523,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C06",
+          "path": "P09/assets/text-objects/C06.png",
+          "sha256": "40218A6E692E71EDDE2EF4CCE13382B9D346ABD701C997FDF12AE6532F0C91BA",
+          "width": 967,
+          "height": 1626,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C07",
+          "path": "P09/assets/text-objects/C07.png",
+          "sha256": "22A745D9481F97C5DA0AFC20B6461927DC9CADFAF3EB3A0029739D2E6E1736C2",
+          "width": 1055,
+          "height": 1490,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C08",
+          "path": "P09/assets/text-objects/C08.png",
+          "sha256": "33FD095903A59870B3FB8C93864B98FE97A3CADDD392B615ACF0B2A054FAF2DA",
+          "width": 973,
+          "height": 1617,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C09",
+          "path": "P09/assets/text-objects/C09.png",
+          "sha256": "F714F67D6BA1C1E48103CFFA905C22FA5E17E8CCF8A08F71C5DA2244113B0301",
+          "width": 889,
+          "height": 1769,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C10",
+          "path": "P09/assets/text-objects/C10.png",
+          "sha256": "077FEF7A3BCACBD3D00CB2BD53C913E9357F69AF005694969315225A3190397A",
+          "width": 1024,
+          "height": 1536,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C11",
+          "path": "P09/assets/text-objects/C11.png",
+          "sha256": "F412DEA39F6DBD292BB082961E6B5E6C497F738A6650D0B1BA6B9C970D86D4AF",
+          "width": 1021,
+          "height": 1541,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C12",
+          "path": "P09/assets/text-objects/C12.png",
+          "sha256": "E235AB4489C5A5C1F1F8856DCD6CDE49646DCF3B5C1DBF44D58096B120EA6D55",
+          "width": 1536,
+          "height": 1024,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "C13",
+          "path": "P09/assets/text-objects/C13.png",
+          "sha256": "29B0C5970F09DB6DB0CA88A05050365DAD1EC34793FCC2A746D150AC35522FDA",
+          "width": 1254,
+          "height": 1254,
+          "kind": "balloon",
+          "role": "approved-original",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-22",
+          "path": "P09/reference-output/historical-final.png",
+          "sha256": "7B3203F19CFBD61848E6871383F9D9AAB7B62025E9D40DEA749C18FAD6939845",
+          "width": 1024,
+          "height": 1536,
+          "kind": "reference",
+          "role": "historical-master",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-23",
+          "path": "P09/storyboards/frame-03.png",
+          "sha256": "C3B765196DCAB2D6E7D0319B4709E21A077B00FA45A737FF26FDF5C7ACF05C35",
+          "width": 1024,
+          "height": 1536,
+          "kind": "reference",
+          "role": "structural-line-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-24",
+          "path": "P09/storyboards/selected/U01.png",
+          "sha256": "6E2AA3EDE18C42130E48B0A65320278523DAE25E05E92BEA327F11041620CC4E",
+          "width": 1024,
+          "height": 245,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-25",
+          "path": "P09/storyboards/selected/U02.png",
+          "sha256": "AB1A2E6D0BED01E3A5E05F4FD69B4DB4956E2D57702AF902E4319F0C3A1EB93B",
+          "width": 539,
+          "height": 275,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-26",
+          "path": "P09/storyboards/selected/A01.png",
+          "sha256": "4244513AEDFBAB34FD94511BED1590F1DF63C69A5271E2899FCC036677880433",
+          "width": 390,
+          "height": 165,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-27",
+          "path": "P09/storyboards/selected/U03.png",
+          "sha256": "C8DCF204126BBC9C24A3040CD8A8624D62753869D8B7AD4EB3512A77639A791C",
+          "width": 410,
+          "height": 300,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-28",
+          "path": "P09/storyboards/selected/U04.png",
+          "sha256": "5EAA19B4FEF67AFDEF1E058D4ED0C5EB605B321F964E203E062FA744588A88AE",
+          "width": 1024,
+          "height": 385,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-29",
+          "path": "P09/storyboards/selected/A02.png",
+          "sha256": "6ED281DD885007463B941ADABDFC2CF5819A777C011A7A963EC3DA56F3B01669",
+          "width": 250,
+          "height": 230,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-30",
+          "path": "P09/storyboards/selected/U05.png",
+          "sha256": "019D986119B9598BEC415C501C13CE3E92411F1E292936C154AEE18372414B92",
+          "width": 524,
+          "height": 260,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-31",
+          "path": "P09/storyboards/selected/U06.png",
+          "sha256": "6AC3ABC9FFEB8FF3F3FA1C0419D0DBDBE5C25A2779D39BC646B05B465D91DCA3",
+          "width": 540,
+          "height": 295,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        },
+        {
+          "id": "reference-32",
+          "path": "P09/storyboards/selected/U07.png",
+          "sha256": "5750D42FA0E2FDDB124365ED9BD5951F4F128B508702FC425F8B74C4A63B3BCB",
+          "width": 1024,
+          "height": 266,
+          "kind": "reference",
+          "role": "selected-panel-reference",
+          "usageTerms": "local-layout-only"
+        }
+      ],
+      "projects": [
+        {
+          "path": "P09/projects/start.json",
+          "sha256": "0C3943EE1B1B234FEB4E731AA577172C87245B247EDE91B2990D6C1E149A7987",
+          "panelCount": 9,
+          "balloonCount": 13
+        },
+        {
+          "path": "P09/projects/reference.json",
+          "sha256": "17C821FC514A09C16B54E2CFA06F35E1077678D7F376769849BC6593F4779746",
+          "panelCount": 9,
+          "balloonCount": 13
+        }
+      ],
+      "references": [
+        {
+          "path": "P09/reference-output/editor-reference.png",
+          "sha256": "DE758D46BDF26749CADD6788180AEB516D8D86D2BAE4C7A24E667A9C83FEE467",
+          "width": 2048,
+          "height": 3072,
+          "role": "editor-reference",
+          "usageTerms": "local-layout-only"
+        }
+      ]
+    }
+  ],
+  "publicationPermissions": {
+    "confirmedOn": "2026-10-02",
+    "publicDownloadApproved": true,
+    "officialCurrentTutorialDisplayApproved": true,
+    "ownershipTransferred": false,
+    "creator": "bluecutt",
+    "aiCollaborator": "ChatGPT",
+    "rightsScope": "all rights legally held by creator; third-party rights retained",
+    "downloaderUsage": "local-layout-only",
+    "publicationChannel": "GitHub repository and Releases",
+    "casePackageRevision": "v09",
+    "githubPlatformPermissionsAccepted": true,
+    "githubPublicForkPermissionsAccepted": true,
+    "githubAndAffiliateAiTrainingLicenseAccepted": true,
+    "termsReference": "ASSET-TERMS.md",
+    "published": false
+  }
+}

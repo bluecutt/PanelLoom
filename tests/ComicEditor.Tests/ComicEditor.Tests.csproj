@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0-windows</TargetFramework><UseWindowsForms>true</UseWindowsForms></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../src/ComicEditor.Core/ComicEditor.Core.csproj" /><ProjectReference Include="../../src/ComicEditor.Rendering/ComicEditor.Rendering.csproj" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="../../src/ComicEditor.Cli/ComicEditor.Cli.csproj" /></ItemGroup>
+  <ItemGroup><ProjectReference Include="../../src/ComicEditor.Session/ComicEditor.Session.csproj" /></ItemGroup>
+</Project>

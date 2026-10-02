@@ -1,0 +1,764 @@
+{
+    "format":  "ComicPanelEditorProject",
+    "version":  2,
+    "canvas":  {
+                   "width":  1024,
+                   "height":  1536,
+                   "background":  "#FFFFFF",
+                   "exportScale":  2
+               },
+    "border":  {
+                   "color":  "#000000",
+                   "width":  4,
+                   "mode":  "SingleLine"
+               },
+    "edgeSnap":  {
+                     "enabled":  false,
+                     "tolerance":  8
+                 },
+    "outerBorder":  {
+                        "enabled":  false,
+                        "width":  5
+                    },
+    "panels":  [
+                   {
+                       "id":  "U01",
+                       "label":  "U01",
+                       "readingOrder":  1,
+                       "zIndex":  10,
+                       "locked":  false,
+                       "polygon":  [
+                                       [
+                                           3.6198863983154297,
+                                           2.206437349319458
+                                       ],
+                                       [
+                                           1018.41259765625,
+                                           2.206437349319458
+                                       ],
+                                       [
+                                           1018.41259765625,
+                                           283.75469970703125
+                                       ],
+                                       [
+                                           3.6198863983154297,
+                                           283.75469970703125
+                                       ]
+                                   ],
+                       "initialPolygon":  [
+                                              [
+                                                  4,
+                                                  4
+                                              ],
+                                              [
+                                                  1020,
+                                                  4
+                                              ],
+                                              [
+                                                  1020,
+                                                  285
+                                              ],
+                                              [
+                                                  4,
+                                                  285
+                                              ]
+                                          ],
+                       "edgeVisibility":  [
+                                              true,
+                                              true,
+                                              true,
+                                              true
+                                          ],
+                       "sourceImage":  "panels/U01.png",
+                       "fitMode":  "Cover",
+                       "fitBiasX":  0,
+                       "fitBiasY":  0,
+                       "clearFrame":  true,
+                       "imageTransform":  {
+                                              "offsetX":  8.013349997321484,
+                                              "offsetY":  -15.064269813590371,
+                                              "scale":  1.0300000000000007
+                                          },
+                       "initialImageTransform":  {
+                                                     "offsetX":  0,
+                                                     "offsetY":  0,
+                                                     "scale":  1
+                                                 }
+                   },
+                   {
+                       "id":  "U02",
+                       "label":  "U02",
+                       "readingOrder":  2,
+                       "zIndex":  20,
+                       "locked":  false,
+                       "polygon":  [
+                                       [
+                                           4,
+                                           283.75469970703125
+                                       ],
+                                       [
+                                           1018.568115234375,
+                                           283.75469970703125
+                                       ],
+                                       [
+                                           1020,
+                                           752.6184692382812
+                                       ],
+                                       [
+                                           4,
+                                           752.6184692382812
+                                       ]
+                                   ],
+                       "initialPolygon":  [
+                                              [
+                                                  4,
+                                                  292
+                                              ],
+                                              [
+                                                  1020,
+                                                  292
+                                              ],
+                                              [
+                                                  1020,
+                                                  751
+                                              ],
+                                              [
+                                                  4,
+                                                  751
+                                              ]
+                                          ],
+                       "edgeVisibility":  [
+                                              true,
+                                              true,
+                                              true,
+                                              true
+                                          ],
+                       "sourceImage":  "panels/U02.png",
+                       "fitMode":  "Cover",
+                       "fitBiasX":  0,
+                       "fitBiasY":  0,
+                       "clearFrame":  true,
+                       "imageTransform":  {
+                                              "offsetX":  1.6522742263143186,
+                                              "offsetY":  16.49057480851468,
+                                              "scale":  1
+                                          },
+                       "initialImageTransform":  {
+                                                     "offsetX":  0,
+                                                     "offsetY":  0,
+                                                     "scale":  1
+                                                 }
+                   },
+                   {
+                       "id":  "A02",
+                       "label":  "A02",
+                       "readingOrder":  4,
+                       "zIndex":  30,
+                       "locked":  false,
+                       "polygon":  [
+                                       [
+                                           4,
+                                           752.6184692382812
+                                       ],
+                                       [
+                                           507,
+                                           752.6184692382812
+                                       ],
+                                       [
+                                           507,
+                                           1206
+                                       ],
+                                       [
+                                           4,
+                                           1206
+                                       ]
+                                   ],
+                       "initialPolygon":  [
+                                              [
+                                                  4,
+                                                  758
+                                              ],
+                                              [
+                                                  507,
+                                                  758
+                                              ],
+                                              [
+                                                  507,
+                                                  1206
+                                              ],
+                                              [
+                                                  4,
+                                                  1206
+                                              ]
+                                          ],
+                       "edgeVisibility":  [
+                                              true,
+                                              true,
+                                              true,
+                                              true
+                                          ],
+                       "sourceImage":  "panels/A02.png",
+                       "fitMode":  "Cover",
+                       "fitBiasX":  0,
+                       "fitBiasY":  0,
+                       "clearFrame":  true,
+                       "imageTransform":  {
+                                              "offsetX":  -0.29,
+                                              "offsetY":  28.603,
+                                              "scale":  1.0300000000000005
+                                          },
+                       "initialImageTransform":  {
+                                                     "offsetX":  0,
+                                                     "offsetY":  0,
+                                                     "scale":  1
+                                                 }
+                   },
+                   {
+                       "id":  "A01",
+                       "label":  "A01",
+                       "readingOrder":  3,
+                       "zIndex":  30,
+                       "locked":  false,
+                       "polygon":  [
+                                       [
+                                           507,
+                                           751
+                                       ],
+                                       [
+                                           1020,
+                                           751
+                                       ],
+                                       [
+                                           1020,
+                                           1206
+                                       ],
+                                       [
+                                           507,
+                                           1206
+                                       ]
+                                   ],
+                       "initialPolygon":  [
+                                              [
+                                                  511,
+                                                  758
+                                              ],
+                                              [
+                                                  1020,
+                                                  758
+                                              ],
+                                              [
+                                                  1020,
+                                                  1206
+                                              ],
+                                              [
+                                                  511,
+                                                  1206
+                                              ]
+                                          ],
+                       "edgeVisibility":  [
+                                              true,
+                                              true,
+                                              true,
+                                              true
+                                          ],
+                       "sourceImage":  "panels/A01.png",
+                       "fitMode":  "Cover",
+                       "fitBiasX":  0,
+                       "fitBiasY":  0,
+                       "clearFrame":  true,
+                       "imageTransform":  {
+                                              "offsetX":  16.984476739297634,
+                                              "offsetY":  -18.399849800905713,
+                                              "scale":  1.1
+                                          },
+                       "initialImageTransform":  {
+                                                     "offsetX":  0,
+                                                     "offsetY":  0,
+                                                     "scale":  1
+                                                 }
+                   },
+                   {
+                       "id":  "U03",
+                       "label":  "U03",
+                       "readingOrder":  6,
+                       "zIndex":  40,
+                       "locked":  false,
+                       "polygon":  [
+                                       [
+                                           4,
+                                           1206
+                                       ],
+                                       [
+                                           1020,
+                                           1206
+                                       ],
+                                       [
+                                           1020,
+                                           1531
+                                       ],
+                                       [
+                                           4,
+                                           1531
+                                       ]
+                                   ],
+                       "initialPolygon":  [
+                                              [
+                                                  4,
+                                                  1213
+                                              ],
+                                              [
+                                                  1020,
+                                                  1213
+                                              ],
+                                              [
+                                                  1020,
+                                                  1531
+                                              ],
+                                              [
+                                                  4,
+                                                  1531
+                                              ]
+                                          ],
+                       "edgeVisibility":  [
+                                              true,
+                                              true,
+                                              true,
+                                              true
+                                          ],
+                       "sourceImage":  "panels/U03.png",
+                       "fitMode":  "Cover",
+                       "fitBiasX":  0,
+                       "fitBiasY":  0,
+                       "clearFrame":  true,
+                       "imageTransform":  {
+                                              "offsetX":  -53.949,
+                                              "offsetY":  17.962,
+                                              "scale":  0.94
+                                          },
+                       "initialImageTransform":  {
+                                                     "offsetX":  0,
+                                                     "offsetY":  0,
+                                                     "scale":  1
+                                                 }
+                   },
+                   {
+                       "id":  "A03",
+                       "label":  "A03",
+                       "readingOrder":  5,
+                       "zIndex":  100,
+                       "locked":  false,
+                       "polygon":  [
+                                       [
+                                           740.3045654296875,
+                                           1170.0909423828125
+                                       ],
+                                       [
+                                           1017.3748168945312,
+                                           1170.0909423828125
+                                       ],
+                                       [
+                                           1017.3748168945312,
+                                           1347.81005859375
+                                       ],
+                                       [
+                                           740.3045654296875,
+                                           1347.81005859375
+                                       ]
+                                   ],
+                       "initialPolygon":  [
+                                              [
+                                                  774,
+                                                  1057
+                                              ],
+                                              [
+                                                  1017,
+                                                  1057
+                                              ],
+                                              [
+                                                  1017,
+                                                  1206
+                                              ],
+                                              [
+                                                  774,
+                                                  1206
+                                              ]
+                                          ],
+                       "edgeVisibility":  [
+                                              true,
+                                              true,
+                                              true,
+                                              true
+                                          ],
+                       "sourceImage":  "panels/A03.png",
+                       "fitMode":  "Cover",
+                       "fitBiasX":  0,
+                       "fitBiasY":  0,
+                       "clearFrame":  true,
+                       "imageTransform":  {
+                                              "offsetX":  -16.823184248543715,
+                                              "offsetY":  123.03200592609207,
+                                              "scale":  1.21
+                                          },
+                       "initialImageTransform":  {
+                                                     "offsetX":  0,
+                                                     "offsetY":  0,
+                                                     "scale":  1
+                                                 }
+                   }
+               ],
+    "balloons":  [
+                     {
+                         "id":  "C01",
+                         "label":  "C01",
+                         "kind":  "Complete",
+                         "groupId":  "U01-B01",
+                         "zIndex":  1010,
+                         "locked":  false,
+                         "visible":  true,
+                         "sourceImage":  "text-objects/C01.png",
+                         "lockAspect":  true,
+                         "clipPanelId":  "",
+                         "transform":  {
+                                           "x":  707.4089413678508,
+                                           "y":  -2.19769381143945,
+                                           "width":  345.96032899072907,
+                                           "height":  345.96032899072907,
+                                           "rotation":  0,
+                                           "flipX":  false,
+                                           "flipY":  false,
+                                           "opacity":  1
+                                       },
+                         "initialTransform":  {
+                                                  "x":  748,
+                                                  "y":  14,
+                                                  "width":  255,
+                                                  "height":  255,
+                                                  "rotation":  0,
+                                                  "flipX":  false,
+                                                  "flipY":  false,
+                                                  "opacity":  1
+                                              }
+                     },
+                     {
+                         "id":  "C02",
+                         "label":  "C02",
+                         "kind":  "Complete",
+                         "groupId":  "U01-B02",
+                         "zIndex":  1020,
+                         "locked":  false,
+                         "visible":  true,
+                         "sourceImage":  "text-objects/C02.png",
+                         "lockAspect":  true,
+                         "clipPanelId":  "U01",
+                         "transform":  {
+                                           "x":  6.497306188560625,
+                                           "y":  -15.299846905719708,
+                                           "width":  207.826,
+                                           "height":  312.509,
+                                           "rotation":  0,
+                                           "flipX":  false,
+                                           "flipY":  false,
+                                           "opacity":  1
+                                       },
+                         "initialTransform":  {
+                                                  "x":  20,
+                                                  "y":  28,
+                                                  "width":  135,
+                                                  "height":  203,
+                                                  "rotation":  0,
+                                                  "flipX":  false,
+                                                  "flipY":  false,
+                                                  "opacity":  1
+                                              }
+                     },
+                     {
+                         "id":  "C03A",
+                         "label":  "C03A",
+                         "kind":  "Complete",
+                         "groupId":  "U02-T01A",
+                         "zIndex":  1030,
+                         "locked":  false,
+                         "visible":  true,
+                         "sourceImage":  "text-objects/C03A.png",
+                         "lockAspect":  true,
+                         "clipPanelId":  "U02",
+                         "transform":  {
+                                           "x":  763.876105863215,
+                                           "y":  234.32731758964485,
+                                           "width":  328.668,
+                                           "height":  451.371,
+                                           "rotation":  0,
+                                           "flipX":  false,
+                                           "flipY":  false,
+                                           "opacity":  1
+                                       },
+                         "initialTransform":  {
+                                                  "x":  842,
+                                                  "y":  306,
+                                                  "width":  150,
+                                                  "height":  206,
+                                                  "rotation":  0,
+                                                  "flipX":  false,
+                                                  "flipY":  false,
+                                                  "opacity":  1
+                                              }
+                     },
+                     {
+                         "id":  "C03B",
+                         "label":  "C03B",
+                         "kind":  "Complete",
+                         "groupId":  "U02-T01B",
+                         "zIndex":  1040,
+                         "locked":  false,
+                         "visible":  true,
+                         "sourceImage":  "text-objects/C03B.png",
+                         "lockAspect":  true,
+                         "clipPanelId":  "",
+                         "transform":  {
+                                           "x":  -9.92390553786921,
+                                           "y":  231.16825895749557,
+                                           "width":  314.002,
+                                           "height":  368.699,
+                                           "rotation":  0,
+                                           "flipX":  false,
+                                           "flipY":  false,
+                                           "opacity":  1
+                                       },
+                         "initialTransform":  {
+                                                  "x":  28,
+                                                  "y":  482,
+                                                  "width":  155,
+                                                  "height":  182,
+                                                  "rotation":  0,
+                                                  "flipX":  false,
+                                                  "flipY":  false,
+                                                  "opacity":  1
+                                              }
+                     },
+                     {
+                         "id":  "C04",
+                         "label":  "C04",
+                         "kind":  "Complete",
+                         "groupId":  "A01-T02",
+                         "zIndex":  1050,
+                         "locked":  false,
+                         "visible":  true,
+                         "sourceImage":  "text-objects/C04.png",
+                         "lockAspect":  true,
+                         "clipPanelId":  "",
+                         "transform":  {
+                                           "x":  777.183,
+                                           "y":  699.8773144413065,
+                                           "width":  290.31200000000007,
+                                           "height":  410.183,
+                                           "rotation":  0,
+                                           "flipX":  false,
+                                           "flipY":  false,
+                                           "opacity":  1
+                                       },
+                         "initialTransform":  {
+                                                  "x":  848,
+                                                  "y":  738,
+                                                  "width":  155,
+                                                  "height":  219,
+                                                  "rotation":  0,
+                                                  "flipX":  false,
+                                                  "flipY":  false,
+                                                  "opacity":  1
+                                              }
+                     },
+                     {
+                         "id":  "C05",
+                         "label":  "C05",
+                         "kind":  "Complete",
+                         "groupId":  "A02-M01M02",
+                         "zIndex":  1060,
+                         "locked":  false,
+                         "visible":  true,
+                         "sourceImage":  "text-objects/C05.png",
+                         "lockAspect":  true,
+                         "clipPanelId":  "A02",
+                         "transform":  {
+                                           "x":  -22.340323867807683,
+                                           "y":  753.5752253773977,
+                                           "width":  232.65700000000007,
+                                           "height":  485.84200000000004,
+                                           "rotation":  0,
+                                           "flipX":  false,
+                                           "flipY":  false,
+                                           "opacity":  1
+                                       },
+                         "initialTransform":  {
+                                                  "x":  20,
+                                                  "y":  780,
+                                                  "width":  170,
+                                                  "height":  355,
+                                                  "rotation":  0,
+                                                  "flipX":  false,
+                                                  "flipY":  false,
+                                                  "opacity":  1
+                                              }
+                     },
+                     {
+                         "id":  "C06",
+                         "label":  "C06",
+                         "kind":  "Complete",
+                         "groupId":  "A03-N01",
+                         "zIndex":  1080,
+                         "locked":  false,
+                         "visible":  true,
+                         "sourceImage":  "text-objects/C06.png",
+                         "lockAspect":  true,
+                         "clipPanelId":  "",
+                         "transform":  {
+                                           "x":  -64.851,
+                                           "y":  1123.242,
+                                           "width":  364.838,
+                                           "height":  244.442,
+                                           "rotation":  0,
+                                           "flipX":  false,
+                                           "flipY":  false,
+                                           "opacity":  1
+                                       },
+                         "initialTransform":  {
+                                                  "x":  785,
+                                                  "y":  1065,
+                                                  "width":  100,
+                                                  "height":  67,
+                                                  "rotation":  0,
+                                                  "flipX":  false,
+                                                  "flipY":  false,
+                                                  "opacity":  1
+                                              }
+                     },
+                     {
+                         "id":  "C07",
+                         "label":  "C07",
+                         "kind":  "Complete",
+                         "groupId":  "A03-B03-1",
+                         "zIndex":  1090,
+                         "locked":  false,
+                         "visible":  true,
+                         "sourceImage":  "text-objects/C07.png",
+                         "lockAspect":  true,
+                         "clipPanelId":  "",
+                         "transform":  {
+                                           "x":  583.1610367360283,
+                                           "y":  1082.465612239894,
+                                           "width":  233.525,
+                                           "height":  230.281,
+                                           "rotation":  0,
+                                           "flipX":  false,
+                                           "flipY":  false,
+                                           "opacity":  1
+                                       },
+                         "initialTransform":  {
+                                                  "x":  787,
+                                                  "y":  1130,
+                                                  "width":  72,
+                                                  "height":  71,
+                                                  "rotation":  0,
+                                                  "flipX":  false,
+                                                  "flipY":  false,
+                                                  "opacity":  1
+                                              }
+                     },
+                     {
+                         "id":  "C08",
+                         "label":  "C08",
+                         "kind":  "Complete",
+                         "groupId":  "U03-B03-2",
+                         "zIndex":  1100,
+                         "locked":  false,
+                         "visible":  true,
+                         "sourceImage":  "text-objects/C08.png",
+                         "lockAspect":  true,
+                         "clipPanelId":  "",
+                         "transform":  {
+                                           "x":  595.6207085195567,
+                                           "y":  1277.556988401639,
+                                           "width":  286.1554545454548,
+                                           "height":  286.1554545454548,
+                                           "rotation":  0,
+                                           "flipX":  false,
+                                           "flipY":  false,
+                                           "opacity":  1
+                                       },
+                         "initialTransform":  {
+                                                  "x":  775,
+                                                  "y":  1230,
+                                                  "width":  230,
+                                                  "height":  230,
+                                                  "rotation":  0,
+                                                  "flipX":  false,
+                                                  "flipY":  false,
+                                                  "opacity":  1
+                                              },
+                         "panelOcclusion":  {
+                                                "A03":  "front",
+                                                "U03":  "front",
+                                                "A02":  "front",
+                                                "A01":  "front"
+                                            }
+                     },
+                     {
+                         "id":  "C09",
+                         "label":  "C09",
+                         "kind":  "Complete",
+                         "groupId":  "U03-B04",
+                         "zIndex":  1070,
+                         "locked":  false,
+                         "visible":  true,
+                         "sourceImage":  "text-objects/C09.png",
+                         "lockAspect":  true,
+                         "clipPanelId":  "U03",
+                         "transform":  {
+                                           "x":  -39.386,
+                                           "y":  1238.14,
+                                           "width":  273.845,
+                                           "height":  364.14,
+                                           "rotation":  0,
+                                           "flipX":  false,
+                                           "flipY":  false,
+                                           "opacity":  1
+                                       },
+                         "initialTransform":  {
+                                                  "x":  24,
+                                                  "y":  1234,
+                                                  "width":  185,
+                                                  "height":  246,
+                                                  "rotation":  0,
+                                                  "flipX":  false,
+                                                  "flipY":  false,
+                                                  "opacity":  1
+                                              }
+                     }
+                 ],
+    "objectOrder":  {
+                        "balloons":  [
+                                         "C01",
+                                         "C02",
+                                         "C03A",
+                                         "C03B",
+                                         "C04",
+                                         "C05",
+                                         "C09",
+                                         "C06",
+                                         "C08",
+                                         "C07"
+                                     ],
+                        "panels":  [
+                                       "U01",
+                                       "U02",
+                                       "A01",
+                                       "A02",
+                                       "U03",
+                                       "A03"
+                                   ]
+                    },
+    "assetBase":  "../assets",
+    "outputDirectory":  "../output",
+    "pageId":  "P10",
+    "projectName":  "P10 practice reference",
+    "phase":  "practice-reference"
+}

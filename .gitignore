@@ -1,0 +1,13 @@
+.tools/
+.superpowers/
+artifacts/
+dist/
+Data/
+**/bin/
+**/obj/
+*.user
+*.log
+local.settings.json
+case-practice/
+practice-output/
+*.recovery.json

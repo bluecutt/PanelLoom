@@ -1,0 +1,111 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>PanelLoom</h1>
+<p><a href="README.html">English</a> | <a href="README.zh-CN.html">中文</a></p>
+<p>Comic Creation Workflow &amp; Manual Page Assembler.</p>
+<table>
+<thead>
+<tr>
+<th>Page example 1 · P09</th>
+<th>Page example 2 · P10</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="case-studies/P09/reference-output/historical-final.png"><img src="case-studies/P09/reference-output/historical-final.png" alt="Finished P09 page"></a></td>
+<td><a href="case-studies/P10/reference-output/editor-reference.png"><img src="case-studies/P10/reference-output/editor-reference.png" alt="Finished P10 page"></a></td>
+</tr>
+</tbody></table>
+<p>A Codex-oriented workflow for making individual comic pages, paired with a native Windows x64 page assembler and a reusable Skill. Creators and ChatGPT discuss dialogue and visual design, select a framework and performances from layout drafts, redraw panels individually, generate independent lettered objects, and finish framing and layout in the editor.</p>
+<p>The creator decides the story, selects candidates, and approves the final result. ChatGPT helps organize requirements, generate assets, initialize the project, and check resources. Click either preview to view its full-size image. P10 uses the creator&#39;s approved layout in the native editor.</p>
+<p><a href="docs/downloads.en.html">Downloads</a> · <a href="docs/quick-start.en.html">Quick start</a> · <a href="case-studies/P10/guide/full-workflow.en.html">Illustrated P10 tutorial</a> · <a href="docs/codex-setup.en.html">Codex setup</a> · <a href="docs/agent-workflows.en.html">Agent guide</a></p>
+<h2>Compose → Separate → Assemble</h2>
+<p>A full-page layout draft establishes reading order, shots, and space for text. Select the page framework and each panel&#39;s performance independently. Redraw selected crops into complete finished panels, generate the lettered bubbles separately, then assemble and export the page locally.</p>
+<p>Retries stay local to one asset. Correct a hand or expression by replacing its panel; revise dialogue or typography by replacing its bubble. Accepted assets remain available. Reducing whole-page regeneration helps avoid cumulative blur, noise, and changes to unrelated areas during detail and lettering edits.</p>
+<p>Replaceable assets and undoable layout changes make iteration more forgiving. Creators retain control through panel selection, refinement, and manual adjustments. Export renders from the complete source images.</p>
+<h2>Install and get started</h2>
+<h3>Use the Windows editor</h3>
+<p>Use a Windows x64 computer. Manual layout with existing assets works in the portable application without installing Codex, the .NET SDK, or a model API.</p>
+<ol>
+<li>After publication, download the portable Windows x64 ZIP and full practice pack from this repository&#39;s <strong>Releases</strong>. See the <a href="docs/downloads.en.html">download guide</a> for files and verification steps.</li>
+<li>Extract the complete application ZIP into your tools folder. Keep the EXE, DLLs, and companion files together, then double-click <code>ComicEditor.exe</code>.</li>
+<li>Extract the practice pack. In the application, click <strong>打开工程</strong> (Open project) and select <code>P10/projects/reference.json</code> to view the finished example layout.</li>
+<li>Use <strong>项目 → 另存为</strong> (Project → Save as) to create a working copy before moving images, arranging bubbles, and exporting. Follow the <a href="docs/quick-start.en.html">quick start</a> for canvas controls.</li>
+</ol>
+<h3>Start new work in Codex</h3>
+<p>New artwork requires image-generation capability in your current Codex environment. Prepare your own creative project folder, story, character references, and visual requirements.</p>
+<ol>
+<li>Copy the complete <code>skills/comic-page-workflow</code> folder from your downloaded PanelLoom directory into <code>.agents/skills/comic-page-workflow</code> in your creative project. If a Skill with the same name already exists, compare the versions and confirm how to update it while preserving the original.</li>
+<li>Use the <a href="skills/comic-page-workflow/assets/project-config-example.json">project configuration example</a> to prepare <code>comic-project.json</code> at your creative project root. Set <code>editorCliPath</code> to your local <code>ComicEditor.Cli.exe</code> and configure the story, character, visual-document, and page-directory paths.</li>
+<li>Open that creative project in Codex and invoke <code>$comic-page-workflow</code>. If the Skill does not appear, restart Codex and check again. See the <a href="https://learn.chatgpt.com/docs/build-skills">official Skill documentation</a> for repo-scoped discovery.</li>
+<li>Begin with dialogue. Approve it before moving to visual design, drafts, panel selection, and asset generation. See the <a href="docs/codex-setup.en.html">Codex setup guide</a> for the detailed configuration.</li>
+</ol>
+<p>Ask your Agent to help with setup:</p>
+<blockquote>
+<p>From my downloaded PanelLoom directory, install skills/comic-page-workflow into .agents/skills/comic-page-workflow in this creative project. If the destination already exists, compare it and ask before updating. Read the project configuration example, help me prepare comic-project.json, verify the editor CLI and requirements paths, and confirm whether image generation is available in this environment.</p>
+</blockquote>
+<p>Then start your first page:</p>
+<blockquote>
+<p>Use $comic-page-workflow. Read my project configuration, story, character references, and visual requirements. Draft this page&#39;s dialogue first, identifying the speaker, bubble type, reading order, and emotion. Wait for my approval before designing the artwork.</p>
+</blockquote>
+<h2>From dialogue to a finished page</h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Decisions</th>
+<th>Saved output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dialogue</td>
+<td>Exact wording, speaker, emotion, and text container</td>
+<td>Approved dialogue design</td>
+</tr>
+<tr>
+<td>Visual design</td>
+<td>Camera, placement, expression, action, and negative space</td>
+<td>Shot and panel guide</td>
+</tr>
+<tr>
+<td>Draft exploration</td>
+<td>Page proportions, reading order, and acting candidates</td>
+<td>Independent layout drafts</td>
+</tr>
+<tr>
+<td>Numbered selection</td>
+<td>Framework source and content source for each panel</td>
+<td>Framework and panel source map</td>
+</tr>
+<tr>
+<td>Finished artwork</td>
+<td>Redraw from selected crops, with room for reframing</td>
+<td>Complete panel images</td>
+</tr>
+<tr>
+<td>Lettered objects</td>
+<td>Bubble contour, tail, and final text in one asset</td>
+<td>Independently movable text objects</td>
+</tr>
+<tr>
+<td>Local assembly</td>
+<td>Agent initialization, followed by creator adjustments</td>
+<td>Working project and high-resolution export</td>
+</tr>
+</tbody></table>
+<p>The <a href="case-studies/P10/guide/full-workflow.en.html">illustrated P10 tutorial</a> walks through these stages with real conversations in translation, Chinese originals, and saved outputs. The <a href="case-studies/P10/guide/storyboard-design.en.html">panel design chapter</a> includes numbered candidates, separate framework and content selection, and six draft-to-finished comparisons. The <a href="case-studies/P10/guide/lettering-styles.en.html">lettering chapter</a> explains how prompts control contours, tails, and typography. The <a href="docs/page-workflow.en.html">general page workflow</a> provides a reusable checklist for your own work.</p>
+<h2>Edit on the canvas</h2>
+<p>Double-click <code>ComicEditor.exe</code> in the release folder and open a version 2 JSON project. Keep the entire application folder. The portable package includes its runtime; existing-asset editing needs no .NET SDK, model API, or account.</p>
+<p>The canvas wheel scales the selected image or bubble; Ctrl + wheel zooms the whole page. The sidebar wheel only scrolls its controls. Independent polygon panels support size, vertex, shape, and framing adjustments. Bubble controls support complete lettered PNGs, separate body and tail layers, rotation, opacity, clipping or cross-panel display, and front/back relationships to inset panels. Single-line borders retain independent panel shapes, and export renders from the source assets.</p>
+<p>The application interface is currently in Chinese. The <a href="docs/quick-start.en.html">English quick start</a> pairs visible control labels with English meanings. English interface switching is outside this documentation update.</p>
+<h2>Try it with the practice pack</h2>
+<p>Get the Windows application and full practice pack from this repository&#39;s Releases when published; the <a href="docs/downloads.en.html">download guide</a> lists the files and opening steps. P10 contains 6 panels and 10 lettered objects. P09 contains 9 panels and 13 historical blank bubbles. Start with the <a href="case-studies/guide/quick-start.en.html">case exercise</a> and open <code>P10/projects/reference.json</code> from the extracted pack, then save a working copy before editing. <code>start.json</code> preserves the historical initial layout for comparison.</p>
+<p>The artwork retains its Chinese lettering. English instructions explain the workflow and controls. Illustrated guides and their teaching images are included in this repository; the full practice ZIP is distributed as a Release attachment.</p>
+<h2>Work with an Agent</h2>
+<p><code>ComicEditor.Cli.exe</code> provides capability discovery, initialization, validation, asset replacement, rendering, and project bundling. Open editor windows support local sessions for the same user. When the creator enables <strong>允许 Agent 修改本次会话</strong> (Allow Agent to modify this session), an Agent can change specified objects while preserving the current manual state. A batch of edits can be undone together.</p>
+<p>The general-purpose Skill is in <a href="skills/comic-page-workflow/SKILL.html">skills/comic-page-workflow</a>. It reads a project&#39;s own <code>comic-project.json</code> to locate story, character, and visual requirements. Examples, record templates, and stage references are included with the Skill.</p>
+<h2>Version and development</h2>
+<p>The current local release candidate is <code>0.2.0-preview.4</code>, with behavior based on the accepted <code>0.2.0-preview.2</code>. This preparation work organizes the complete workflow, tutorials, licensing, and packaging. See <a href="docs/build-and-release.html">build and release</a> and the <a href="docs/acceptance-checklist.html">acceptance checklist</a>, currently in Chinese.</p>
+<p>Software, the general-purpose Skill, templates, and general documentation use <strong>AGPL-3.0-only</strong>. The embedded comics and case materials retain their separate <a href="ASSET-TERMS.en.html">asset terms</a>; bluecutt retains all legally held creative rights. See the <a href="LICENSE-SCOPE.en.html">license scope</a>, <a href="LICENSE">full software license</a>, and <a href="docs/licensing.html">asset guidance</a>.</p>
+<p>Windows may display an unsigned-application warning on first launch. Verify the download source and checksums. Testing on a second Windows x64 computer was accepted on 2026-10-02: 10 automatic checks and 15 manual checks. Wider Windows compatibility remains subject to further testing.</p>
+<p>Application binaries remain <code>0.2.0-preview.4</code>; this candidate reorganizes the homepage, illustrated guides, and asset terms. Local release preparation is in progress; the repository and Release attachments have not been published.</p>
+<p><a href="CONTRIBUTING.en.html">Contributing</a> · <a href="CREDITS.html">Credits</a></p>
+<p>Creator: bluecutt. AI collaborator: ChatGPT. The Chinese name is 格织. Pre-existing third-party character rights remain with their rights holders.</p>
+</article></body></html>

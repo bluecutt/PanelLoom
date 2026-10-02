@@ -1,0 +1,66 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>单页漫画创作流程</h1>
+<p><a href="page-workflow.en.html">English</a> | <a href="page-workflow.html">中文</a></p>
+<p>这套流程在 Codex 中逐阶段讨论和绘画，再用本地编辑器组装。图像生成需要当前环境提供相应能力；手动编辑已有素材可独立进行。</p>
+<table>
+<thead>
+<tr>
+<th>阶段</th>
+<th>创作者与 ChatGPT 确定的内容</th>
+<th>保存的产物</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>台词</td>
+<td>页面目的、精确文本、说话人、情绪、阅读顺序、气泡与旁白</td>
+<td>确认文字稿</td>
+</tr>
+<tr>
+<td>画面</td>
+<td>每格机位、站位、表情、手部关系、服饰、背景和文字空间</td>
+<td>画面设计说明</td>
+</tr>
+<tr>
+<td>草稿</td>
+<td>独立生成结构候选，比较框架和表演</td>
+<td>原始草稿、编号总览</td>
+</tr>
+<tr>
+<td>选格</td>
+<td>单独选页面框架与每格内容，指定需要修正的瑕疵</td>
+<td>框架、来源表与裁片</td>
+</tr>
+<tr>
+<td>正式画面</td>
+<td>逐格按选定裁片重绘，保留完整画布和调整余量</td>
+<td>无字无气泡的分镜原图</td>
+</tr>
+<tr>
+<td>带字对象</td>
+<td>一次生成轮廓、尾巴与最终文字，按独立调整意图拆分</td>
+<td>气泡、旁白、拟声词等 PNG 与清单</td>
+</tr>
+<tr>
+<td>装配</td>
+<td>Agent 初始化位置、取景、文字尺度和遮挡，创作者精调</td>
+<td>初始化工程、人工工作工程</td>
+</tr>
+<tr>
+<td>输出</td>
+<td>从完整素材高清渲染，确认最终结果</td>
+<td>PNG、尺寸与来源记录、归档副本</td>
+</tr>
+</tbody></table>
+<h2>把要求写具体</h2>
+<p>修改台词时提供序号、精确替换句和情绪目的。画面描述交代镜头距离与方向、人物左右位置、视线、表情、动作和文字空间。手部交互写清谁的左手或右手、袖口与手腕入口、接触位置和遮挡。</p>
+<p>结构草稿阶段可以继续调整台词和布局。选格时分别指定框架版本与各格候选编号，避免用选定框架覆盖已经喜欢的表演。编号表记录每格的原始来源和裁切范围。</p>
+<h2>保留选中的表演</h2>
+<p>正式重绘用单格裁片控制姿势与表情，完成稿参考控制辨识度和画风。画布可留更大余量，同时保留原镜头距离。狭长分镜需要足够宽的构图，原图保存在多边形外的内容以后仍可重新取景。</p>
+<p>角色辨识度和表演优先，手、服装、场景按项目契约逐步细化。遇到反复出现的手部错误，讨论更明确的动作参考或人工修复方案；保存用户认可的结果。</p>
+<h2>让文字可独立调整</h2>
+<p>先建立文字对象清单：每条已确认文字出现一次，容器、说话人和尾巴对应正确。连接气泡可合成一组；需要独立移动的两组要分别保存。旁白、无框文字和拟声词也能使用对象层。</p>
+<p>普通对话保持统一光学字号，情绪高点通过字重、笔势、节奏和整体倾斜增强。生成真实透明外部和清晰文字，保留气泡白色内部。检查标点、轮廓、尾巴和透明度后交创作者审核。</p>
+<h2>精调与归档</h2>
+<p>加载完整画面及带字对象，初始化取景和遮挡，然后由创作者在画布上微调。后续替换以最新人工工程为准，只改指定素材，保留其他对象位置、裁切、层级和导出设置。</p>
+<p>导出直接读取原始素材。记录实际图像尺寸和质量提示，保存匹配工程。人工修复后的最终图片可以与工程渲染不同，要据实记录。确认后按原格式复制归档并比较 SHA-256。</p>
+<p>新一页沿用上一页的服装、道具、场景和情绪连续性。专项介绍页、彩页和旧稿局部更新按各自已批准的流程处理。</p>
+</article></body></html>

@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>十分钟排版练习</h1>
+<p><a href="quick-start.html">中文</a> | <a href="quick-start.en.html">English</a></p>
+<p>先解压 PanelLoom 应用文件夹和案例练习包，保留各自的完整目录。双击应用内的 <code>ComicEditor.exe</code>，打开案例包的 <code>P10/projects/reference.json</code>。先用“项目 → 另存为”，将工作文件保存到 <code>P10/work/working.json</code>；后续“保存”才写入这份工作副本。这个入口载入当前已确认的完整排版。</p>
+<h2>直接操作画布</h2>
+<ol>
+<li>在左侧“分镜”列表选择一个分镜，切到“图片取景”。在画布内拖动图片，普通滚轮缩放当前图片；分镜框保持不变。</li>
+<li>按住 Ctrl 滚轮缩放整页，中键平移，点击“适合窗口”恢复全页视图。右侧属性区的滚轮只滚动侧栏。</li>
+<li>切到“顶点”或“边线”模式，拖动画布控制点或边线，调整分镜形状。框架之外的原图仍保留，随时可重新取景。</li>
+<li>在“气泡”列表选择 C08，即“五分钟已经到了吧？！”的炸裂气泡。在画布拖动或滚轮缩放，观察文字与画面的关系。</li>
+<li>点击“整页自由”让气泡跨格显示；“点选范围”可以直接点画布上的目标分镜，将超出部分隐藏。</li>
+<li>点击“前后遮挡”，在分镜菜单中选择 A03，再选择“置于该分镜前”或“置于该分镜后”。气泡可以跨格，同时被小格遮挡。工具会反馈需要调整的层级；其他对象之间的顺序保持原样。</li>
+<li>点击“上移一层”“下移一层”，可调整同类对象顺序。每一步都可以撤销。</li>
+<li>保存到工作文件，点击“高清导出 PNG”，选择预设倍率并核对输出尺寸，保存到 <code>P10/output/</code>。</li>
+</ol>
+<p>起始工程和参考工程用作固定对照，打开后先另存工作文件，保留这两份基准。P10 的参考工程保留单线边界与 2× 输出，实际为 2048×3072。P09 参考工程为 2×，实际也为 2048×3072。高倍率从完整素材重新绘制；像素不足时保留质量提示。</p>
+<h2>对照参考</h2>
+<p>以下截图来自初始化练习工程的隔离副本，展示当前原生预览版的实际操作界面。精调后的布局见下方对照和参考工程。</p>
+<p><img src="images/editor-overview.png" alt="初始化练习工程界面"></p>
+<p>选择独立带字气泡后，画布显示可直接拖动的控制框。原素材保持完整。</p>
+<p><img src="images/bubble-selected.png" alt="独立气泡选择"></p>
+<p>同一个气泡可分别设置显示范围与相对分镜遮挡。菜单列出目标分镜，并提供前、后与恢复原行为三种选择。</p>
+<p><img src="images/occlusion-menu.png" alt="前后遮挡菜单"></p>
+<p><code>reference-output/editor-reference.png</code> 与 <code>projects/reference.json</code> 配对，使用创作者已确认的新原生编辑器布局，保留气泡裁切、前后遮挡、框架位置和输出倍率。<code>projects/start.json</code> 保留历史初始化布局，可单独打开比较人工调整前后的变化。<code>historical-final.png</code> 展示当时确认的历史成品。</p>
+<table>
+<thead>
+<tr>
+<th>初始化布局</th>
+<th>精调后的参考布局</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><img src="../P10/reference-output/initial-layout.png" alt="初始化"></td>
+<td><img src="../P10/reference-output/editor-reference.png" alt="精调参考"></td>
+</tr>
+</tbody></table>
+<p>P09 提供空白气泡，可练习对象定位、跨格裁切和遮挡。使用练习素材时仅进行本地非破坏性排版，并保存本地结果。</p>
+<p><a href="product-introduction.html">案例介绍</a> · <a href="../P10/guide/full-workflow.html">P10 全流程</a> · <a href="agent-appendix.html">Agent 操作</a> · <a href="../ASSET-TERMS.html">素材使用说明</a></p>
+</article></body></html>

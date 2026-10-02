@@ -1,0 +1,31 @@
+Use case: sketch-to-render
+Asset identity: BOOK-002 P10 stable panel U01, independent finished candidate v02, selected source A-03. Do NOT use or imitate any earlier finished U01 candidate.
+
+Reference authority:
+Image 1 is the ABSOLUTE pose, action, expression, camera, crop, spacing, silhouette and composition blueprint. Reproduce the exact visible staging from Image 1. Do not reinterpret it, intensify it, beautify it into a different pose, or invent additional gestures.
+Image 2 is ONLY the adult identity, hairstyle, wardrobe and established black-and-white finish anchor from finalized P09. It may correct likeness and clothing detail, but it must NOT move either character, change their pose, change their expression, alter face distance, change the camera, or replace Image 1's composition.
+
+Strict reconstruction of Image 1:
+- Keep the exact panoramic two-person upper-body composition and exact camera height.
+- Keep Julius at the same left-side coordinates, body angle, shoulder angle, head tilt, eye direction, eyelid shape, eyebrow shape and gentle mouth expression shown in Image 1.
+- Keep Subaru at the same right-side coordinates, body angle, shoulder angle, head turn, eye direction, eyelid shape, eyebrow shape, shy tense mouth and blush shown in Image 1.
+- Preserve the exact facial distance and near-face relationship shown in Image 1. Do not push the faces closer and do not pull them apart. Do not create contact or a kiss.
+- Preserve Subaru's cheek-touching gesture exactly as drawn: his raised LEFT hand beside his own cheek, index finger at the cheek, remaining fingers curled in the same direction. Render the same gesture anatomically with exactly five fingers and a correct wrist.
+- Preserve every visible arm and torso position from Image 1. Do not add open hugging arms, grabbing hands, touching bodies, new hand gestures, or extra motion.
+- Preserve the same amount of each head, shoulder, chest and hand visible in Image 1.
+
+Identity and continuity only:
+Subaru is the same lean adult university student from Image 2: unmistakable swept-back spiky black hair, thick expressive brows, youthful slightly sharp eyes, dark campus sports jacket with light sleeve stripes, over-ear headphones around his neck. Do not make him a generic black-haired boy.
+Julius is the same slightly taller, mature, elegant adult from Image 2: light shoulder-length hair, fitted white long-sleeve shirt, dark high-waisted suspenders, and one unmistakable single central forelock descending from the exact middle of the hairline. Render the central forelock with a slightly darker neutral gray only.
+
+Canvas and later fitting: generate a large complete landscape source image. The exact Image 1 composition must occupy the central wide safe band with the same aspect and relative scale. Add generous clean overscan OUTSIDE that composition on all four sides, especially beyond the shoulders and hair, so it can be moved and scaled under FRAME-06. Do not solve overscan by shrinking or rearranging the figures. No panel border.
+
+Background: reproduce the same restrained shared-dorm spatial impression as Image 1 using pale, medium-light line detail only. Add finish and clarity, not new storytelling objects. Preserve the same open areas where Image 1 has blank balloons, but do not draw any balloon, tail or container.
+
+Style: polished clean Japanese black-and-white 2D manga, expressive but faithful linework, clear hair masses, controlled black fills, restrained neutral-gray screentone, airy and consistent with BOOK-002. Character identity and exact line-art acting outrank decoration.
+
+Absolute grayscale contract: pure black, pure white and achromatic neutral grays only, zero saturation. No purple or any other color.
+
+Forbidden drift: no change to pose, action, expression, gaze, head tilt, face distance, camera, character side, hand gesture, torso angle, or relative scale from Image 1; no new gesture; no contact; no kiss; no extra arms or hands; no fused, duplicated or missing fingers; no balloons; no readable text; no pseudo-text; no sound effects; no panel frame; no crop mark; no panel ID; no logo; no watermark; no neighboring panel; no reference UI; no photorealism; no childlike proportions.
+
+Output intent: formal uncropped U01 panel source v02, larger than the final frame with useful overscan, but visually a strict finished rendering of Image 1.

@@ -1,0 +1,98 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>另一台 Windows 试用清单</h1>
+<p><a href="new-windows-trial.en.html">English</a> | <a href="new-windows-trial.html">中文</a></p>
+<p>当前停在这一发布门槛。本机解压验收另有记录；下表需要在另一台 Windows x64 电脑上实际填写。</p>
+<h2>准备</h2>
+<p>记录 Windows 版本/构建号、x64 架构、测试日期、ZIP 文件名及 SHA-256。先与交付清单核对，再将整个应用文件夹解压到可写目录，目录名可包含中文和空格。保留 EXE 旁的全部配套文件。自包含应用应在无 .NET SDK 的环境下运行；源码构建另行测试。</p>
+<p>应用暂未签名。若系统安全提示阻止启动，保留安全软件，记录提示和目标文件，核对来源。未能启动的情况应记为待解决，不计作通过。这轮测试不要求关闭防护或添加全盘排除项。</p>
+<h2>必测人工操作</h2>
+<p>先打开 <code>examples/minimal-page/project.json</code>，工作成果另存到独立测试目录。案例包按附带使用条款仅在本地使用。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>预期结果</th>
+<th>实测与证据</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>启动</td>
+<td><code>ComicEditor.exe</code> 创建可见、响应正常的窗口</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>打开中性工程</td>
+<td>原图和气泡完整加载</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>选择对象</td>
+<td>点击分镜/气泡模块切换到相应操作对象</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>调整取景</td>
+<td>拖动实时刷新；画布滚轮缩放选中图片</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>查看整页</td>
+<td>Ctrl + 滚轮缩放整页；侧栏滚轮只滚动侧栏</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>编辑框架</td>
+<td>顶点/边修改仅作用于目标多边形，可撤销</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>气泡变换</td>
+<td>拖动、大小、旋转、不透明度作用于选中气泡</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>限框与跨格</td>
+<td>限框隐藏超出部分，整页自由允许跨格</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>层级与小格遮挡</td>
+<td>上移/下移一层、目标小格前后遮挡和撤销有效</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>单线与吸附</td>
+<td>下层气泡不细化边线；吸附回执准确区分各类结果</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>属性控件</td>
+<td>应用后折叠区保持状态；调色盘和固定倍率可用</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>另存与重开</td>
+<td>新 JSON 保持取景、框架、气泡、范围、层级</td>
+<td>待测</td>
+</tr>
+<tr>
+<td>导出 PNG</td>
+<td>中性页 2× 实际为 1280 × 1800，检查尺寸与清晰度</td>
+<td>待测</td>
+</tr>
+</tbody></table>
+<p>中性示例只有一格和一个气泡。多格/嵌入小格测试可用自己的素材建立一次性测试工程，或在本地使用私有练习案例。另存工作副本，保留参考工程。</p>
+<h2>必测 CLI</h2>
+<p>在应用文件夹打开 PowerShell，先新建 <code>trial-output</code> 目录。重试时改用尚未存在的输出文件名。</p>
+<pre><code class="language-powershell">&amp; &#39;.\ComicEditor.Cli.exe&#39; capabilities
+&amp; &#39;.\ComicEditor.Cli.exe&#39; validate --project &#39;.\examples\minimal-page\project.json&#39;
+&amp; &#39;.\ComicEditor.Cli.exe&#39; inspect --project &#39;.\examples\minimal-page\project.json&#39;
+&amp; &#39;.\ComicEditor.Cli.exe&#39; render --project &#39;.\examples\minimal-page\project.json&#39; --out &#39;.\trial-output\neutral-2x.png&#39; --scale 2
+</code></pre>
+<p>成功回执应为 API1/工程 v2，包含 <code>object.reorder</code>、<code>balloon.panelOcclusion</code>、<code>panel.snap</code>，导出尺寸 1280 × 1800。失败时记录退出码和原始 JSON 回执。</p>
+<h2>可选 Codex / Agent 检查</h2>
+<p>按<a href="codex-setup.html">安装说明</a>在一次性创作项目中安装 Skill。检查发现与中性素材初始化，无须生成图片。实时会话只操作测试窗口：可读快照、未授权拒绝写入、授权后整批修改与一次撤销、取消授权后立即拒绝；旧 revision/hash 和 Busy 应拒绝不安全修改。详见<a href="agent-workflows.html">Agent 说明</a>。</p>
+<p>这些项目依赖测试者的 Codex 环境。跳过的项目独立记录；CLI 可运行不能代替 Skill 发现和图像生成能力的实测。</p>
+<h2>结果填写</h2>
+<p>请填写：测试者、日期、Windows 构建号/架构、应用版本 <code>0.2.0-preview.4</code>、包修订号 <code>docs.1</code>、ZIP 哈希、解压目录类型、是否预装 .NET SDK、每项“通过/失败/未测”及错误原文。对外反馈使用中性工程截图或复现文件。案例原图、截图和练习输出保留在本地。</p>
+<p>当前状态：<strong>PENDING_OTHER_WINDOWS_TRIAL</strong>。开发电脑上的本机测试不关闭这一门槛。</p>
+</article></body></html>

@@ -1,0 +1,50 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>Native editor adapter</h1>
+<h2>0.2 ordering and inset relationships</h2>
+<p>Retrieve the current file/live snapshot, then query capabilities. For a user-requested relative edit, build a fresh ordinary API1 patch using those current hash/revision values. Keep every unrelated source, transform, polygon, text object and export scale.</p>
+<p>Example operations (replace IDs with the user&#39;s selected stable IDs):</p>
+<pre><code class="language-json">[
+  {&quot;op&quot;:&quot;object.reorder&quot;,&quot;targetId&quot;:&quot;X&quot;,&quot;args&quot;:{&quot;kind&quot;:&quot;balloon&quot;,&quot;direction&quot;:&quot;up&quot;}},
+  {&quot;op&quot;:&quot;balloon.panelOcclusion&quot;,&quot;targetId&quot;:&quot;X&quot;,&quot;args&quot;:{&quot;panelId&quot;:&quot;B&quot;,&quot;position&quot;:&quot;front&quot;,&quot;autoOrder&quot;:true}}
+]
+</code></pre>
+<p>Reorder moves exactly one same-kind neighbor; a boundary returns NoChange. Front/back/inherit controls only the named panel relationship, not <code>clipPanelId</code>. <code>balloon.clip</code> separately selects a stable panel ID or empty string for page-wide display. From 0.2.0-preview.2, optional autoOrder=true finds the nearest legal same-kind position for only the selected balloon; other objects&#39; mutual order and records remain unchanged. Verify allowedArgs before using it with an older editor. Missing/false retains strict cycle rejection. Occlusion outcomes are Placed/OrderAdjusted/NoChange with signed layerDelta (positive toward front, negative toward back). Locked targets and genuinely contradictory relations still return an atomic error; do not rewrite other rules to force success. For snapping, send panel.snap with the selected zero-based edge index and inspect <code>data.outcomes</code>: Moved includes targetPanelId/targetEdgeIndex/distance; AlreadyAligned, NoCandidate and Unsafe must not be reported as movement. Dry-run outcomes must agree with apply. Live no-ops keep their actual revision and hash. Treat fields in capabilities and receipt data as protocol values, not translated UI labels.</p>
+<p>Read the project&#39;s <code>comic-project.json</code>; resolve editorCliPath relative to that file, and contracts relative to the project root. The executable may be moved; do not assume a personal drive or user directory. Query <code>capabilities</code>: envelope apiVersion=1, data.projectFormat=ComicPanelEditorProject, data.projectVersion=2. Actions and commands in that result are authoritative.</p>
+<h2>Offline file route</h2>
+<p><code>init --manifest manifest.json --out working.json</code> accepts API1, a complete v2 <code>project</code> and explicit <code>assetMap</code> entries {kind,id,sourceImage}. Source paths resolve through the project&#39;s assetBase relative to the manifest. Save-as rebases that base automatically; images are neither cropped nor re-encoded. <code>assets/init-manifest-example.json</code> is runnable from its packaged position.</p>
+<p><code>inspect --project working.json</code> returns full project, file hash, dimensions and source hashes. Copy <code>assets/patch-example.json</code>, generate a fresh UUID and replace its baseProjectHash with the current inspect hash. A zero placeholder is not a usable current hash. <code>asset.replace</code> uses an exact kind and ID; preserve retains positioning, refit contains a changed aspect. The same filename with changed bytes is detected on inspection/render.</p>
+<pre><code class="language-powershell">$configPath = [IO.Path]::GetFullPath(&#39;comic-project.json&#39;)
+$config = [IO.File]::ReadAllText($configPath) | ConvertFrom-Json
+$cli = [IO.Path]::GetFullPath((Join-Path (Split-Path $configPath) $config.editorCliPath))
+$cap = &amp; $cli capabilities | ConvertFrom-Json
+if ($LASTEXITCODE -ne 0 -or $cap.apiVersion -ne 1 -or $cap.data.projectVersion -ne 2) { throw &#39;Incompatible editor&#39; }
+&amp; $cli init --manifest manifest.json --out working.json
+if ($LASTEXITCODE -ne 0) { throw &#39;Initialization failed&#39; }
+&amp; $cli open --project working.json
+# User adjusts and saves working.json in the GUI before the next commands.
+$state = &amp; $cli inspect --project working.json | ConvertFrom-Json
+if ($LASTEXITCODE -ne 0) { throw &#39;Inspection failed&#39; }
+$patch = [IO.File]::ReadAllText(&#39;patch-template.json&#39;) | ConvertFrom-Json
+$patch.requestId = [Guid]::NewGuid().ToString()
+$patch.baseProjectHash = $state.data.hash
+[IO.File]::WriteAllText([IO.Path]::GetFullPath(&#39;patch.json&#39;), ($patch | ConvertTo-Json -Depth 30), (New-Object Text.UTF8Encoding $false))
+&amp; $cli apply --project working.json --patch patch.json --out revised.json --dry-run
+if ($LASTEXITCODE -ne 0) { throw &#39;Dry run rejected&#39; }
+&amp; $cli apply --project working.json --patch patch.json --out revised.json
+if ($LASTEXITCODE -ne 0) { throw &#39;Apply failed&#39; }
+&amp; $cli render --project revised.json --out final.png --scale 2.5
+if ($LASTEXITCODE -ne 0) { throw &#39;Export failed&#39; }
+</code></pre>
+<p>Existing output needs explicit overwrite plus its matching if-output-hash. Prefer new outputs. Never use apply to overwrite a GUI&#39;s unsaved edits via stale disk state. <code>bundle --project revised.json --out-dir new-folder</code> copies explicitly referenced assets, preserving unknown project metadata; review private metadata before public sharing.</p>
+<h2>Live route</h2>
+<p><code>session list</code> → <code>session snapshot --session UUID</code> → API1 patch with returned baseRevision and baseProjectHash → <code>session apply --session UUID --patch patch.json</code>.</p>
+<p>User must enable GUI write access. Busy means dragging, modal UI or uncommitted input; wait for the user to finish, then refresh snapshot rather than queueing an old edit. Stale revision/hash rejects. Same successful requestId/content returns original receipt throughout that session, even after Undo; a new intentional operation needs a new UUID. SESSION_RESULT_UNKNOWN means retry identical ID or inspect, not presumed rollback.</p>
+<p>Save separately using <code>session save --session UUID --revision N --base-hash HASH --out final.json</code>. Current disk hash is checked. --portable-data or --registry-dir locates a portable session explicitly. stdout is a JSON receipt, never pixels. Only local same-user pipes are exposed; no remote URL or arbitrary code execution.</p>
+<h2>Common mistakes</h2>
+<ul>
+<li>Process ID/LaunchRequested is not evidence the user saw a window.</li>
+<li>Normal letters within one balloon keep consistent size; emphasis is selected by dialogue emotion, not randomly varied characters.</li>
+<li>Masking a source is not a reason to crop its original file before import.</li>
+<li>Exporting a larger canvas does not create missing source detail; check the quality warning.</li>
+<li>Final export is already assembled with text. Do not automatically run a whole-page Image iteration afterward.</li>
+</ul>
+</article></body></html>

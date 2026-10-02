@@ -1,0 +1,10 @@
+Use case: illustration-story.
+Asset type: BOOK-002 P10 U01 complete manga balloon-and-lettering object for later manual editor assembly; transparent PNG cutout.
+Input image: Image 1 is ONLY the v0.6 structural reference for this balloon's single vertical oval shape, gentle hand-drawn asymmetry, line weight, white breathing room, and short pointed tail direction toward the right. Ignore and remove every character fragment, dorm background, panel line, and source pixel.
+Primary request: Create one isolated medium vertical ordinary Japanese manga speech balloon, closely preserving the v0.6 proportions and calm rounded silhouette, with one short pointed tail extending to the right toward adult Julius.
+Exact text, verbatim Simplified Chinese and punctuation: “谢谢你，昴。”
+Typography: professional natural hand-lettered Chinese manga lettering. Vertical Chinese text, top-to-bottom; use one balanced vertical column if legible, otherwise two balanced columns read right-to-left. Small-to-medium but clearly readable after page assembly, elegant, soft, restrained, stable, and sincere. Consistent optical character size; no random character enlargement. Comfortable inner margins; no glyph touches the outline.
+Style: clean natural pure-black manga ink outline with subtle hand-drawn breathing; solid opaque pure-white balloon interior; crisp black lettering. Not a mechanically perfect vector ellipse.
+Transparency: the entire area outside the balloon outline and tail must be genuinely transparent RGBA. Keep generous transparent safety margin around all sides.
+Absolute accuracy: render the contracted string exactly once as 谢谢你，昴。 Preserve both 谢 characters, the comma after 你, the character 昴, and the final full stop. No omissions, substitutions, paraphrases, duplicates, pseudo-Chinese, garbled glyphs, Japanese, English, numbers, sound effects, panel border, background, characters, screentone, shadow, logo, watermark, signature, UI, or checkerboard pattern.
+Output intent: exactly one standalone complete B02 balloon-plus-text asset, portrait canvas, ready to import as one Complete object into the manual manga editor.

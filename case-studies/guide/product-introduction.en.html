@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>PanelLoom</h1>
+<p><a href="product-introduction.html">中文</a> | <a href="product-introduction.en.html">English</a></p>
+<p>Comic Creation Workflow &amp; Manual Page Assembler.</p>
+<table>
+<thead>
+<tr>
+<th>Page example 1</th>
+<th>Page example 2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../P09/reference-output/historical-final.png"><img src="../P09/reference-output/historical-final.png" alt="Page example 1"></a></td>
+<td><a href="../P10/reference-output/editor-reference.png"><img src="../P10/reference-output/editor-reference.png" alt="Page example 2"></a></td>
+</tr>
+</tbody></table>
+<p>PanelLoom helps creators collaborate with Codex to make a comic page. Discuss dialogue and shots, explore the page through layout drafts, select a framework and individual performances, then redraw each panel and generate independent lettered objects. Use the local editor to frame the artwork, arrange the page, and export at high resolution.</p>
+<p>The creator decides the story, selects candidates, and approves the final result. ChatGPT organizes the agreed requirements, assists with asset generation, initializes the project, and checks its resources. The two examples above show results from this process; the second uses the creator&#39;s currently approved layout in the native editor.</p>
+<h2>Compose → Separate → Assemble</h2>
+<p>Start with a full-page layout draft to establish reading order, camera angles, and space for text. Separate the selected panels into individual redraw tasks, and generate the final speech bubbles and lettering as independent assets. Assemble those complete assets into a page in the local editor.</p>
+<p>Each retry affects one asset. A hand or expression can be corrected by redrawing that panel; dialogue or typography can be revised by replacing its lettered object. Accepted artwork stays available, and an unsuccessful asset can be replaced on its own.</p>
+<p>During this comic&#39;s production, repeated whole-page image edits for lettering and small corrections introduced blur, noise, and changes in unrelated areas. Separating artwork and lettering reduced the need to regenerate the full page. Local composition also preserves the usable detail in the source images through export. Independent candidates, replaceable assets, and undoable layout changes make iteration more forgiving. Final quality comes from selection, panel-by-panel refinement, manual repairs where needed, and the creator&#39;s review.</p>
+<h2>From dialogue to a finished page</h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Decisions</th>
+<th>Saved output</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Dialogue</td>
+<td>Exact wording, speaker, emotion, and text container</td>
+<td>Approved dialogue design</td>
+</tr>
+<tr>
+<td>Visual design</td>
+<td>Camera, placement, expression, action, and negative space</td>
+<td>Shot and panel guide</td>
+</tr>
+<tr>
+<td>Draft exploration</td>
+<td>Page proportions, reading order, and acting candidates</td>
+<td>Independent layout drafts</td>
+</tr>
+<tr>
+<td>Numbered selection</td>
+<td>Framework source and content source for each panel</td>
+<td>Framework and panel source map</td>
+</tr>
+<tr>
+<td>Finished artwork</td>
+<td>Redraw from selected crops, with room for reframing</td>
+<td>Complete panel images</td>
+</tr>
+<tr>
+<td>Lettered objects</td>
+<td>Bubble contour, tail, and final text in one asset</td>
+<td>Independently movable text objects</td>
+</tr>
+<tr>
+<td>Local assembly</td>
+<td>Agent initialization, followed by creator adjustments</td>
+<td>Working project and high-resolution export</td>
+</tr>
+</tbody></table>
+<p>The <a href="../P10/guide/full-workflow.en.html">full P10 workflow</a> documents these stages through real conversations in translation and their outputs, with Chinese originals retained for comparison. The <a href="../P10/guide/storyboard-design.en.html">panel design chapter</a> shows numbered candidates, separate framework and content selection, and six draft-to-finished comparisons. The <a href="../P10/guide/lettering-styles.en.html">lettering chapter</a> explains how prompts describe bubble shapes, tails, and typography. Each chapter links to its Chinese counterpart.</p>
+<h2>Make the final adjustments on the canvas</h2>
+<p>Each panel is an independent polygon mask over a complete source image. Drag the image to reframe it, or adjust vertices and edges to change the panel shape. Bubbles can be clipped to one panel or displayed across panels. Their front/back relationship to an inset panel is a separate setting.</p>
+<p>On the canvas, the mouse wheel scales the selected image or bubble. Ctrl + wheel zooms the whole page. In the property sidebar, the wheel scrolls the controls. Source artwork, text objects, and project parameters are stored separately; final export renders from the complete assets.</p>
+<h2>Try the editor</h2>
+<p>The practice pack contains complete panels, text objects, an initial project, an approved reference project, and reference exports. Follow the <a href="quick-start.en.html">quick-start exercise</a>, beginning with P10 to practice framing, bubble placement, clipping, and occlusion. P09 provides a more complex main-panel/inset arrangement.</p>
+<p>P10 includes 6 panels and 10 lettered objects. P09 includes 9 panels and 13 historical blank bubbles; its original finished page went through whole-page lettering and manual repairs. Native-editor reference exports and historical final pages are kept separately.</p>
+<p>The artwork retains its original Chinese lettering. English instructions explain the workflow and controls without changing the images. The application interface remains in Chinese; the quick start pairs each relevant control with an English meaning.</p>
+<p>Creator: bluecutt. AI collaborator: ChatGPT. See the <a href="../ASSET-TERMS.en.html">case asset terms</a>.</p>
+</article></body></html>

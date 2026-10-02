@@ -1,0 +1,1 @@
+{"apiVersion":1,"requestId":"00000000-0000-4000-8000-000000000001","baseProjectHash":"0000000000000000000000000000000000000000000000000000000000000000","operations":[{"op":"asset.replace","targetId":"B01","args":{"kind":"balloon","sourceImage":"balloon-revised.png","fitPolicy":"preserve"}}]}

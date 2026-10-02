@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1104 1676" width="1104" height="1676">
+  <rect width="1104" height="1676" fill="white"/>
+  <g fill="#263342" font-family="Microsoft YaHei, sans-serif">
+    <text x="44" y="48" font-size="32" font-weight="700">P10 页面布局</text>
+    <text x="44" y="82" font-size="19">编号对应当前工程；小格位置保留人工精调结果。</text>
+  </g>
+  <g transform="translate(40 108)" stroke="#364452" stroke-width="4" fill="#f7f9fb" stroke-linejoin="round">
+    <polygon id="U01" points="3.6198863983154297,2.206437349319458 1018.41259765625,2.206437349319458 1018.41259765625,283.75469970703125 3.6198863983154297,283.75469970703125"/>
+    <polygon id="U02" points="4,283.75469970703125 1018.568115234375,283.75469970703125 1020,752.6184692382812 4,752.6184692382812"/>
+    <polygon id="A02" points="4,752.6184692382812 507,752.6184692382812 507,1206 4,1206"/>
+    <polygon id="A01" points="507,751 1020,751 1020,1206 507,1206"/>
+    <polygon id="U03" points="4,1206 1020,1206 1020,1531 4,1531"/>
+    <polygon id="A03" fill="#eaf0f5" points="740.3045654296875,1170.0909423828125 1017.3748168945312,1170.0909423828125 1017.3748168945312,1347.81005859375 740.3045654296875,1347.81005859375"/>
+    <g stroke="none" fill="#263342" font-family="Microsoft YaHei, sans-serif" text-anchor="middle">
+      <text x="510" y="122" font-size="30" font-weight="700">U01 · 开场近景</text>
+      <text x="510" y="166" font-size="22">近距离互动、许可对白</text>
+      <text x="511" y="492" font-size="30" font-weight="700">U02 · 拥抱主格</text>
+      <text x="511" y="536" font-size="22">环腰、摸头、侧上方俯拍</text>
+      <text x="255" y="956" font-size="29" font-weight="700">A02 · 伸手邀请</text>
+      <text x="255" y="998" font-size="21">低机位仰拍、明亮回忆</text>
+      <text x="763" y="956" font-size="29" font-weight="700">A01 · 墙角回忆</text>
+      <text x="763" y="998" font-size="21">正面俯拍、暗色氛围</text>
+      <text x="367" y="1376" font-size="30" font-weight="700">U03 · Q 版收束</text>
+      <text x="367" y="1420" font-size="22">拥抱延续、喜剧反应</text>
+      <text x="879" y="1238" font-size="25" font-weight="700">A03</text>
+      <text x="879" y="1282" font-size="22">侧脸特写</text>
+    </g>
+  </g>
+</svg>

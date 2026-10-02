@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>PanelLoom Case Practice Pack</h1>
+<p><a href="README.html">中文</a> | <a href="README.en.html">English</a></p>
+<p>Comic Creation Workflow &amp; Manual Page Assembler.</p>
+<p><a href="guide/product-introduction.en.html">Introduction and page examples</a> · <a href="guide/quick-start.en.html">Quick start</a> · <a href="ASSET-TERMS.en.html">Asset terms</a></p>
+<p>Release-preparation candidate v09 is approved for everyone to download, with official public display of the currently reviewed teaching images. bluecutt retains the rights legally held in the comics and images. Local practice and GitHub&#39;s permitted platform uses follow the asset terms.</p>
+<p>The application and full practice pack will be provided through the PanelLoom repository&#39;s Releases. Illustrated tutorials can also be read directly in the repository.</p>
+<p>English entry pages retain the creator&#39;s approved P10 native-editor layout: clipping, front/back occlusion, independent panel shapes, and its 2× export setting. The historical initial layout is kept separately.</p>
+<p>The pack contains complete original panels, text objects, draft references, editable projects, and native-editor reference exports. Layout practice with existing assets uses the Windows x64 portable editor and requires no SDK, image model, or author account. Projects use <code>ComicPanelEditorProject</code> version 2 and a native editor supporting API1.</p>
+<p>Read the <a href="ASSET-TERMS.en.html">asset terms</a>, then open <code>P10/projects/reference.json</code> and save a working copy under <code>P10/work/</code> before adjusting the page.</p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Panels</th>
+<th>Bubble/text objects</th>
+<th>Historical final page</th>
+<th>Native-editor reference</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>P10</td>
+<td>6</td>
+<td>10 lettered objects</td>
+<td>2560×3840</td>
+<td>2048×3072, single-line borders</td>
+</tr>
+<tr>
+<td>P09</td>
+<td>9</td>
+<td>13 blank bubbles</td>
+<td>1024×1536</td>
+<td>2048×3072, single-line borders</td>
+</tr>
+</tbody></table>
+<p><code>projects/reference.json</code> is the approved demonstration layout. <code>projects/start.json</code> preserves the historical initialization for comparison. Keep both as fixed baselines and save work separately. Complete images remain in <code>assets/</code>; polygon masks control what appears on the page without discarding content outside the frame.</p>
+<p><code>reference-output/historical-final.png</code> is a byte-identical copy of the original finished page. <code>editor-reference.png</code> is rendered from the native reference project. Historical manual layout and image repairs may not all be represented in the saved project, so both outputs are retained. Source-resolution notes are saved in <code>quality.json</code>.</p>
+<p>The P10 chapters are available in English with Chinese counterparts: <a href="P10/guide/full-workflow.en.html">full workflow</a>, <a href="P10/guide/storyboard-design.en.html">numbered selection and redraw comparisons</a>, <a href="P10/guide/lettering-styles.en.html">lettered-object prompts and styles</a>, <a href="P10/guide/text-objects.en.html">object list</a>, <a href="P10/guide/prompt-notes.en.html">prompt appendix</a>, and <a href="guide/agent-appendix.en.html">Agent operations</a>. Historical conversations include their Chinese originals and English translations, with model-call text and archived prompts labeled separately. Artwork and lettering retain their original form. P09&#39;s advanced chapter remains in Chinese.</p>
+<p>Creator: bluecutt. AI collaborator: ChatGPT. Illustrated tutorials and teaching images are included in the GitHub repository; the full practice ZIP is provided through its Releases. The creator has approved the platform content permissions described in the asset terms. The pack has not been published.</p>
+</article></body></html>

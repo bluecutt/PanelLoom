@@ -1,0 +1,14 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema","title":"ComicPanelEditorProject v2",
+ "type":"object","required":["format","version"],"additionalProperties":true,
+ "properties":{
+  "format":{"const":"ComicPanelEditorProject"},"version":{"const":2},"assetBase":{"type":"string"},
+  "canvas":{"type":"object","properties":{"width":{"type":"integer","minimum":1},"height":{"type":"integer","minimum":1},"exportScale":{"type":"number","exclusiveMinimum":0}}},
+  "objectOrder":{"type":"object","additionalProperties":false,"properties":{"panels":{"type":"array","uniqueItems":true,"items":{"type":"string","minLength":1}},"balloons":{"type":"array","uniqueItems":true,"items":{"type":"string","minLength":1}}}},
+  "panels":{"type":"array","items":{"$ref":"#/$defs/panel"}},"balloons":{"type":"array","items":{"$ref":"#/$defs/balloon"}}
+ },
+ "$defs":{
+  "panel":{"type":"object","required":["id","sourceImage","polygon"],"additionalProperties":true,"properties":{"id":{"type":"string","minLength":1},"sourceImage":{"type":"string","minLength":1},"polygon":{"type":"array","minItems":3,"items":{"type":"array","minItems":2,"maxItems":2,"items":{"type":"number"}}}}},
+  "balloon":{"type":"object","required":["id","sourceImage"],"additionalProperties":true,"properties":{"id":{"type":"string","minLength":1},"sourceImage":{"type":"string","minLength":1},"clipPanelId":{"type":"string"},"panelOcclusion":{"type":"object","additionalProperties":{"enum":["front","back"]}},"transform":{"type":"object"}}}
+ }
+}

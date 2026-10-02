@@ -1,0 +1,31 @@
+Use case: sketch-to-render
+Asset identity: BOOK-002 P10 stable panel U02, independent finished candidate v02, selected source B-04. Do NOT use or imitate any earlier finished U02 or U01 candidate.
+
+Reference authority:
+Image 1 is the ABSOLUTE pose, action, expression, camera, crop, spacing, silhouette, overlap and composition blueprint. Reproduce the exact visible scene from Image 1. This is a strict clean finished rendering of the sketch, not a reinterpretation.
+Image 2 is ONLY the adult identity, hairstyle, wardrobe and established black-and-white finish anchor from finalized P09. It may correct likeness and clothing detail, but it must NOT change Image 1's pose, facial acting, arm paths, head placement, camera angle, character coordinates or crop logic.
+
+Strict reconstruction of Image 1:
+- Preserve the exact wide upper-body composition, same elevated side/top viewpoint, same downward camera angle and same visual scale.
+- Keep Julius at the exact left-side position from Image 1, with the same bent upper-body silhouette, same head placement against Subaru, same closed-eye face angle, same gentle relaxed mouth, same visible amount of half-profile, and the same hair direction.
+- Keep Subaru at the exact right-side position from Image 1, with the same upright torso, head angle, eye direction, eyebrow shape, shy-soft expression, blush, and the same visible amount of face and shoulders.
+- Preserve Subaru's head-stroking hand exactly where Image 1 places it, approaching the same part of Julius's head with the same palm orientation and finger direction. Render exactly five anatomically correct fingers and a clear wrist without changing the gesture.
+- Preserve every visible Julius arm, forearm, hand, elbow, sleeve and occlusion exactly as mapped in Image 1. Keep the same embrace path around Subaru. Do not rotate the embrace toward the camera, widen it, move it lower or higher, expose hidden limbs, or invent a second visible hand where the sketch hides it.
+- Preserve the exact body contact points and emotional distance shown in Image 1. Do not turn the scene into a frontal hug, a waist-level full-body hug, a bed pose, a kneel, a crouch, a lift, a struggle or a more dramatic embrace.
+- Preserve the same blank regions and relative figure scale from Image 1.
+
+Identity and continuity only:
+Subaru is the same lean adult university student from Image 2: swept-back spiky black hair, thick expressive brows, youthful slightly sharp eyes, dark campus sports jacket with light sleeve stripes, over-ear headphones around his neck. Do not make him a generic black-haired character.
+Julius is the same slightly taller, mature, elegant adult from Image 2: light shoulder-length hair, fitted white long-sleeve shirt, dark high-waisted suspenders, and one unmistakable single central forelock from the exact middle of the hairline. Show that forelock through clean outline and a slightly darker neutral gray only.
+
+Canvas and later fitting: generate a large complete landscape source image. The exact Image 1 composition must occupy the central wide safe band with unchanged relative scale and geometry. Add generous clean overscan OUTSIDE the original composition on all four sides for later movement and masking under FRAME-06. Do not create overscan by shrinking, zooming out, changing the camera, separating the characters or revealing legs. Keep it upper-body only.
+
+Background: finish the same restrained shared-dorm impression and pale emotional texture suggested by Image 1. Use clean, medium-light background information and soft neutral-gray tone, but do not introduce foreground furniture or new objects that alter the silhouette. Preserve the same open spaces where Image 1 contains blank balloons, but draw no balloons, tails or containers.
+
+Style: polished clean Japanese black-and-white 2D manga, expressive but faithful linework, clear large hair masses, controlled solid black, restrained neutral-gray screentone, airy and consistent with BOOK-002. Exact line-art acting, facial expression and anatomy outrank decoration.
+
+Absolute grayscale contract: pure black, pure white and achromatic neutral grays only, zero saturation. No purple or any other color.
+
+Forbidden drift: no change to camera angle, pose, action, facial expression, gaze, head placement, arm route, hand placement, character side, torso angle, overlap, body contact, or relative scale from Image 1; no frontal redesign; no kneeling; no crouching; no legs; no bed pose; no additional gesture; no extra arms or hands; no fused, duplicated or missing fingers; no hand emerging from torso; no balloons; no readable text; no pseudo-text; no sound effects; no panel border; no crop mark; no panel ID; no logo; no watermark; no neighboring panel; no reference UI; no photorealism; no erotic emphasis; no childlike proportions.
+
+Output intent: formal uncropped U02 panel source v02, larger than the final frame with useful overscan, but visually a strict finished rendering of Image 1.

@@ -1,0 +1,5 @@
+{
+ "$schema":"https://json-schema.org/draft/2020-12/schema","title":"Comic Editor Patch API v1","type":"object","additionalProperties":false,
+ "required":["apiVersion","requestId","baseProjectHash","operations"],
+ "properties":{"apiVersion":{"const":1},"requestId":{"type":"string","minLength":1},"baseProjectHash":{"type":"string","pattern":"^[A-Fa-f0-9]{64}$"},"baseRevision":{"type":"integer","minimum":0},"operations":{"type":"array","maxItems":1000,"items":{"type":"object","additionalProperties":false,"required":["op","args"],"properties":{"op":{"type":"string"},"targetId":{"type":["string","null"]},"args":{"type":"object"}}}}}
+}

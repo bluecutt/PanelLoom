@@ -1,0 +1,29 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>Agent 操作附录</h1>
+<p><a href="agent-appendix.en.html">English</a> | <a href="agent-appendix.html">中文</a></p>
+<p>PanelLoom 为 Agent 保留离线 CLI、工程 JSON 和本机实时会话入口。以下操作使用正式应用里的 <code>ComicEditor.Cli.exe</code>。先查询 capabilities，按当前返回的协议填写请求。</p>
+<pre><code class="language-powershell">$cli = &#39;D:\PanelLoom\ComicEditor.Cli.exe&#39;
+$caseRoot = &#39;D:\PanelLoom-cases&#39;
+&amp; $cli capabilities
+&amp; $cli inspect --project &quot;$caseRoot\P10\projects\start.json&quot;
+&amp; $cli validate --project &quot;$caseRoot\P10\projects\start.json&quot;
+</code></pre>
+<p>以上是可替换的读者路径。检查实际素材尺寸、对象数量和范围，再建立独立工作工程。</p>
+<h2>从已确认的布局初始化</h2>
+<p>init 的 manifest 含 apiVersion、完整 project 和 assetMap。每个对象使用 kind、id、sourceImage；只引用用户明确批准的素材。原图保持完整，分镜多边形负责取景。相对路径从 manifest 的 assetBase 解析。</p>
+<pre><code class="language-powershell">&amp; $cli init --manifest manifest.json --out working.json
+&amp; $cli inspect --project working.json
+&amp; $cli validate --project working.json
+&amp; $cli render --project working.json --out practice.png --scale 2.5
+</code></pre>
+<p>编辑器应用中附带 schemas 和中性示例。用自己的创作素材建立 manifest 时，先按照这些文件检查结构。</p>
+<h2>修改、干跑与回执</h2>
+<p>inspect 返回当前工程 hash。patch 使用 apiVersion 1、全新的 UUID requestId、当前 baseProjectHash 和注册动作。先执行 dry-run，再输出到新工程。</p>
+<pre><code class="language-powershell">&amp; $cli apply --project working.json --patch patch.json --out working-next.json --dry-run
+&amp; $cli apply --project working.json --patch patch.json --out working-next.json
+</code></pre>
+<p>气泡范围由 balloon.clip 管理；相对小格遮挡由 balloon.panelOcclusion 管理。需要自动将当前气泡放到最近合法层级时，明确传入 autoOrder:true。先检查 capabilities 是否支持此参数。读回 data.outcomes，确认实际调整与警告。</p>
+<h2>正在打开的人工工程</h2>
+<p>依次执行 session list、session snapshot，在当前未保存状态上构建请求。GUI 中的“允许 Agent 修改本次会话”由用户开启；默认只读。Agent 使用最新 revision/hash，先检查干跑结果，再整批修改。遇到 Busy 或结果未知时重新读取状态，保持相同请求的幂等重试。</p>
+<p>保存是独立操作，人工布局确认前保留工作副本。所有图像通过本地路径传递，CLI 返回 JSON 回执。</p>
+<p>本练习包中的 case 图像仅允许本地非破坏性排版。新的绘画、AI 重绘与公开输出使用创作者自己的素材。<a href="../ASSET-TERMS.html">使用说明</a>。</p>
+</article></body></html>

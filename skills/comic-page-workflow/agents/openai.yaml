@@ -1,0 +1,6 @@
+interface:
+  display_name: "单页漫画创作工作流"
+  short_description: "协作设计台词与分镜，逐格重绘、生成独立带字对象并使用原生编辑器组装"
+  default_prompt: "请使用 $comic-page-workflow，读取当前项目契约并从已确认阶段继续制作这一页漫画。"
+policy:
+  allow_implicit_invocation: true

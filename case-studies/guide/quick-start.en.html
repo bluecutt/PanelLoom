@@ -1,0 +1,105 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>A ten-minute layout exercise</h1>
+<p><a href="quick-start.html">中文</a> | <a href="quick-start.en.html">English</a></p>
+<p>Extract the PanelLoom application folder and the case practice pack, keeping both folder structures intact. Double-click <code>ComicEditor.exe</code>, click <strong>打开工程</strong> (Open project), and choose <code>P10/projects/reference.json</code> from the practice pack. Use <strong>项目 → 另存为</strong> (Project → Save As) to create <code>P10/work/working.json</code> before making adjustments. Subsequent <strong>保存</strong> (Save) operations write to that working copy. This opens the creator&#39;s currently approved layout.</p>
+<h2>Work directly on the canvas</h2>
+<ol>
+<li>Select a panel from <strong>分镜</strong> (Panels) on the left and switch to <strong>图片取景</strong> (Image framing). Drag its image on the canvas. Use the mouse wheel to scale that image while keeping the panel frame in place.</li>
+<li>Hold Ctrl and use the wheel to zoom the whole page. Use the middle mouse button to pan, and <strong>适合窗口</strong> (Fit to window) to restore the full-page view. The wheel in the right property sidebar only scrolls that sidebar.</li>
+<li>Switch to <strong>顶点</strong> (Vertices) or <strong>边线</strong> (Edges). Drag a control point or edge to adjust the panel shape. Source content outside the mask remains available for later reframing.</li>
+<li>In <strong>气泡</strong> (Bubbles), select C08, the explosive bubble reading <code>五分钟已经到了吧？！</code> (roughly, “The five minutes are already up, aren&#39;t they?!”). Drag or scale it on the canvas and watch its relationship to the artwork.</li>
+<li>Click <strong>整页自由</strong> (Allow across the page) to let the bubble cross panel boundaries. With <strong>点选范围</strong> (Pick clipping panel), click the target panel on the canvas to hide the part of the bubble outside that panel.</li>
+<li>Click <strong>前后遮挡</strong> (Front/back occlusion). Choose A03 in the panel menu, then <strong>置于该分镜前</strong> (In front of this panel) or <strong>置于该分镜后</strong> (Behind this panel). A cross-panel bubble can still be covered by an inset. The editor reports any layer adjustment needed for that relationship while preserving the relative order of other objects.</li>
+<li>Use <strong>上移一层</strong> (Move up one layer) or <strong>下移一层</strong> (Move down one layer) to change the order within the same object type. Each operation can be undone.</li>
+<li>Save your working file. Click <strong>高清导出 PNG</strong> (High-resolution PNG export), choose a preset multiplier, check the displayed output dimensions, and save into <code>P10/output/</code>.</li>
+</ol>
+<p>Keep the initial and reference projects as fixed comparison points. Save edits in a separate working file. The P10 reference uses single-line borders and a 2× export, producing 2048×3072 pixels. The P09 reference also produces 2048×3072 at 2×. Higher multipliers render from complete assets; retain any source-resolution warnings.</p>
+<h2>Control names at a glance</h2>
+<p>The interface remains in Chinese. These labels match the controls shown in the screenshots:</p>
+<table>
+<thead>
+<tr>
+<th>Visible label</th>
+<th>English meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>打开工程 / 保存</td>
+<td>Open project / Save</td>
+</tr>
+<tr>
+<td>项目 → 另存为</td>
+<td>Project → Save As</td>
+</tr>
+<tr>
+<td>撤销 / 重做</td>
+<td>Undo / Redo</td>
+</tr>
+<tr>
+<td>分镜 / 气泡</td>
+<td>Panels / Bubbles</td>
+</tr>
+<tr>
+<td>图片取景</td>
+<td>Image framing</td>
+</tr>
+<tr>
+<td>顶点 / 边线</td>
+<td>Vertices / Edges</td>
+</tr>
+<tr>
+<td>适合窗口</td>
+<td>Fit to window</td>
+</tr>
+<tr>
+<td>点选范围</td>
+<td>Pick clipping panel</td>
+</tr>
+<tr>
+<td>整页自由</td>
+<td>Allow across the page</td>
+</tr>
+<tr>
+<td>前后遮挡</td>
+<td>Front/back occlusion relative to a panel</td>
+</tr>
+<tr>
+<td>置于该分镜前 / 置于该分镜后</td>
+<td>In front of / Behind this panel</td>
+</tr>
+<tr>
+<td>上移一层 / 下移一层</td>
+<td>Move up / down one layer</td>
+</tr>
+<tr>
+<td>高清导出 PNG</td>
+<td>High-resolution PNG export</td>
+</tr>
+<tr>
+<td>允许 Agent 修改本次会话</td>
+<td>Allow Agent to modify this session</td>
+</tr>
+</tbody></table>
+<p>Clipping and occlusion answer different questions: clipping controls where the bubble can appear; occlusion controls which overlapping panel covers it. Set both as needed. The Agent permission checkbox authorizes supported writes to the current editor session; ordinary manual adjustments do not require it.</p>
+<h2>Compare the results</h2>
+<p>The following screenshots were captured from an isolated initial practice project. They show the native preview&#39;s actual controls. The approved adjusted layout is shown further below.</p>
+<p><img src="images/editor-overview.png" alt="Initial practice project interface"></p>
+<p>Selecting an independent lettered bubble displays a control box that can be manipulated directly. The original asset remains intact.</p>
+<p><img src="images/bubble-selected.png" alt="Selected independent bubble"></p>
+<p>Display range and panel occlusion are separate controls. The menu lists target panels and offers front, back, and restore-default choices.</p>
+<p><img src="images/occlusion-menu.png" alt="Panel occlusion menu"></p>
+<p><code>reference-output/editor-reference.png</code> is paired with <code>projects/reference.json</code>. It preserves the creator&#39;s approved framing, clipping, occlusion, panel positions, and export scale. <code>projects/start.json</code> preserves the historical initialization, so it can be opened separately to compare the Agent&#39;s initial placement with manual adjustments. <code>historical-final.png</code> preserves the original approved finished page.</p>
+<table>
+<thead>
+<tr>
+<th>Initial layout</th>
+<th>Adjusted reference layout</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../P10/reference-output/initial-layout.png"><img src="../P10/reference-output/initial-layout.png" alt="Initial layout"></a></td>
+<td><a href="../P10/reference-output/editor-reference.png"><img src="../P10/reference-output/editor-reference.png" alt="Adjusted reference"></a></td>
+</tr>
+</tbody></table>
+<p>P09 includes blank bubble assets for practice with positioning, cross-panel clipping, and occlusion. Use the case assets for local, non-destructive layout exercises and save results locally, under the <a href="../ASSET-TERMS.en.html">asset terms</a>.</p>
+<p><a href="product-introduction.en.html">Introduction</a> · <a href="../P10/guide/full-workflow.en.html">Full P10 workflow</a> · <a href="agent-appendix.en.html">Agent reference</a> · <a href="../ASSET-TERMS.en.html">Asset terms</a></p>
+</article></body></html>

@@ -1,0 +1,13 @@
+Use case: illustration-story.
+Asset type: BOOK-002 P10 U01 complete manga balloon-and-lettering object for later manual editor assembly; transparent PNG cutout.
+Input image: Image 1 is ONLY the v0.6 structural style reference for the rounded diagonal connected rhythm, soft asymmetry, natural black ink outline, and breathing room. Ignore and remove every character fragment, dorm background, panel line, and source pixels. The formal contract corrects two structural errors in the reference: this is spoken dialogue, not inner thought, and it must have exactly three connected speech-balloon lobes rather than two.
+Primary request: Create one isolated complete Japanese manga speech-balloon group containing exactly three softly connected rounded lobes arranged diagonally from upper-right to lower-left, with one shared short pointed speech tail extending toward the lower-left/left to indicate adult Subaru. No round thought-tail beads.
+Exact text, verbatim Simplified Chinese and punctuation, one sentence per lobe in this reading order:
+1. upper-right lobe: “也不是.....不行吧.....” — use exactly five ordinary period dots in each pause.
+2. middle lobe: “但只准五分钟。”
+3. lower-left lobe: “你可别想占我便宜。”
+Typography: professional lively hand-lettered Chinese manga lettering. Vertical Chinese columns, characters top-to-bottom; the three lobes read upper-right to middle to lower-left. Keep a consistent optical character size and stroke system throughout the connected group; do not randomly enlarge individual characters. First sentence is slightly tighter and lighter to show shy hesitation; second is clear and serious; third is only slightly heavier and firmer, defiant but not a shout and not rejection. Large enough to read after page assembly, balanced inner margins, no glyph touches the outline.
+Style: clean natural pure-black manga ink outline with subtle hand-drawn breathing; solid opaque pure-white balloon interior; crisp black lettering. Not a mechanically perfect vector ellipse.
+Transparency: the entire area outside the complete balloon silhouette and tail must be genuinely transparent RGBA. Keep generous transparent safety margin around all sides.
+Absolute accuracy: render each contracted string exactly once. Preserve every Chinese character and punctuation mark. No omissions, substitutions, paraphrases, duplicates, pseudo-Chinese, garbled glyphs, Japanese, English, numbers, sound effects, panel border, background, characters, screentone, shadow, logo, watermark, signature, UI, or checkerboard pattern.
+Output intent: exactly one standalone complete B01 balloon-plus-text asset, tall/near-square canvas, ready to import as one Complete object into the manual manga editor.

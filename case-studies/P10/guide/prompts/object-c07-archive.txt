@@ -1,0 +1,9 @@
+Use case: illustration-story.
+Asset type: BOOK-002 P10 A03 complete manga speech-balloon-and-lettering object for manual editor assembly; transparent PNG cutout.
+Input images: Image 1 is ONLY the v0.6 structural reference for the small rounded ordinary speech balloon, compact proportions and short pointed tail extending to the right. Ignore the character face, caption fragment, panel border and background. Image 2 is ONLY the P10 black-ink outline and hand-lettering continuity anchor; do not copy its text or exact large proportions.
+Primary request: Create one isolated small compact rounded ordinary manga speech balloon with one short pointed tail extending to the right toward adult Subaru. Keep the v0.6 quiet, slightly compressed hand-drawn shape, with solid opaque white interior.
+Exact text, verbatim Simplified Chinese and punctuation: “……喂。” The opening is exactly one Chinese six-dot ellipsis pair, followed by 喂 and a final full stop.
+Typography: natural hand-lettered Chinese manga dialogue, vertical top-to-bottom. Small, thin-to-medium, low and restrained, as if Subaru is holding back irritation before speaking louder. Consistent optical size; no shout styling, no random enlargement. Balanced inner margins.
+Transparency: everything outside the balloon and tail must be genuinely transparent RGBA, with generous transparent safety margin.
+Absolute accuracy: render ……喂。 exactly once. No missing, substituted, repeated or extra punctuation or characters; no pseudo-Chinese, Japanese, English, numbers, caption box, thought beads, character, face, panel border, background, screentone, shadow, logo, watermark, signature, UI or checkerboard pixels.
+Output intent: exactly one standalone C07 A03 B03-1 balloon-plus-text asset, compact near-square canvas, ready as one Complete object.

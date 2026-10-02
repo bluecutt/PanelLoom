@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0-windows</TargetFramework><UseWPF>true</UseWPF></PropertyGroup>
+ <ItemGroup><ProjectReference Include="../ComicEditor.Rendering/ComicEditor.Rendering.csproj" /></ItemGroup>
+ <ItemGroup><ProjectReference Include="../ComicEditor.Session/ComicEditor.Session.csproj" /></ItemGroup>
+</Project>

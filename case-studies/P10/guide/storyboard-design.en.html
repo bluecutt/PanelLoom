@@ -1,0 +1,303 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>Designing the Panels</h1>
+<p><a href="storyboard-design.html">中文</a> | <a href="storyboard-design.en.html">English</a></p>
+<h2>Finished page previews</h2>
+<table>
+<thead>
+<tr>
+<th>Page example 1</th>
+<th>Page example 2</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../../P09/reference-output/historical-final.png"><img src="../../P09/reference-output/historical-final.png" alt="Page example 1"></a></td>
+<td><a href="../reference-output/editor-reference.png"><img src="../reference-output/editor-reference.png" alt="Page example 2"></a></td>
+</tr>
+</tbody></table>
+<p>This chapter shows how a shot description becomes a visual guide and then a page framework. Specify acting and camera placement, confirm the reading order and space for text, and begin drawing.</p>
+<p>Historical excerpts below are translated into English. Expand each Chinese original for comparison. Newly prepared templates are labeled separately.</p>
+<h2>1. Describe the intended shot</h2>
+<p>The creator first describes each panel in words. Two actual request excerpts show how to specify character placement, action, expression, and camera angle.</p>
+<p>Close interaction · English translation:</p>
+<blockquote>
+<p>U01 should show Subaru&#39;s shyness and Julius&#39;s intense anticipation, focusing on their upper bodies. Subaru occupies the right half, his body facing left while his head turns right. His cheeks are lightly flushed, with a bead of sweat from embarrassment. He scratches his cheek with his left index finger, looking slightly nervous.</p>
+</blockquote>
+<details lang="zh-CN"><summary lang="en">Chinese original</summary>
+
+<blockquote>
+<p>U01主要用来描绘昴有点害羞和尤里乌斯欲望拉满的张力情景，镜头主要是昴和尤里乌斯的上半身。昴整体在分镜右半边，昴身体朝左边，但是头偏向右边，脸颊微红，还有一滴因为害羞而出现的汗。昴的左手的食指挠着脸颊，一副有点紧张的样子。</p>
+</blockquote>
+</details>
+
+<p>Embrace · English translation:</p>
+<blockquote>
+<p>Julius wraps his arms around Subaru&#39;s waist and buries his head against Subaru&#39;s chest, with half his profile visible. His eyes are closed, his cheeks lightly flushed, and he looks content. Subaru strokes Julius&#39;s head with one hand; his cheeks are much redder, but his expression is resigned. Julius remains on the left and Subaru on the right. The camera looks down from the side at about 45 degrees.</p>
+</blockquote>
+<details lang="zh-CN"><summary lang="en">Chinese original</summary>
+
+<blockquote>
+<p>尤里乌斯环住昴的腰肢，把头埋进昴的怀里去感受昴的气息，露出一半侧脸，尤里乌斯这时候是闭着眼睛的，脸颊微红，但是一脸享受的样子。而昴就单手抚摸着尤里乌斯的头，脸颊很红，但是表情很无奈。该分镜依然是尤里乌斯在左边，昴在右边，镜头从上斜着往下45度从侧面方向拍摄这个画面。</p>
+</blockquote>
+</details>
+
+<p>The first description separates the body&#39;s direction from the head&#39;s direction and uses cheek scratching to express embarrassment. The second describes the waist embrace, head pat, and high camera angle together. These details define what later redraws must retain.</p>
+<h2>2. Discuss action and text placement</h2>
+<p>ChatGPT checks speaker identity, action continuity, and reading order, then organizes them into reviewable requirements.</p>
+<p>Historical reply excerpt · English translation:</p>
+<blockquote>
+<p>This keeps the speakers clear and supports right-to-left reading.</p>
+</blockquote>
+<details lang="zh-CN"><summary lang="en">Chinese original</summary>
+
+<blockquote>
+<p>这样才能保持说话人清楚，也符合右至左的阅读顺序。</p>
+</blockquote>
+</details>
+
+<p>Each character&#39;s bubbles are placed near the corresponding speaker, with tails pointing correctly. The same hand continues its action across adjacent shots. The creator also confirms framing and the positions of the two unboxed text columns.</p>
+<p>Six stable project IDs carry through discussion, cropping, finished assets, and the editor:</p>
+<table>
+<thead>
+<tr>
+<th>Project ID</th>
+<th>Shot</th>
+<th>Details to establish</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>U01</td>
+<td>Opening close-up</td>
+<td>Upper-body framing, face distance, cheek-scratching gesture, three-part bubble group</td>
+</tr>
+<tr>
+<td>U02</td>
+<td>Main embrace</td>
+<td>Left/right placement, side high angle, waist embrace and head-patting hand relationship</td>
+</tr>
+<tr>
+<td>A01</td>
+<td>Dark memory</td>
+<td>Front high angle, full curled pose, dark gradient background</td>
+</tr>
+<tr>
+<td>A02</td>
+<td>Bright memory</td>
+<td>Low angle, inviting hand, soft light and text space</td>
+</tr>
+<tr>
+<td>A03</td>
+<td>Expression inset</td>
+<td>Profile framing, eyes and mouth, independent inset placement</td>
+</tr>
+<tr>
+<td>U03</td>
+<td>Chibi ending</td>
+<td>Simplified upper-body interaction, height difference, reaction text and background</td>
+</tr>
+</tbody></table>
+<h2>3. Build the visual guide</h2>
+<p>Establish the main panel and inset relationships before refining shots and text placement. The diagram below follows the actual shapes, sizes, and positions in the approved reference project. All six IDs are available in the editor.</p>
+<p><a href="images/layout-guide.en.png"><img src="images/layout-guide.en.png" alt="P10 layout with project IDs"></a></p>
+<p>U02 receives the largest performance space. Read the memory row from A01 on the right to A02 on the left. U03 continues the interaction at the bottom, with A03 overlaid on its right side. This diagram preserves the final manual geometry; FRAME-06 remains the historical initialization source. Moving an inset later does not change the chosen performance.</p>
+<p><a href="images/acting-guide.en.png"><img src="images/acting-guide.en.png" alt="Shot and action guide"></a></p>
+<p>Framing, placement, hand relationships, and text space are established for every shot. Individual redraws refine these approved choices.</p>
+<p>The original shot notes add these details:</p>
+<ul>
+<li><strong>U01:</strong> Include faces, shoulders, chest, and preparatory gestures. The right character&#39;s body faces left while his head turns slightly right, avoiding eye contact. His left index finger scratches his cheek and the other fingers curl naturally. Place the connected bubbles from upper right toward center and the other speaker&#39;s bubble on the left. Use pale lines and light gray behind the faces and hands.</li>
+<li><strong>U02:</strong> Look down from the side at about 45 degrees. Retain the partly visible profile, waist-embracing arm, and head-patting hand. Keep actions continuous across neighboring shots, with clear hand and arm ownership. Dark hair and jacket form black masses; light hair and a white shirt form bright masses.</li>
+<li><strong>A02:</strong> Use a low angle to emphasize the open hand and smile. The body leans slightly forward, inviting the other character to take the hand. Clarify the perspective of palm, thumb, four fingers, and wrist. Preserve text space, with soft light and a few star points in the background.</li>
+</ul>
+<h2>4. Number the drafts, then select framework and content</h2>
+<p>Image generates independent full-page layout drafts from the approved guide. The overview places their frameworks and corresponding shots together. FRAME-01 through FRAME-07 identify page frameworks; A through F identify shot groups; the final number identifies the draft version. For example, A-03 is the opening close-up in draft three, with the stable project ID U01.</p>
+<p><a href="../storyboards/numbered/all-frames.png"><img src="../storyboards/numbered/all-frames.png" alt="Seven-draft numbered selection overview"></a></p>
+<p>Click the overview for its full resolution. For closer inspection, open the individual numbered pages: <a href="../storyboards/numbered/frame-01.png">draft 1</a>, <a href="../storyboards/numbered/frame-02.png">draft 2</a>, <a href="../storyboards/numbered/frame-03.png">draft 3</a>, <a href="../storyboards/numbered/frame-04.png">draft 4</a>, <a href="../storyboards/numbered/frame-05.png">draft 5</a>, <a href="../storyboards/numbered/frame-06.png">draft 6</a>, and <a href="../storyboards/numbered/frame-07.png">draft 7</a>.</p>
+<p>Make two selections:</p>
+<ol>
+<li><strong>Page framework.</strong> Compare reading order, main-panel area, memory-row space, inset placement, and text margins. P10 selected FRAME-06, or v0.6.</li>
+<li><strong>Panel performances.</strong> Compare acting, expressions, camera choices, and character identity across all drafts. Each panel may come from a different version.</li>
+</ol>
+<p>P10&#39;s selection:</p>
+<table>
+<thead>
+<tr>
+<th>Stable project ID</th>
+<th>Candidate ID</th>
+<th>Draft</th>
+<th>Shot</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>U01</td>
+<td>A-03</td>
+<td>3</td>
+<td>Two-character opening close-up</td>
+</tr>
+<tr>
+<td>U02</td>
+<td>B-04</td>
+<td>4</td>
+<td>Main embrace</td>
+</tr>
+<tr>
+<td>A01</td>
+<td>C-06</td>
+<td>6</td>
+<td>Corner memory</td>
+</tr>
+<tr>
+<td>A02</td>
+<td>D-06</td>
+<td>6</td>
+<td>Reaching out</td>
+</tr>
+<tr>
+<td>A03</td>
+<td>E-02</td>
+<td>2</td>
+<td>Profile inset</td>
+</tr>
+<tr>
+<td>U03</td>
+<td>F-07</td>
+<td>7</td>
+<td>Chibi ending</td>
+</tr>
+</tbody></table>
+<p>Historical selection request · English translation:</p>
+<blockquote>
+<p>Selected panels: A03, B04, C06, D06, E02, F07.
+Selected framework: v0.6.
+Please crop and save these panels first. I&#39;ll then specify finished redraws.</p>
+</blockquote>
+<details lang="zh-CN"><summary lang="en">Chinese original</summary>
+
+<blockquote>
+<p>正式分镜为：A03,B04,C06,D06,E02,F07
+正式分镜框架为：v0.6
+请你先把对应分镜截下来，稍后我再指定分镜来进行正式版重绘</p>
+</blockquote>
+</details>
+
+<p>The framework records initial panel geometry and area. The content source map records which draft performance to retain. Lock the sources, crop and save the selected shots, then request independent finished redraws from those crops.</p>
+<h2>5. From selected crops to finished artwork</h2>
+<p>All six selected crops and final complete panel assets are shown below. Drafts on the left guide acting and camera choices; finished images on the right add rendering detail without text. Click to see the original dimensions.</p>
+<h3>U01 · A-03 · Opening close-up</h3>
+<table>
+<thead>
+<tr>
+<th>Selected draft crop</th>
+<th>Complete finished panel</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../storyboards/selected/U01.png"><img src="../storyboards/selected/U01.png" alt="U01 crop"></a></td>
+<td><a href="../assets/panels/U01.png"><img src="../assets/panels/U01.png" alt="U01 artwork"></a></td>
+</tr>
+</tbody></table>
+<p>Retain left/right placement, close face distance, the turned head, and the cheek-scratching gesture. Refine lines, clothing, and the simple environment.</p>
+<h3>U02 · B-04 · Main embrace</h3>
+<table>
+<thead>
+<tr>
+<th>Selected draft crop</th>
+<th>Complete finished panel</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../storyboards/selected/U02.png"><img src="../storyboards/selected/U02.png" alt="U02 crop"></a></td>
+<td><a href="../assets/panels/U02.png"><img src="../assets/panels/U02.png" alt="U02 artwork"></a></td>
+</tr>
+</tbody></table>
+<p>Protect the high angle, waist embrace, head pat, partly visible profile, and expressions. The crop guides acting; approved finished references guide identity and style.</p>
+<h3>A01 · C-06 · Corner memory</h3>
+<table>
+<thead>
+<tr>
+<th>Selected draft crop</th>
+<th>Complete finished panel</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../storyboards/selected/A01.png"><img src="../storyboards/selected/A01.png" alt="A01 crop"></a></td>
+<td><a href="../assets/panels/A01.png"><img src="../assets/panels/A01.png" alt="A01 artwork"></a></td>
+</tr>
+</tbody></table>
+<p>Maintain the front high angle and curled posture. Finish the dirt, abrasions, traces of recent tears, and dark atmosphere.</p>
+<h3>A02 · D-06 · Reaching out</h3>
+<table>
+<thead>
+<tr>
+<th>Selected draft crop</th>
+<th>Complete finished panel</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../storyboards/selected/A02.png"><img src="../storyboards/selected/A02.png" alt="A02 crop"></a></td>
+<td><a href="../assets/panels/A02.png"><img src="../assets/panels/A02.png" alt="A02 artwork"></a></td>
+</tr>
+</tbody></table>
+<p>Keep the low angle, sunny smile, and open hand inviting the other character to stand. Preserve the bright background. The promise is later assembled as unboxed lettering.</p>
+<h3>A03 · E-02 · Profile inset</h3>
+<table>
+<thead>
+<tr>
+<th>Selected draft crop</th>
+<th>Complete finished panel</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../storyboards/selected/A03.png"><img src="../storyboards/selected/A03.png" alt="A03 crop"></a></td>
+<td><a href="../assets/panels/A03.png"><img src="../assets/panels/A03.png" alt="A03 artwork"></a></td>
+</tr>
+</tbody></table>
+<p>Retain the profile, closed eyes, and restrained complaint. Save the complete source outside the inset mask for later reframing.</p>
+<h3>U03 · F-07 · Chibi ending</h3>
+<table>
+<thead>
+<tr>
+<th>Selected draft crop</th>
+<th>Complete finished panel</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../storyboards/selected/U03.png"><img src="../storyboards/selected/U03.png" alt="U03 crop"></a></td>
+<td><a href="../assets/panels/U03.png"><img src="../assets/panels/U03.png" alt="U03 artwork"></a></td>
+</tr>
+</tbody></table>
+<p>Preserve the embrace and backward-leaning comic reaction, showing only upper bodies. Keep slender chibi proportions, the height difference, correct clothing, and a soft background. A long horizontal frame needs an adequately wide composition.</p>
+<h3>Request a finished redraw</h3>
+<p>This is a translated template for new work. Supply your own approved dialogue and character requirements:</p>
+<blockquote>
+<p>Use [selected single-panel draft crop] as the reference for action, expression, and camera. Independently draw the finished version of [project panel ID]. Preserve placement, head angles, gaze, mouth shapes, and hand contacts. [Approved finished reference] controls identity, clothing, and rendering style only. Add the agreed environment and details, with no bubbles, lettering, or page borders. Extend the composition with usable reframing margins while ensuring it fits the target panel. Preserve the intended character scale and shot distance.</p>
+</blockquote>
+<details lang="zh-CN"><summary lang="en">Chinese source template</summary>
+
+<blockquote>
+<p>以［选定的单格线稿裁片］为动作、表情和机位依据，独立绘制［工程编号］的正式版本。严格保留人物站位、头部角度、视线、嘴形和手部接触关系。［已确认完成稿参考］只用于辨识度、服装和画风。按画面设计补足环境与细节，不绘制气泡、文字或页面边框。在能装入目标分镜的前提下，向四周补出可用取景余量；人物大小和景别保持原约定。</p>
+</blockquote>
+</details>
+
+<p>Generate and save each panel separately. First check source selection and acting, then hands, clothing, and environment. Replace only a panel needing correction; retain its accepted neighbors.</p>
+<p>The editor masks a complete image with its polygon without discarding the source content outside it. Dragging and scaling change framing. Lettered objects are produced separately; see the <a href="lettering-styles.en.html">prompt and style guide</a>.</p>
+<h2>6. Write your own shot description</h2>
+<p>A translated discussion starter:</p>
+<blockquote>
+<p>This page should convey [emotion or story change]. I&#39;ll describe each shot. Please check action continuity, character placement, reading order, and bubble ownership, then organize a visual guide. We&#39;ll generate layout drafts after confirmation.</p>
+</blockquote>
+<details lang="zh-CN"><summary lang="en">Chinese source template</summary>
+
+<blockquote>
+<p>这一页要表现［情绪或剧情变化］。我先描述每个镜头，请你检查动作连续性、人物站位、阅读顺序和气泡归属，再整理成画面设计说明。确认后我们再生成结构草稿。</p>
+</blockquote>
+</details>
+
+<p>For each panel, write a paragraph or a list covering:</p>
+<ul>
+<li>What the panel should communicate.</li>
+<li>Character placement, direction, and gaze.</li>
+<li>Expression, body action, and hand relationships.</li>
+<li>Framing, camera angle, and background.</li>
+<li>Dialogue, speaker, bubble positions, and reading order.</li>
+</ul>
+<p>Review action, framing, and text space one panel at a time. Identify changes by panel position, confirm them, then enter the draft stage.</p>
+<p><a href="storyboard-description.en.html">Complete creator description</a> · <a href="../../ASSET-TERMS.en.html">Case asset terms</a> · <a href="full-workflow.en.html">Full workflow</a></p>
+</article></body></html>

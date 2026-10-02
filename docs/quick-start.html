@@ -1,0 +1,22 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>快速上手</h1>
+<p><a href="quick-start.html">中文</a> | <a href="quick-start.en.html">English</a></p>
+<p>使用 Windows x64 免安装文件夹。保留配套 DLL、文档与示例，双击 <code>ComicEditor.exe</code>。</p>
+<h2>打开并调整</h2>
+<ol>
+<li>点击“打开工程”，选择 <code>examples/minimal-page/project.json</code>。先用“项目 → 另存为”创建新的工作文件，后续“保存”写入该工作副本。</li>
+<li>在分镜列表选择上格，在画布中拖动图片；普通滚轮缩放当前图片。按住 Ctrl 滚轮缩放整页，中键平移。右侧滚轮滚动属性面板。</li>
+<li>切换到顶点或边线工具，直接拖动画布上的控制点或边。分镜框变化只改变取景，原图仍完整保存。</li>
+<li>切换到气泡列表，选中气泡后在画布拖动、缩放。范围选择该分镜可隐藏超出部分，选择“整页自由”可跨格显示。</li>
+<li>用“前后遮挡”指定气泡与目标小格的关系。范围和遮挡分别调节；状态栏反馈自动上移或下移的层数。一次操作可以撤销。</li>
+<li>保存工程，点击“高清导出 PNG”。选择 1×、2×、2.5×或3×，核对界面显示的输出尺寸。原素材像素不足会给出质量提示。</li>
+</ol>
+<p>模板示例用于验证操作，源图像素有限。较高导出倍率保留可用细节，无法补出缺失细节。实际创作导入完整原图。</p>
+<p><img src="images/neutral/assembled-example.png" alt="中性工程的本地组装输出"></p>
+<h2>在 Codex 中开始</h2>
+<p>将 <code>skills/comic-page-workflow</code> 复制到自己创作项目下的 <code>.agents/skills/comic-page-workflow</code>，准备项目配置与自己的契约。可参考 Skill 内的 <code>assets/project-config-example.json</code>，将编辑器路径指向本机免安装目录，契约路径指向自己的文档。具体步骤见 <a href="codex-setup.html">Codex 设置</a>。</p>
+<blockquote>
+<p>请使用 $comic-page-workflow，读取项目配置、当前剧情和角色画风契约。先为这一页整理台词初稿，标注说话人、气泡类型、阅读顺序与情绪。我确认后再设计画面。</p>
+</blockquote>
+<p>需要 Agent 初始化时，提供已确认框架、完整图像和独立带字对象。见 <a href="agent-workflows.html">Agent 操作</a>。正在使用的工程先获取实时快照，按窗口中的授权开关决定是否可写。</p>
+<p>进入 <a href="page-workflow.html">完整创作流程</a>，了解每一步的输入和产物。素材授权见 <a href="licensing.html">许可与素材</a>。</p>
+</article></body></html>

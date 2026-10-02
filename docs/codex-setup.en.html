@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>Use the workflow in Codex</h1>
+<p><a href="codex-setup.en.html">English</a> | <a href="codex-setup.html">中文</a></p>
+<p>The package contains the complete <code>skills/comic-page-workflow</code> folder. Keep its references, templates and example assets together. The editor can run independently of Codex; generating new artwork requires image-generation tools available in your Codex environment.</p>
+<h2>1. Prepare your project</h2>
+<p>Extract the entire application folder. For the relative configuration below, place that folder at <code>tools/ComicEditor</code> inside your own creative project. Alternatively, configure the CLI&#39;s actual location. Create your own story, character and visual contracts.</p>
+<pre><code class="language-text">my-comic/
+  .agents/skills/comic-page-workflow/
+    SKILL.md
+    references/  templates/  assets/
+  comic-project.json
+  contracts/story.md
+  contracts/characters.md
+  contracts/visual.md
+  pages/
+  tools/ComicEditor/ComicEditor.Cli.exe
+  tools/ComicEditor/ComicEditor.exe
+  tools/ComicEditor/...other application files
+</code></pre>
+<p>Copy the supplied Skill folder to <code>.agents/skills/comic-page-workflow</code>. Open this project in Codex. Codex discovers repository Skills under <code>.agents/skills</code>; restart Codex if a new Skill is not visible. See <a href="https://learn.chatgpt.com/docs/build-skills">the official Skill documentation</a>.</p>
+<h2>2. Set the project configuration</h2>
+<p>Copy <code>skills/comic-page-workflow/assets/project-config-example.json</code> to your project root as <code>comic-project.json</code>. Its default content is:</p>
+<pre><code class="language-json">{
+  &quot;editorCliPath&quot;: &quot;tools/ComicEditor/ComicEditor.Cli.exe&quot;,
+  &quot;contracts&quot;: {
+    &quot;story&quot;: &quot;contracts/story.md&quot;,
+    &quot;characters&quot;: &quot;contracts/characters.md&quot;,
+    &quot;visual&quot;: &quot;contracts/visual.md&quot;,
+    &quot;pages&quot;: &quot;pages&quot;
+  }
+}
+</code></pre>
+<p><code>editorCliPath</code> resolves relative to this configuration file. Contract paths locate your own project requirements. Different creative projects can use different contracts and editor locations. Keep the complete runtime folder beside the executables.</p>
+<h2>3. Start a page</h2>
+<p>Select the Skill in Codex, or invoke <code>$comic-page-workflow</code> explicitly where Skill mentions are supported. For example:</p>
+<blockquote>
+<p>Use $comic-page-workflow. Read comic-project.json and my story, character and visual contracts. Prepare a dialogue draft for this page, listing the speaker, exact wording, emotion, reading order and bubble or caption form. Wait for my approval before designing shots.</p>
+</blockquote>
+<p>The workflow progresses through dialogue, visual design, independent layout drafts, separate framework and panel selection, finished panel redraws, independent lettered objects, assembly and export. Confirm each stage with the creator. The creator adjusts framing and lettering in the editor and approves the final result.</p>
+<h2>4. Verify the editor connection</h2>
+<p>From your project directory, run:</p>
+<pre><code class="language-powershell">&amp; &#39;.\tools\ComicEditor\ComicEditor.Cli.exe&#39; capabilities
+&amp; &#39;.\tools\ComicEditor\ComicEditor.Cli.exe&#39; validate --project &#39;.\tools\ComicEditor\examples\minimal-page\project.json&#39;
+</code></pre>
+<p>Successful JSON receipts should identify API version 1 and project version 2. Ask the Agent to read the Skill&#39;s native editor adapter before initialization or changes. The <a href="agent-workflows.en.html">Agent guide</a> describes file-based and live-session operations.</p>
+<p>If the Skill is missing, check the folder name, <code>SKILL.md</code> and the opened project directory. Avoid duplicate Skills with the same name. If the CLI fails, check its configured path and retained runtime files. Image generation availability is separate from the local editor connection. No model keys or accounts are shipped in this package.</p>
+<p><a href="quick-start.en.html">Quick start</a> · <a href="page-workflow.en.html">Page workflow</a> · <a href="agent-workflows.en.html">Agent guide</a> · <a href="new-windows-trial.en.html">Another Windows trial</a></p>
+</article></body></html>

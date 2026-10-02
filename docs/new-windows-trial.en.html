@@ -1,0 +1,98 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>Trial on another Windows computer</h1>
+<p><a href="new-windows-trial.en.html">English</a> | <a href="new-windows-trial.html">中文</a></p>
+<p>This is the remaining release gate. Local extraction checks have a separate report. A fresh-computer result is recorded only after someone performs this trial on another Windows x64 machine.</p>
+<h2>Prepare</h2>
+<p>Record the Windows version/build, x64 architecture, package filename, ZIP SHA-256 and test date. Compare the hash with the delivery manifest before extraction. Extract the whole application folder into a writable location with spaces or non-ASCII characters. Retain all runtime files. The self-contained application should run without a .NET SDK; building source is a separate task.</p>
+<p>The application is unsigned. If Windows security blocks it, record the exact message and file involved, and verify the source. Keep security software enabled. A blocked launch is an unresolved test result, not a passing launch. Do not add blanket exclusions or change system security settings for this trial.</p>
+<h2>Required manual checks</h2>
+<p>Use <code>examples/minimal-page/project.json</code> first and save new work under a separate test folder. Use the restricted case pack only after reading its asset terms.</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Expected result</th>
+<th>Result and evidence</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Launch</td>
+<td><code>ComicEditor.exe</code> opens a visible, responding window</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Open neutral project</td>
+<td>Panel image and bubble load without missing assets</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Object selection</td>
+<td>Selecting the panel/bubble module switches the corresponding edit target</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Image framing</td>
+<td>Drag updates live; wheel on the canvas scales the selected image</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Navigation</td>
+<td>Ctrl + wheel zooms the page; sidebar wheel scrolls without changing an image</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Panel geometry</td>
+<td>Vertex/edge editing changes the selected polygon and can be undone</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Bubble geometry</td>
+<td>Drag, resize, rotation and opacity operate on the selected bubble</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>Panel clipping hides overflow; page-wide mode allows crossing panels</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Layers and inset occlusion</td>
+<td>Up/down moves one layer; front/back relationships to an inset work and Undo restores the prior state</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Borders and snap</td>
+<td>Border remains complete above a lower bubble; snap reports moved/aligned/no candidate/unsafe appropriately</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Controls</td>
+<td>Applied settings retain open sections; color chooser and fixed export scales remain usable</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>Save and reopen</td>
+<td>Save a new JSON file; reopening retains framing, polygons, bubbles, clipping and layers</td>
+<td>Pending</td>
+</tr>
+<tr>
+<td>PNG export</td>
+<td>Neutral page at 2× is 1280 × 1800; inspect actual dimensions and sharpness</td>
+<td>Pending</td>
+</tr>
+</tbody></table>
+<p>The neutral page has one panel and one bubble. For multiple panels/inset checks, create a disposable project with your own assets, or use the private case pack locally. Save copies and leave reference projects intact.</p>
+<h2>Required CLI checks</h2>
+<p>Open PowerShell in the extracted application folder. Create a new <code>trial-output</code> folder; use unused output filenames on reruns.</p>
+<pre><code class="language-powershell">&amp; &#39;.\ComicEditor.Cli.exe&#39; capabilities
+&amp; &#39;.\ComicEditor.Cli.exe&#39; validate --project &#39;.\examples\minimal-page\project.json&#39;
+&amp; &#39;.\ComicEditor.Cli.exe&#39; inspect --project &#39;.\examples\minimal-page\project.json&#39;
+&amp; &#39;.\ComicEditor.Cli.exe&#39; render --project &#39;.\examples\minimal-page\project.json&#39; --out &#39;.\trial-output\neutral-2x.png&#39; --scale 2
+</code></pre>
+<p>Expect successful JSON receipts, API1/project v2, the actions <code>object.reorder</code>, <code>balloon.panelOcclusion</code>, <code>panel.snap</code>, and 1280 × 1800 output. Record both the exit code and receipt for failures.</p>
+<h2>Optional Codex and Agent integration checks</h2>
+<p>Install the Skill in a disposable creative project following <a href="codex-setup.en.html">Codex setup</a>. Verify Skill discovery and its neutral initialization example without generating images. For live checks, open only that test project: snapshot is readable; writes are denied until permission is enabled; one approved batch can be undone; disabling permission denies subsequent writes. Stale revision/hash and busy state must reject unsafe changes. Follow the <a href="agent-workflows.en.html">Agent guide</a>.</p>
+<p>These optional checks depend on the recipient&#39;s Codex environment. Record skipped items separately; a CLI pass does not prove Skill discovery or image-generation access.</p>
+<h2>Return a result</h2>
+<p>Record: tester, date, Windows build/architecture, application version <code>0.2.0-preview.4</code>, package revision <code>docs.1</code>, ZIP hash, extraction location category, whether .NET SDK was already installed, every item as Pass/Fail/Not tested, and exact error text. Use a neutral project for screenshots or shared reproduction files. Restricted case screenshots and practice output remain local.</p>
+<p>Status: <strong>PENDING_OTHER_WINDOWS_TRIAL</strong>. A successful local test on the development computer does not close this gate.</p>
+</article></body></html>

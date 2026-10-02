@@ -1,0 +1,25 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>构建与便携发行</h1>
+<p>候选版本为 <code>0.2.0-preview.4</code>。功能代码沿用 <code>0.2.0-preview.2</code>，本轮整理许可、完整通用 Skill、教程入口与发行打包。各版本独立输出，不覆盖旧包。</p>
+<h2>本地环境</h2>
+<p>使用稳定 .NET 10 SDK；当前核查为 10.0.401，项目通过 global.json 选择 10.0 系列兼容特性版本。仓库脚本默认使用 <code>.tools/dotnet/dotnet.exe</code>。已有 SDK 可在当前构建进程设置 <code>COMIC_EDITOR_DOTNET_PATH</code> 为其绝对路径，脚本核验实际版本。该本机路径不写进源码配置或包。</p>
+<p><code>scripts/Prepare-Sdk.ps1 -Download</code> 是明确请求下载官方 SDK 的入口，校验 SHA512 后解压到本地 <code>.tools</code>，保持系统 PATH 不变。离线工作不调用该入口。已有运行时缓存放 <code>.tools/nuget-packages</code>，SDK/cache 均不进入发行物。</p>
+<h2>测试</h2>
+<pre><code class="language-powershell">powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/Test.ps1 -Suite Public
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tests/packaging/Packaging.Tests.ps1
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tests/packaging/ReleaseContents.Tests.ps1 -IncludeSourceExport
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File tests/CasePracticePackage.Tests.ps1 -CliPath dist/ComicEditor-0.2.0-preview.4-win-x64/ComicEditor.Cli.exe
+</code></pre>
+<p>公共测试使用中性 fixtures，并拒绝空套件。完整 All/UiAll 中部分回归需要本地私有 fixtures；缺失时应报告未验证。通用 Skill 内的中性示例可在独立复制后通过 init、validate 和 render 验证。</p>
+<h2>打包</h2>
+<pre><code class="language-powershell">powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/Publish.ps1 -Version 0.2.0-preview.4 -Offline
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File scripts/Export-Source.ps1 -Version 0.2.0-preview.4
+</code></pre>
+<p><code>-Offline</code> 仅使用已有 SDK 和运行时缓存，缺依赖即失败。GUI/CLI 分别自包含发布，合并前比较同名文件 hash。保留整个 win-x64 文件夹；无安装器、驱动、后台服务或管理员步骤。源码包同时提供相同版本的自有源码、构建脚本和通用资料。</p>
+<p>发行包包含 README、LICENSE、LICENSE-SCOPE、ASSET-TERMS、CREDITS、CONTRIBUTING、docs、schemas、中性示例与 Skill。存在 <code>case-studies/</code> 时，共用复制器把完整教学案例、原图、工程和双语教程一起带入应用及源码包，并要求素材条款和清单齐全。没有案例目录的中性项目仍可单独打包。源码包额外包含 src、tests 和 scripts。排除 .tools、artifacts、bin/obj、用户 Data、私有 fixture 与原始会话。</p>
+<p><code>ReleaseContents.Tests.ps1</code> 验证真实文件复制、案例全目录字节一致、中性打包兼容和缺少案例许可时的拒绝行为；<code>-IncludeSourceExport</code> 同时执行真实源码导出。常规导出与 GitHub 集中候选使用相同的许可及案例内容规则。</p>
+<p>许可收集读取实际 runtimeconfig 中的 includedFrameworks，从对应缓存包取得许可证。核心运行时及 WindowsDesktop 按版本保存到 licenses/，核心 notices 与 SDK 补充 notices 分别保留；runtime-notices-manifest.json 记录相对位置和 hash。AGPL 标准原文单独为 LICENSE。release-manifest.json 为发行文件提供 hash 与大小清单。</p>
+<h2>验收</h2>
+<p><code>Scan-Public-Package.ps1 -Directory &lt;导出的源码或应用目录&gt;</code> 检查实际可分发目录。构建工作目录包含私有缓存与测试产物，不作为可公开目录。</p>
+<p><code>Test-Package.ps1 -PackageDirectory &lt;应用目录&gt;</code> 复制包到中文空格路径，禁用 PATH 的 dotnet 查找，验证实际 EXE、只读会话和 1280×1800 中性输出。它使用独立测试窗口，测试结束关闭；保持已有窗口不变。本机结果与另一台干净 Windows 的验收分别记录。</p>
+<p>软件候选本地通过后，由作者确认仓库名、对应源码提供方式与发行渠道，再执行发布。许可见 <a href="licensing.html">licensing.md</a>。</p>
+</article></body></html>

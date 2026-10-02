@@ -1,0 +1,36 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>格织 PanelLoom · 本地教程</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>P09：复杂分镜与修订经验</h1>
+<p><a href="../reference-output/historical-final.png"><img src="../reference-output/historical-final.png" alt="历史正式成品"></a></p>
+<p>P09 用于观察大主格、微格、手部交互、取景和气泡遮挡。它采用历史空白气泡与整页填词路线，正式成品还包含创作者的人工修复。</p>
+<h2>台词改动如何连接后续页面</h2>
+<p>初始台词请求后的会话中断，现有来源未找到对应初稿回复。后续两句修订及实际回复可以作为可追溯的起点。</p>
+<p>创作者 · 原文：</p>
+<blockquote>
+<p>我就只修改两句：
+16.“......笨蛋，我们约定过的吧。”
+17.”再说了我不是都说过会回来的吗。“
+其他的我觉得都挺不错的，修改16句主要是为了给后面的剧情埋伏笔</p>
+</blockquote>
+<p>ChatGPT · 原文：</p>
+<blockquote>
+<p>好嘞老大。我继续按漫画单页制作 skill 来处理：把第 16、17 句替换为这组“约定”伏笔，其余台词原样锁定，并把 P09 文字稿更新成正式候选版。</p>
+</blockquote>
+<p>按序号指定两句改动，其他台词保持原样。后面的页面围绕这处已确认文字继续设计。</p>
+<h2>每格来源与框架分开</h2>
+<p>P09 的框架选第三版；9 个内容候选为 A03、B04、C03、D01、E06、F03、G06、H04、I03。分别记录来源后，再逐格重绘完整原图。</p>
+<p><img src="../storyboards/frame-03.png" alt="选定结构草稿"></p>
+<p>练习工程保留 9 个分镜与 13 个空白气泡。原图和遮罩分开，可以移动取景，完整保留被微格暂时盖住的内容。</p>
+<h2>手部交互与人工修复</h2>
+<p>这一页的手部曾经历多次调整。创作者明确了手的归属、接触位置和手指朝向，最后对部分分镜手动精修。练习包采用已确认的原图，保留其完整尺寸与字节。</p>
+<p>这类问题可先描述每个人的左右手、手腕入口、接触的手掌或指尖，以及哪些部位被遮挡。遇到反复失败时，选择更明确的参考、经确认的简化动作或人工修复。将被用户接受的文件单独记录。</p>
+<h2>空白气泡与带字对象的演进</h2>
+<p>P09 的 13 个素材是空白气泡，历史成品上的文字来自之后的整页填词与人工修复。练习中的新版渲染因此显示空白气泡。</p>
+<p><img src="../reference-output/editor-reference.png" alt="新版空白气泡练习参考"></p>
+<p>P09 还遇到整页填词删除微格的问题。P10 随后把最终文字与气泡一次生成，作为独立对象装配；修改一组文字时保留已经接受的画面。</p>
+<h2>练习主格和微格关系</h2>
+<p>从 <code>projects/start.json</code> 另存工作副本。先调整一格的原图取景，再把一枚气泡设为整页自由，移到主格与微格交界处，分别体验位于小格前面和后面的效果。</p>
+<p>范围控制显示区域，前后遮挡控制与特定小格的关系。启用自动调层时，编辑器寻找当前气泡最近的合法层级，保留其他对象相互顺序。根据状态栏回执检查实际结果，并用撤销返回上一步。</p>
+<h2>输出像素与历史成品</h2>
+<p>历史正式母稿为 1024×1536。本次新版参考工程以 2× 渲染，输出为 2048×3072。它用于验证工程取景、气泡与边界；源图像素不足的提示保留在质量记录中。</p>
+<p>提高倍率让导出直接利用原素材，已有低清细节仍受源文件限制。对照图像实际尺寸和告警，选择适合自己素材的倍率。</p>
+<p><a href="../../guide/quick-start.html">返回快速操作</a> · <a href="../../ASSET-TERMS.html">素材使用说明</a>。</p>
+</article></body></html>

@@ -1,0 +1,61 @@
+Use case: illustration-story.
+Asset identity: create one brand-new independent portrait Japanese manga structural storyboard candidate v0.6 for P10. Unfinished clean pencil/construction-line page for judging panel rhythm, camera, exact character likeness, expression, hand action, clothing continuity and blank lettering space. Present-day characters are adult university students. Flashback is a fully clothed, non-romantic childhood friendship rescue memory. Do not use any previous P10 candidate as input.
+
+REFERENCE AUTHORITY
+Image 1 is the HIGHEST-PRIORITY adult identity anchor. Reproduce the recognizably same adult Subaru and Julius from Image 1 across U01, U02, A03 and U03: same face shapes, eye shapes, eyebrows, hair silhouettes, height relationship and outfits. Do not copy its layout or text.
+Image 2 is ONLY the Q-style language anchor for U03: genuinely simplified big-head manga chibi faces, compact clean bodies, expressive symbols and cute comic rhythm. Ignore its cat ears, furry clothing, original poses, layout and balloons.
+Image 3 is ONLY childhood Subaru's radiant closed-eye smile, open happiness, soft light and sparse stars. Ignore every UI element, text, crown, cape, color and original pose.
+Image 4 is the childhood Julius identity and wardrobe anchor: light short hair, white shirt, dark suspender shorts, long socks and brown-style shoes. Ignore original hand-kissing action, adjacent figure, background and color.
+Image 5 is the childhood Subaru identity and wardrobe anchor: black upward-spiky hair, white long-sleeve shirt, light knitted sweater vest, dark shorts, long socks and light sneakers. Ignore original intimate pose, adjacent figure, hearts and color.
+
+GLOBAL VISUAL CONTRACT
+Priority: character recognizability first; readable action/expression/gaze second; anatomy/hands/clothes continuity third; background detail last.
+Clean black-and-white 2D Japanese manga. Clear external contours, readable large hair masses, economical internal lines, restrained neutral-gray tones and generous white space. Backgrounds merely identify dorm or wall corner. U02 is the single dominant panel. Reading is top-to-bottom and right-to-left within a row. Subaru is visually lively and reactive; Julius is visually steady and controlled.
+
+EXACT ADULT IDENTITY
+Adult Subaru: unmistakable Image 1 likeness—angular youthful face, strong thick eyebrows, sharp almond eyes, exposed forehead, dense black hair swept sharply upward/back, slim youthful adult body. Dark school sports jacket with light stripes; over-ear headphones around neck. Do not soften him into a generic round-eyed boy.
+Adult Julius: unmistakable Image 1 likeness—refined longer face, slender mature eyes, orderly light medium-length hair, one clearly separate long lock falling from the exact center of his forehead toward the bridge of his nose. Slightly taller and more composed. White long-sleeve shirt with dark slim suspenders. Do not shorten his hair into a generic boy cut and never omit the central lock.
+Keep these identities consistent in every present-day panel, including simplified Q form.
+
+PAGE FRAMEWORK
+U01 full-width top about 22%.
+U02 full-width dominant main panel about 38%.
+Memory row about 24%: A02 on LEFT 55%, A01 on RIGHT 45%; read A01 then A02.
+U03 bottom full-width shallow panel about 18%, with A03 inset at upper-right.
+Reading: U01 -> U02 -> A01 -> A02 -> A03 -> U03.
+
+U01 — permission before contact
+Adult Julius left, adult Subaru right, upper-body close shot, light dorm lines. Subaru turns his head away with shy blush, sweat drop, and left index finger scratching cheek. Julius leans near, delighted and relieved, hands hovering before an embrace; no kiss and no body contact. Empty connected three-part balloon upper-right/middle for Subaru; empty ordinary balloon upper-left for Julius.
+
+U02 — dominant adult embrace
+Upper bodies only, side high-angle about 45 degrees down; no legs or knees. Julius LEFT in white shirt/suspenders, bends only upper body, eyes closed, side face against Subaru's upper torso, both arms clearly around waist. Subaru RIGHT in dark sports jacket/headphones, standing upright, embarrassed but tender, left hand gently strokes Julius's hair. Three empty thought balloons: two right and one left, preserving faces and hands. Lightest, cleanest reality panel.
+
+A01 — RIGHT flashback, STRICT FRONTAL childhood Julius
+Childhood Subaru's camera stands directly in front and slightly above. Julius sits centered in wall corner facing the camera frontally, not profile and not three-quarter: face/nose/chest/crossed arms/both knees/both shoes oriented toward viewer. He hugs knees and looks upward through hair. Exact Image 4 childhood identity and suspender-shorts outfit, central lock, mild dirt/abrasions without gore. Darkest panel with black-gray edges fading toward readable face. One empty thin white thought balloon upper/right.
+
+A02 — LEFT flashback, Julius floor-level upward POV; OFFERED HAND TO PULL HIM UP
+Camera is childhood Julius's eye level while seated on floor, tilted upward toward childhood Subaru. Use a clear low-angle perspective through Subaru's upward-receding torso, chin and face, but do not create an aggressive extreme-lens hand.
+Childhood Subaru wears exact Image 5 sweater-vest outfit and exact black spiky hairstyle. He bends slightly forward, smiles radiantly with closed eyes, and reaches one arm DOWN toward Julius to HELP HIM STAND.
+HAND GESTURE IS AN INVITATION, NOT A GRAB: elbow and forearm travel diagonally downward from Subaru toward the lower foreground. The hand is relaxed and offered like a hand-up/handshake: palm angled gently upward and slightly sideways, four fingers kept naturally close together with a soft curl, thumb relaxed open, wrist straight. The receiver can place his hand into it. The hand is moderately foreshortened but not huge. It must NOT face flat toward camera, NOT spread all five fingers wide, NOT resemble a claw, NOT close around an object, and NOT reach as if grabbing something.
+Brightest panel with white light, sparse rays and stars. A02 contains NO balloon, NO thought bubble, NO caption box, NO rectangle, NO outlined placeholder, NO tail and NO visible container. Only two natural unoutlined vertical blank background strips on the left for later text.
+
+A01/A02 CAMERA PAIR
+A01: Subaru looks down and sees Julius frontally. A02: Julius looks upward from the floor and sees Subaru offering a hand. This reverse-shot relationship must be obvious.
+
+A03 — inset
+Adult Subaru from Image 1, side-face close-up, eyes closed, cheeks red, mildly fed-up complaint. One empty small narration rectangle and one empty normal balloon.
+
+U03 — GENUINE Q-VERSION, UPPER BODIES ONLY
+Use Image 2's unmistakable Q/chibi drawing language, not realistic adult rendering: visibly enlarged rounded heads, simplified eyes/mouths/noses, compact simplified shoulders and torsos, shortened clean arms, expressive blush and motion symbols. Still keep the figures slim, elegant and attractive rather than pudgy or toddler-like.
+Show ONLY upper bodies, cropped around lower waist/mid-torso. No hips, thighs, knees, legs, feet or shoes.
+Q Julius LEFT: simplified Image 1 face/hair identity, light bobbed medium hair with the central forehead lock still obvious, white shirt and dark suspenders. Eyes closed, calm satisfied smile, cheek pressed to Subaru, both simplified arms clearly encircle Subaru's upper waist.
+Q Subaru RIGHT: simplified Image 1 identity, black swept-up spiky hair, strong eyebrows, dark sports jacket and headphones. Upper torso leans back, face intensely red, mouth open in flustered protest, shoulders and hands defensive with shake lines, but he does not truly push Julius away.
+One empty calm rounded balloon near Julius left and one empty energetic spiky balloon near Subaru right. White comedic background. No cat ears, animal features, fur clothes or tails.
+
+GRAYSCALE
+Pure black, pure white and achromatic neutral grays only. Zero color saturation. No colored hair, eyes, clothing, highlights or screen tones.
+
+HARD INVARIANTS
+No readable Chinese/Japanese/English, no letters, numbers, pseudo-text, random glyphs, sound effects, panel IDs, logos, watermarks, signatures, UI or reference overlays. Every allowed container blank. No container in A02. No extra people. No gore. No kiss. No U01 contact before permission. No clothing swaps. Exact adult identities from Image 1. Exact childhood wardrobes from Images 4 and 5. A01 frontal. A02 hand offered to pull up, never claw/grab. U03 must be true Q style and upper-body-only. No fused hands, extra fingers or ambiguous arms.
+
+Output intent: exactly one independent full-page structural-line candidate for immediate user review.

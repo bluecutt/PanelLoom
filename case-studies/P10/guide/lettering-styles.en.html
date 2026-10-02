@@ -1,0 +1,181 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>Lettered Bubbles: Prompts and Styles</h1>
+<p><a href="lettering-styles.html">中文</a> | <a href="lettering-styles.en.html">English</a></p>
+<p>Generate lettering, contour, and tail together for each independently movable object. Panel artwork stays separate, so a text revision only replaces its corresponding object. Captions, thoughts, and unboxed text use the same object layer.</p>
+<p>This chapter pairs real P10 assets with the wording used to describe their styles. English excerpts come from historical calls or saved generation records. Explanations and the reusable template are editorial material translated from the Chinese guide. The <a href="prompt-notes.en.html">appendix</a> preserves full historical prompts. Constraints express the intended result; generated glyphs, punctuation, and transparency still require review.</p>
+<h2>1. Define the movable unit</h2>
+<p>An object may contain one sentence or an intentionally connected bubble group. Decide what must move independently before generation.</p>
+<p>C01&#39;s three dialogue bubbles move together, so they form one object. U02&#39;s thoughts sit on opposite sides of the characters and need separate placement; the final assets are C03A and C03B. Speaker identity alone does not determine object grouping.</p>
+<table>
+<thead>
+<tr>
+<th>Prompt component</th>
+<th>Specify</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Reference roles</td>
+<td>Bubble crop for shape; accepted object for typography</td>
+<td>Contour and lettering continuity</td>
+</tr>
+<tr>
+<td>Object and contour</td>
+<td>Single bubble, lobe count, rounded or irregular spikes</td>
+<td>Shape and reading rhythm</td>
+</tr>
+<tr>
+<td>Exact text</td>
+<td>Verbatim wording, punctuation, lobe or column assignment</td>
+<td>Content and arrangement</td>
+</tr>
+<tr>
+<td>Tail</td>
+<td>Pointed tail or thought beads, direction, actual speaker</td>
+<td>Speaker ownership</td>
+</tr>
+<tr>
+<td>Typography and emotion</td>
+<td>Optical size, ink weight, stroke energy, margins, emphasized sentence</td>
+<td>Readability and emotional emphasis</td>
+</tr>
+<tr>
+<td>Transparency</td>
+<td>Transparent exterior, white interior; only ink for unboxed text</td>
+<td>Clean composition over artwork</td>
+</tr>
+<tr>
+<td>Output extent</td>
+<td>Complete independent object with safe margins</td>
+<td>Editing freedom</td>
+</tr>
+</tbody></table>
+<p>Specify the speaker separately from the object&#39;s location. A cross-panel thought trail should point to the person thinking, even when another character is closer to the bubble.</p>
+<h2>2. Rounded response and connected dialogue</h2>
+<table>
+<thead>
+<tr>
+<th>C02 · Single response</th>
+<th>C01 · Three-part dialogue</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../assets/text-objects/C02.png"><img src="../assets/text-objects/C02.png" alt="C02"></a></td>
+<td><a href="../assets/text-objects/C01.png"><img src="../assets/text-objects/C01.png" alt="C01"></a></td>
+</tr>
+</tbody></table>
+<h3>C02: A restrained, readable response</h3>
+<p>Historical contour and tail constraints:</p>
+<pre><code class="language-text">one isolated medium vertical ordinary Japanese manga speech balloon
+calm rounded silhouette
+one short pointed tail extending to the right
+</code></pre>
+<p>Typography constraints:</p>
+<pre><code class="language-text">elegant, soft, restrained, stable, and sincere
+Consistent optical character size
+Comfortable inner margins
+</code></pre>
+<p>A vertical oval and short pointed tail suit quiet dialogue. Even character size, lighter ink, and generous inner margins make a short line stable to read. Slight hand-drawn asymmetry keeps the contour natural.</p>
+<h3>C01: Three sentences with small emotional changes</h3>
+<p>Historical structural constraints:</p>
+<pre><code class="language-text">exactly three softly connected rounded lobes
+arranged diagonally from upper-right to lower-left
+one shared short pointed speech tail
+</code></pre>
+<p>One sentence goes in each lobe, read upper right → middle → lower left:</p>
+<ol>
+<li><code>也不是.....不行吧.....</code> — hesitant permission, approximately “It&#39;s not that I mind.”</li>
+<li><code>但只准五分钟。</code> — “But only five minutes.”</li>
+<li><code>你可别想占我便宜。</code> — “Don&#39;t think you can take advantage of me.”</li>
+</ol>
+<p>Keep one lettering system, with controlled differences in delivery:</p>
+<pre><code class="language-text">Keep a consistent optical character size and stroke system throughout the connected group
+First sentence is slightly tighter and lighter
+third is only slightly heavier and firmer
+</code></pre>
+<p>The first sentence is lighter and slightly tighter to convey hesitation; the last is a little firmer to express defiance. Ink weight and rhythm carry the emotion while individual character sizes stay consistent.</p>
+<h2>3. Thoughts: Bead trails and cross-panel ownership</h2>
+<table>
+<thead>
+<tr>
+<th>C03A · Right connected pair</th>
+<th>C03B · Left single thought</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../assets/text-objects/C03A.png"><img src="../assets/text-objects/C03A.png" alt="C03A"></a></td>
+<td><a href="../assets/text-objects/C03B.png"><img src="../assets/text-objects/C03B.png" alt="C03B"></a></td>
+</tr>
+</tbody></table>
+<p>C03 was initially generated as a combined image. It was split into two assets for independent placement, preserving lettering and contour pixels. For new work, specifying separate right and left outputs from the outset establishes that editing boundary during generation.</p>
+<p><a href="../assets/text-objects/C04.png"><img src="../assets/text-objects/C04.png" alt="C04 with its upward thought trail"></a></p>
+<p>C04 sits beside the A01 flashback, but the thinker is in U02 above. Its record explicitly describes ownership and bead direction:</p>
+<pre><code class="language-text">this thought belongs to adult Subaru in the U02 panel above
+Exactly three round thought-tail beads must emerge from the TOP
+travel vertically upward/slightly upper-left, decreasing in size upward
+</code></pre>
+<p>Three beads become smaller toward the top. Check the direction against final placement so it points to the present-day thinker.</p>
+<p>The final text is <code>真是麻烦的家伙啊.....</code>, approximately “What a troublesome guy,” with five ordinary final period dots. The historical prompt specified six. The creator later requested five and the extra punctuation was covered locally. Use the final approved wording for a new task; retain the historical prompt unchanged as a record.</p>
+<h2>4. Unboxed vertical text: Ink only</h2>
+<p><a href="../assets/text-objects/C05.png"><img src="../assets/text-objects/C05.png" alt="C05 two-column unboxed lettering"></a></p>
+<p>C05 places two promises in A02 as one text object. Shape and layout constraints:</p>
+<pre><code class="language-text">exactly one isolated transparent text-only object
+two separate vertical columns
+read the RIGHT column first and the LEFT column second
+</code></pre>
+<p>Transparency constraint:</p>
+<pre><code class="language-text">every pixel outside the black lettering must be genuinely transparent RGBA
+</code></pre>
+<p>The right column reads <code>和我成为朋友吧，我会保护你的。</code> (“Become my friend. I&#39;ll protect you.”). The left reads <code>以后别再一个人躲起来了</code> (“Don&#39;t hide away by yourself again.”). They use the same optical character size; the longer right sentence produces a longer column. Light rays and stars belong to the panel background. This object contains only black lettering, with transparency between glyphs.</p>
+<h2>5. Caption box: Horizontal and steady</h2>
+<p><a href="../assets/text-objects/C06.png"><img src="../assets/text-objects/C06.png" alt="C06 time caption"></a></p>
+<p>Contour and arrangement constraints:</p>
+<pre><code class="language-text">one isolated small horizontal rectangular manga narration box
+compact upright Chinese manga narration lettering
+horizontally arranged in one centered line from left to right
+</code></pre>
+<p><code>五分钟后。</code> (“Five minutes later.”) uses a compact horizontal rectangle, centered upright lettering, and a white interior. It remains an independent editor object that can be placed along the reading route.</p>
+<h2>6. Quiet speech and shouting in one lettering system</h2>
+<table>
+<thead>
+<tr>
+<th>C07 · Restrained reminder</th>
+<th>C08 · Emotional peak</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../assets/text-objects/C07.png"><img src="../assets/text-objects/C07.png" alt="C07"></a></td>
+<td><a href="../assets/text-objects/C08.png"><img src="../assets/text-objects/C08.png" alt="C08"></a></td>
+</tr>
+</tbody></table>
+<p>C07&#39;s <code>……喂。</code> (“…Hey.”) uses a small compact rounded bubble and lighter letters:</p>
+<pre><code class="language-text">small compact rounded ordinary manga speech balloon
+Small, thin-to-medium, low and restrained
+</code></pre>
+<p>C08&#39;s <code>五分钟已经到了吧？！</code> (“The five minutes are already up, aren&#39;t they?!”) is the page&#39;s lettering peak. The contour has irregular rounded spikes; the ink is heavier, sharper, and more forward-driving:</p>
+<pre><code class="language-text">lively uneven rounded-spike silhouette
+heavier, sharper and slightly forward-driving
+express force through stroke pressure, line rhythm and whole-block energy
+</code></pre>
+<p>The prompt also requires <code>consistent optical character size</code>. Pressure, shape, and overall rhythm create force. Punctuation is explicitly a Chinese question mark followed by an exclamation mark: <code>？！</code>. Leave generous inner margins between lettering and spikes.</p>
+<p><a href="../assets/text-objects/C09.png"><img src="../assets/text-objects/C09.png" alt="C09 calm connected response"></a></p>
+<p>C09&#39;s response uses softly connected rounded lobes and restrained asymmetry. Its prompt includes <code>softly connected rounded two-lobe balloon</code> and <code>calm, relaxed, affectionate and completely matter-of-fact</code>. This creates a quiet contrast to C08 within the same ink system. Its line, <code>再多抱一会儿。</code>, means “Let me hold you a little longer.”</p>
+<h2>7. A template for your own artwork</h2>
+<p>This is the English version of the guide&#39;s reusable template:</p>
+<pre><code class="language-text">Generate one independently movable [speech / thought / caption / unboxed text] object.
+Reference 1 controls contour, connections, and tail only.
+Reference 2 controls the approved lettering and ink style only.
+Shape: [contour, lobe count, connection direction].
+Exact text: [verbatim wording and punctuation].
+Layout: [horizontal / vertical, reading order, lobe assignment, inner margins].
+Speaker and tail: [owner, pointed tail / thought beads, direction and target].
+Typography: consistent optical size and stroke system. Express [specified line]&#39;s
+emotion through [ink weight, stroke gesture, overall rhythm].
+Output: high-resolution PNG, genuinely transparent outside; white bubble or box interior.
+Unboxed text retains ink only. Leave safety margins around complete tips and beads.
+Output this object alone, without characters, scenery, panel borders, or extra text.
+</code></pre>
+<p>The historical examples use vertical Chinese lettering. For your own English-language comic, specify horizontal left-to-right text and intended line breaks where appropriate. Decide the panel reading route and the text flow separately, and adjust bubble proportions to your words. The supplied case assets retain their original lettering.</p>
+<p>Check wording, punctuation, tail ownership, and the actual alpha channel, then submit for creator review. A checkerboard can be painted into a generated image. Some historical P10 outputs required documented exterior-background alpha processing, with white bubble interiors preserved. Scaling an object also changes its reading size; compare optical character size across neighboring objects during initialization.</p>
+<p>Approved assets are imported as complete objects. Placement, clipping, and occlusion are layout controls. A lettered bitmap should not be mirrored, since that would mirror its characters too. The final page comes directly from local export.</p>
+<p><a href="text-objects.en.html">Object list</a> · <a href="prompt-notes.en.html">Full historical prompts</a> · <a href="full-workflow.en.html">Full workflow</a></p>
+</article></body></html>

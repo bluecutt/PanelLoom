@@ -1,0 +1,22 @@
+{
+    "width":  2048,
+    "height":  3072,
+    "warnings":  [
+                     {
+                         "severity":  "warning",
+                         "code":  "SOURCE_UPSAMPLED",
+                         "objectId":  "U01",
+                         "path":  "/sourceImage",
+                         "message":  "Source pixels per output pixel: 0.964"
+                     },
+                     {
+                         "severity":  "warning",
+                         "code":  "SOURCE_UPSAMPLED",
+                         "objectId":  "U04",
+                         "path":  "/sourceImage",
+                         "message":  "Source pixels per output pixel: 0.904"
+                     }
+                 ],
+    "role":  "editor-reference",
+    "note":  "Rendered from the supplied reference project; historical master stored separately."
+}

@@ -1,0 +1,47 @@
+Feature,LegacySource,NativeRoute,Status
+Project open and save-as,Read-Project Save-Project,ProjectStore and GUI,automated-and-desktop-verified; user-acceptance-pending
+Unknown JSON fields,New-ProjectObject,Raw JsonObject preservation,automated-and-desktop-verified; user-acceptance-pending
+Panel selection,panelCombo,Objects panel,automated-and-desktop-verified; user-acceptance-pending
+Complete original images,Get-BaseImageGeometry,PanelPainter,automated-and-desktop-verified; user-acceptance-pending
+Image offset scale and fit,imageX imageY imageScale FitMode FitBias,panel.image,automated-and-desktop-verified; user-acceptance-pending
+Independent bounds,frameX frameY frameW frameH,panel.bounds,automated-and-desktop-verified; user-acceptance-pending
+Independent polygon vertices,vertexCombo vertexX vertexY,panel.vertex panel.polygon,automated-and-desktop-verified; user-acceptance-pending
+Image mode drag,modeCombo pictureBox,panel.image InputRouter,automated-and-desktop-verified; user-acceptance-pending
+Whole panel drag,Move-PanelTogether,panel.move InputRouter,automated-and-desktop-verified; user-acceptance-pending
+Vertex priority,Complete-PanelDrag,panel.vertex InputRouter,automated-and-desktop-verified; user-acceptance-pending
+Panel lock,lockCheck,object.lock,automated-and-desktop-verified; user-acceptance-pending
+Panel order,zDownButton zUpButton,object.layer,automated-and-desktop-verified; user-acceptance-pending
+Panel image reset,resetImageButton,object.reset image,automated-and-desktop-verified; user-acceptance-pending
+Panel frame reset,resetFrameButton,object.reset frame,automated-and-desktop-verified; user-acceptance-pending
+Undo redo,undoButton redoButton,ProjectHistory,automated-and-desktop-verified; user-acceptance-pending
+Legacy and SingleLine,borderStyleCombo,page.border,automated-and-desktop-verified; user-acceptance-pending
+Per-edge visibility,edgeCombo edgeVisibleCheck,panel.edge,automated-and-desktop-verified; user-acceptance-pending
+Show all edges,showAllEdgesButton,panel.edge batch,automated-and-desktop-verified; user-acceptance-pending
+Optional edge snap,snapCheck snapDistance snapEdgeButton,page.snap panel.snap,automated-and-desktop-verified; user-acceptance-pending
+Alt bypass snap,pictureBox drag,InputRouter,automated-and-desktop-verified; user-acceptance-pending
+Outer border,outerBorderCheck,page.border,automated-and-desktop-verified; user-acceptance-pending
+Balloon selection and mode,balloonCombo balloonModeButton,Objects panel mode toolbar,automated-and-desktop-verified; user-acceptance-pending
+Import complete body tail,importCompleteButton importBodyButton importTailButton,balloon.add kind,automated-and-desktop-verified; user-acceptance-pending
+Import scope,balloonImportScopeCombo,balloon.clip,automated-and-desktop-verified; user-acceptance-pending
+Balloon duplicate delete,duplicateBalloonButton deleteBalloonButton,balloon.copy balloon.remove,automated-and-desktop-verified; user-acceptance-pending
+Balloon visible lock,balloonVisibleCheck balloonLockCheck,balloon.visible object.lock,automated-and-desktop-verified; user-acceptance-pending
+Balloon ratio lock,balloonAspectCheck,balloon.transform,automated-and-desktop-verified; user-acceptance-pending
+Balloon group and group move,balloonGroupText balloonGroupMoveCheck,balloon.group balloon.move,automated-and-desktop-verified; user-acceptance-pending
+Balloon flip,balloonFlipXCheck balloonFlipYCheck,balloon.transform,automated-and-desktop-verified; user-acceptance-pending
+Balloon position size rotation opacity,balloonX balloonY balloonW balloonH balloonRotation balloonOpacity,balloon.transform,automated-and-desktop-verified; user-acceptance-pending
+Balloon clip or free,balloonClipCombo,balloon.clip,automated-and-desktop-verified; user-acceptance-pending
+Balloon order,balloonZDownButton balloonZUpButton,object.layer,automated-and-desktop-verified; user-acceptance-pending
+Balloon reset,resetBalloonButton,object.reset balloon,automated-and-desktop-verified; user-acceptance-pending
+Balloon handles rotation,Draw-BalloonOverlay Test-PointInBalloon,InputRouter,automated-and-desktop-verified; user-acceptance-pending
+Full visible border guard,Draw-BalloonImage BorderGuard,SingleLine guard,automated-and-desktop-verified; user-acceptance-pending
+Zoom and pan,pictureBox MouseWheel,ViewTransform only,automated-and-desktop-verified; user-acceptance-pending
+Keyboard shortcuts,form KeyDown,Focus-safe InputRouter,automated-and-desktop-verified; user-acceptance-pending
+PNG high resolution,exportScaleCombo exportButton,PageRenderer export dialog,automated-and-desktop-verified; user-acceptance-pending
+Quality assessment,Get-ExportQualityAssessment,AssetInspector and export dialog,automated-and-desktop-verified; user-acceptance-pending
+Open output folder,openFolderButton,Export dialog,automated-and-desktop-verified; user-acceptance-pending
+Smoke and UI tests,SmokeTest UiSmokeTest,Regression suites and GUI smoke,automated-and-desktop-verified; user-acceptance-pending
+Agent initialize and replace assets,project JSON external pipeline,Core CLI session,automated-and-desktop-verified; user-acceptance-pending
+Adjacent up and down,manual numeric layers,object.reorder and canvas buttons,automated-and-desktop-verified; user-acceptance-pending
+Relative inset occlusion,global layer numeric fields,balloon.panelOcclusion and canvas menu,automated-and-pixel-verified; user-acceptance-pending
+Snap actual outcome,apply generic status,panel.snap outcomes and selected edge highlight,automated-and-desktop-verified; user-acceptance-pending
+Continuous preview,mouse-up preview,epoch sampler and original bitmap leases,automated-and-private-page-verified; user-acceptance-pending

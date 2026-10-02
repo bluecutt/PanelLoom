@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PanelLoom · Local Guide</title><style>*{box-sizing:border-box}body{margin:0;background:#edf0f4;color:#242b35;font-family:'Microsoft YaHei','Segoe UI',sans-serif}article{max-width:1120px;margin:28px auto;padding:44px 54px;background:white;border:1px solid #dce2ea;border-radius:12px;font-size:18px;line-height:1.85;overflow-wrap:anywhere}h1{font-size:32px;line-height:1.4;margin:0 0 24px}h2{font-size:24px;margin:34px 0 16px;border-bottom:1px solid #e2e7ee;padding-bottom:8px}h3{font-size:21px}p{margin:14px 0}a{color:#365f85;text-decoration:none}a:hover{text-decoration:underline}blockquote{margin:18px 0;background:#f6f8fb;border-left:4px solid #8ba1b5;padding:8px 24px}table{width:100%;border-collapse:collapse;font-size:17px}td,th{border:1px solid #dce2e9;padding:10px 12px;vertical-align:top;text-align:left}th{background:#f4f6f8}table:has(img){table-layout:fixed}table:has(img) th,table:has(img) td{border:0;width:50%;text-align:center;background:white;padding:8px 14px}img{display:block;max-width:100%;height:auto;margin:20px auto}table:has(img) img{max-height:760px}pre{white-space:pre-wrap;font:16px/1.65 Consolas,'Microsoft YaHei',monospace;background:#f5f7fa;padding:20px;border-radius:7px;overflow-wrap:anywhere}code{font-family:Consolas,'Microsoft YaHei',monospace}li{margin:8px 0}summary{cursor:pointer} @media(max-width:800px){article{margin:0;padding:24px;font-size:16px}h1{font-size:26px}table{font-size:15px}}</style></head><body><article><h1>Agent and creator collaboration</h1>
+<p><a href="agent-workflows.en.html">English</a> | <a href="agent-workflows.html">中文</a></p>
+<p>Use <code>ComicEditor.Cli.exe</code> from the complete application folder. Query <code>capabilities</code> first: its commands, actions and allowed arguments are authoritative. This candidate supports API v1 and version 2 projects. The <a href="agent-api.html">API reference</a>, schemas and neutral examples describe the request structure.</p>
+<h2>File-based initialization and output</h2>
+<ol>
+<li>Read the creator-approved framework, selected original panel images, independent lettered objects and placement instructions.</li>
+<li>Build an init manifest with <code>apiVersion</code>, the complete v2 <code>project</code> and explicit <code>assetMap</code> entries. Keep original images intact; panel polygons control their visible area.</li>
+<li>Initialize, inspect and validate a new working file.</li>
+</ol>
+<pre><code class="language-powershell">$cli = &#39;.\ComicEditor.Cli.exe&#39;
+&amp; $cli capabilities
+&amp; $cli init --manifest &#39;.\skills\comic-page-workflow\assets\init-manifest-example.json&#39; --out &#39;.\working.json&#39;
+&amp; $cli inspect --project &#39;.\working.json&#39;
+&amp; $cli validate --project &#39;.\working.json&#39;
+&amp; $cli open --project &#39;.\working.json&#39;
+</code></pre>
+<p>This example uses packaged neutral assets. <code>open</code> returns <code>LaunchRequested</code>; confirm that the creator can see the window before reporting that it is open. The creator adjusts and saves the working project.</p>
+<p>Read that newest file before modifying it. A patch needs API1, a fresh UUID <code>requestId</code>, the current <code>baseProjectHash</code> from <code>inspect</code>, and registered operations. For example, <code>object.reorder</code> uses <code>targetId</code> and <code>{ &quot;kind&quot;: &quot;balloon&quot;, &quot;direction&quot;: &quot;up&quot; }</code>. Use the actual selected ID from the project. Copy the Skill&#39;s patch example as a template and replace its placeholder hash, ID and request ID.</p>
+<pre><code class="language-powershell">&amp; $cli apply --project &#39;.\working.json&#39; --patch &#39;.\patch.json&#39; --out &#39;.\working-next.json&#39; --dry-run
+# Continue only after a successful receipt and review of its changes.
+&amp; $cli apply --project &#39;.\working.json&#39; --patch &#39;.\patch.json&#39; --out &#39;.\working-next.json&#39;
+&amp; $cli render --project &#39;.\working-next.json&#39; --out &#39;.\final.png&#39; --scale 2.5
+&amp; $cli bundle --project &#39;.\working-next.json&#39; --out-dir &#39;.\portable-page&#39;
+</code></pre>
+<p>Use new output paths. Existing outputs require explicit overwrite with their matching hash. <code>asset.replace</code> changes only the named panel or balloon; choose <code>preserve</code> or <code>refit</code> explicitly when dimensions change. Preserve unrelated transforms, polygons, sources, clipping, layers and export settings. Bundling copies referenced assets; review metadata and asset permissions before sharing your own bundle.</p>
+<h2>Work on an open editor session</h2>
+<pre><code class="language-powershell">&amp; $cli session list
+&amp; $cli session snapshot --session SESSION_UUID
+&amp; $cli session apply --session SESSION_UUID --patch &#39;.\live-patch.json&#39; --dry-run
+&amp; $cli session apply --session SESSION_UUID --patch &#39;.\live-patch.json&#39;
+&amp; $cli session save --session SESSION_UUID --revision CURRENT_REVISION --base-hash CURRENT_HASH --out &#39;.\saved-next.json&#39;
+</code></pre>
+<p>Replace placeholders with actual values. A live patch contains the latest <code>baseRevision</code> and <code>baseProjectHash</code> returned by the snapshot. Read a fresh snapshot after applying, before saving. For portable sessions, use <code>--registry-dir</code> to select the application&#39;s <code>Data/Sessions</code> folder when needed.</p>
+<p>The GUI starts read-only for Agent writes. The creator enables <strong>允许 Agent 修改本次会话</strong> (Allow Agent to modify this session). Changes operate on the current unsaved layout. One batch can be undone together. Clearing permission takes effect immediately. Dragging, modal dialogs and uncommitted inputs can return <code>Busy</code>; let the creator finish and refresh the snapshot. Do not overwrite live manual work with an older disk file.</p>
+<p>Reusing a successful request ID with identical content returns its original receipt. A new intended action needs a new UUID. Different content with the same ID is rejected. <code>SESSION_RESULT_UNKNOWN</code> indicates an uncertain communication result: retry the identical request or inspect current state. Saving is separate; an unexpected external file change rejects the save.</p>
+<h2>Clipping, occlusion and actual outcomes</h2>
+<p><code>balloon.clip</code> controls the display scope. <code>balloon.panelOcclusion</code> controls front/back/inherit relative to a named panel; it does not change clipping. In preview.2 and later, <code>autoOrder:true</code> can move the selected balloon to its nearest legal same-kind position while preserving other objects&#39; relative order. Query support before using it. Omitting it retains strict conflict rejection. Contradictory relations and locked targets remain atomic errors.</p>
+<pre><code class="language-json">{
+  &quot;op&quot;: &quot;balloon.panelOcclusion&quot;,
+  &quot;targetId&quot;: &quot;SELECTED_BALLOON_ID&quot;,
+  &quot;args&quot;: { &quot;panelId&quot;: &quot;INSET_PANEL_ID&quot;, &quot;position&quot;: &quot;back&quot;, &quot;autoOrder&quot;: true }
+}
+</code></pre>
+<p>Read <code>data.outcomes</code>: occlusion reports <code>Placed</code>, <code>OrderAdjusted</code> or <code>NoChange</code>, with signed <code>layerDelta</code>. Positive moves toward the front, negative toward the back. Relation and automatic ordering form one Undo transaction. <code>object.reorder</code> moves one actual same-kind neighbor. <code>panel.snap</code> reports <code>Moved</code>, <code>AlreadyAligned</code>, <code>NoCandidate</code> or <code>Unsafe</code>; overall <code>success:true</code> alone does not prove an edge moved.</p>
+<h2>Local operation and verification</h2>
+<p>Sessions use local same-user Windows pipes. No remote listener, model-call endpoint or arbitrary-code endpoint is exposed. Send image paths; stdout contains JSON receipts, with no image Base64. Offline file operations remain available.</p>
+<p>The recipient <a href="new-windows-trial.en.html">Windows trial checklist</a> covers portable launch, layout, save/reopen, export and optional live authorization checks. Another-machine compatibility remains pending until that trial is recorded.</p>
+<p><a href="codex-setup.en.html">Codex setup</a> · <a href="quick-start.en.html">Quick start</a> · <a href="../CONTRIBUTING.en.html">Contribution guide</a></p>
+</article></body></html>
